@@ -4,6 +4,8 @@ $defflip = (!cfip()) ? exit(header('HTTP/1.1 401 Unauthorized')) : 1;
 /**
  * Do not edit this unless you have confirmed that your config has been updated!
  *  https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-config-version
+ * 新版本升级：016->017 GIT 更新后，1、升级数据库017文件；2、该配置文件添加017声明处
+ * 升级完毕
  **/
 $config['version'] = '0.0.7';
 
@@ -103,7 +105,7 @@ $config['ap_threshold']['max'] = 250;
  *  Minimum manual payout amount
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-manual-payout-threshold
  * 手动付款门槛，默认值为1该值决定了手动提款时必须达到的值
- * 0.0.7版本新增的，老配置文件记得添加
+ * 017--版本新增
  **/
 $config['mp_threshold'] = 1;
 
