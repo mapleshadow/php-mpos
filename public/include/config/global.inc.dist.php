@@ -243,7 +243,8 @@ $config['pplns']['dynamic']['percent'] = 30;
  * 具体，需要根据实际情况而定
  * 该值在建立矿池前期一般固定就不改了，如果要改，那么需要升级数据库内所有用户的难度为新难度，ST内的缓存也需要更新为新难度，才生效
  */
-$config['difficulty'] = 20;
+#$config['difficulty'] = 20;
+$config['difficulty'] = 21;
 
 /**
  * Block Reward
