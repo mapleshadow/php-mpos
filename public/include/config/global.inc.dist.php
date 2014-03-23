@@ -4,6 +4,8 @@ $defflip = (!cfip()) ? exit(header('HTTP/1.1 401 Unauthorized')) : 1;
 /**
  * Do not edit this unless you have confirmed that your config has been updated!
  *  https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-config-version
+ * 新版本升级：016->017 GIT 更新后，1、升级数据库017文件；2、该配置文件添加017声明处
+ * 升级完毕
  **/
 $config['version'] = '0.0.7';
 
@@ -58,6 +60,17 @@ $config['wallet']['username'] = 'testnet';
 $config['wallet']['password'] = 'testnet';
 
 /**
+ * Cold Wallet / Liquid Assets
+ *  Automatically send liquid assets to a cold wallet
+ *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-liquid-assets--cold-wallet
+ * 收钱钱包的配置，新版本没了，不知道转移到哪里去了。。。。。。。。。。
+ * 内容分别是：地址、储备、阀值。储备表示留在钱包的币量，阀值表示最低发送的币量（一旦超过就激活提款）
+ **/
+#$config['coldwallet']['address'] = '';
+#$config['coldwallet']['reserve'] = 50;
+#$config['coldwallet']['threshold'] = 5;
+
+/**
  * Getting Started Config
  *  Shown to users in the 'Getting Started' section
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-getting-started
@@ -92,7 +105,7 @@ $config['ap_threshold']['max'] = 250;
  *  Minimum manual payout amount
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-manual-payout-threshold
  * 手动付款门槛，默认值为1该值决定了手动提款时必须达到的值
- * 0.0.7版本新增的，老配置文件记得添加
+ * 017--版本新增
  **/
 $config['mp_threshold'] = 1;
 
@@ -152,14 +165,12 @@ $config['txfee_auto'] = 0.01;
 $config['txfee_manual'] = 0.01;
 
 /**
- * Block & Pool Bonus
- *  Bonus coins for blockfinder or a pool bonus for everyone
+ * Block Bonus
+ *  Bonus in coins of block bonus
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-block-bonus
- *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-pool-bonus
  */
 $config['block_bonus'] = 0;
-$config['pool_bonus'] = 0;
-$config['pool_bonus_type'] = 'payout';
+
 
 /**
  * Payout System
@@ -232,8 +243,7 @@ $config['pplns']['dynamic']['percent'] = 30;
  * 具体，需要根据实际情况而定
  * 该值在建立矿池前期一般固定就不改了，如果要改，那么需要升级数据库内所有用户的难度为新难度，ST内的缓存也需要更新为新难度，才生效
  */
-#$config['difficulty'] = 20;
-$config['difficulty'] = 21;
+$config['difficulty'] = 20;
 
 /**
  * Block Reward

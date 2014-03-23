@@ -40,7 +40,6 @@ if ($user->isAuthenticated()) {
     break;
   }
 
-  $smarty->assign('DISABLE_IDLEWORKERNOTIFICATIONS', $setting->getValue('notifications_disable_idle_worker'));
   $aWorkers = $worker->getWorkers($_SESSION['USERDATA']['id']);
   if (!$aWorkers) $_SESSION['POPUP'][] = array('CONTENT' => 'You have no workers configured', 'TYPE' => 'errormsg');
 
