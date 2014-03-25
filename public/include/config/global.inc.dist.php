@@ -4,7 +4,7 @@ $defflip = (!cfip()) ? exit(header('HTTP/1.1 401 Unauthorized')) : 1;
 /**
  * Do not edit this unless you have confirmed that your config has been updated!
  *  https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-config-version
- * 新版本升级：016->017 GIT 更新后，1、升级数据库017文件；2、该配置文件添加017声明处
+ * 新版本升级：upgrade\run_upgrades.php 更新后，1、升级数据库；2、改配置文件到符合最新版本状态
  * 升级完毕
  **/
 $config['version'] = '0.0.7';
@@ -35,6 +35,13 @@ $config['SALTY'] = 'THISSHOULDALSOBERRAANNDDOOM';
   * 币种的算法
   **/
 $config['algorithm'] = 'scrypt';
+
+/**
+  * Getbalance API Calls
+  *  System used for getting actual Balance from Wallet
+  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#getbalance-api-calls
+  **/
+$config['getbalancewithunconfirmed'] = true;
 
 /**
  * Database configuration
@@ -150,8 +157,8 @@ $config['coindiffchangetarget'] = 2016;
  **/
 #$config['txfee_auto'] = 0.1;
 #$config['txfee_manual'] = 0.1;
-$config['txfee_auto'] = 0.01;
-$config['txfee_manual'] = 0.01;
+$config['txfee_auto'] = 0.001;
+$config['txfee_manual'] = 0.001;
 
 /**
  * Block & Pool Bonus
