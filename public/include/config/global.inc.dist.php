@@ -70,6 +70,7 @@ $config['wallet']['password'] = 'testnet';
  * Swiftmailer configuration
  *  Configure your way to send mails
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-swiftmailer
+ * 2014.3.28-新增smtp邮件功能
  **/
 $config['swiftmailer']['type'] = 'sendmail';
 $config['swiftmailer']['sendmail']['path'] = '/usr/sbin/sendmail';
