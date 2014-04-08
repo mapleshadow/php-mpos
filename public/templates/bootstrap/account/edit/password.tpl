@@ -31,7 +31,7 @@
               {nocache}<input class="form-control" type="password" name="newPassword2" id="pw_field2"{if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.changepw && !$CHANGEPASSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
             </div>
             <div class="form-group">
-              <label>4 digit PIN</label>
+              <label>4 Digit PIN</label>
               <input class="form-control" type="password" name="authPin" size="4" maxlength="4" />
             </div>
 
@@ -45,14 +45,14 @@
         <input type="hidden" name="utype" value="change_pw">
         {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.changepw}
         {if $CHANGEPASSSENT == 1 && $CHANGEPASSUNLOCKED == 1}
-        <input type="submit" value="Change Password" class="btn btn-success">
+        <input type="submit" value="Change Password" class="btn btn-success btn-sm">
         {elseif $CHANGEPASSSENT == 0 && $CHANGEPASSUNLOCKED == 1 || $CHANGEPASSSENT == 1 && $CHANGEPASSUNLOCKED == 0}
-        <input type="submit" value="Change Password" class="btn btn-danger" disabled>
+        <input type="submit" value="Change Password" class="btn btn-danger btn-sm" disabled>
         {elseif $CHANGEPASSSENT == 0 && $CHANGEPASSUNLOCKED == 0}
-        <input type="submit" value="Unlock" class="btn btn-warning" name="unlock">
+        <input type="submit" value="Unlock" class="btn btn-warning btn-sm" name="unlock">
         {/if}
         {else}
-        <input type="submit" value="Change Password" class="btn btn-success">
+        <input type="submit" value="Change Password" class="btn btn-success btn-sm">
         {/if}
         {/nocache}
       </div>

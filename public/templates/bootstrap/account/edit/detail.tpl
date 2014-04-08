@@ -54,7 +54,7 @@
               <font size="1">Hide username on website from others. Admins can still get your user information.</font>
             </div>
             <div class="form-group">
-              <label>4 digit PIN</label>
+              <label>4 Digit PIN</label>
               <font size="1">The 4 digit PIN you chose when registering</font>
               <input class="form-control" type="password" name="authPin" size="4" maxlength="4">
             </div>
@@ -69,14 +69,14 @@
       <input type="hidden" name="utype" value="account_edit">
       {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details}
       {if $DETAILSSENT == 1 && $DETAILSUNLOCKED == 1}
-      <input type="submit" value="Update Account" class="btn btn-success">
+      <input type="submit" value="Update Account" class="btn btn-success btn-sm">
       {elseif $DETAILSSENT == 0 && $DETAILSUNLOCKED == 1 || $DETAILSSENT == 1 && $DETAILSUNLOCKED == 0}
-      <input type="submit" value="Update Account" class="btn btn-danger" disabled>
+      <input type="submit" value="Update Account" class="btn btn-danger btn-sm" disabled>
       {elseif $DETAILSSENT == 0 && $DETAILSUNLOCKED == 0}
-      <input type="submit" value="Unlock" class="btn btn-warning" name="unlock">
+      <input type="submit" value="Unlock" class="btn btn-warning btn-sm" name="unlock">
       {/if}
       {else}
-      <input type="submit" value="Update Account" class="btn btn-success">
+      <input type="submit" value="Update Account" class="btn btn-success btn-sm">
       {/if}
       {/nocache}
       </div>

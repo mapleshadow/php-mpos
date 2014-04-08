@@ -19,7 +19,7 @@
           </div>
         </div>
       <div class="panel-footer">
-        <input type="submit" value="Add New Worker" class="btn btn-success">
+        <input type="submit" value="Add New Worker" class="btn btn-success btn-sm">
       </div>
     </div>
   </form>
@@ -42,7 +42,7 @@
                   <th class="smallwidth">Worker Login</th>
                   <th class="smallwidth">Worker Password</th>
                   <th class="text-center">Active</th>
-                  {if $GLOBAL.config.disable_notifications != 1 && $DISABLE_IDLEWORKERNOTIFICATIONS != 1}<th>Monitor</th>{/if}
+                  {if $GLOBAL.config.disable_notifications != 1 && $DISABLE_IDLEWORKERNOTIFICATIONS != 1}<th class="text-center">Monitor</th>{/if}
                   <th class="text-right">Khash/s</th>
                   <th class="text-right">Difficulty</th>
                   <th class="text-center">Action</th>
@@ -54,7 +54,7 @@
                {assign var="username" value="."|escape|explode:$WORKERS[worker].username:2} 
                <tr>
                  <td>
-                  <div class="input-group">
+                  <div class="input-group input-group-sm">
                     <span {if $WORKERS[worker].hashrate > 0}style="color: orange"{/if} class="input-group-addon">{$username.0|escape}.</span>
                     <input type="text" name="data[{$WORKERS[worker].id}][username]" value="{$username.1|escape}" size="10" required class="form-control" />
                   </div>
@@ -62,9 +62,9 @@
                  <td><input class="form-control" type="text" name="data[{$WORKERS[worker].id}][password]" value="{$WORKERS[worker].password|escape}" size="10" required></td>
                  <td class="text-center"><i class="fa fa-{if $WORKERS[worker].hashrate > 0}check{else}times{/if} fa-fw"></i></td>
                  {if $GLOBAL.config.disable_notifications != 1 && $DISABLE_IDLEWORKERNOTIFICATIONS != 1}
-                 <td>
+                 <td class="text-center">
                    <input type="hidden" name="data[{$WORKERS[worker].id}][monitor]" value="0" />
-                   <input type="checkbox" class="switch" data-size="small"  name="data[{$WORKERS[worker].id}][monitor]" id="data[{$WORKERS[worker].id}][monitor]" value="1" {if $WORKERS[worker].monitor}checked{/if}/>
+                   <input type="checkbox" class="switch" data-size="mini"  name="data[{$WORKERS[worker].id}][monitor]" id="data[{$WORKERS[worker].id}][monitor]" value="1" {if $WORKERS[worker].monitor}checked{/if}/>
                  </td>
                  {/if}
                  <td class="text-right">{$WORKERS[worker].hashrate|number_format}</td>
@@ -77,7 +77,7 @@
             </table>
           </div>
           <div class="panel-footer">
-            <input type="submit" class="btn btn-success" value="Update Workers">
+            <input type="submit" class="btn btn-success btn-sm" value="Update Workers">
           </div>
         </div>
       </form>
