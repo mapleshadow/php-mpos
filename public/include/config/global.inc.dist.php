@@ -167,6 +167,20 @@ $config['cointarget'] = '150';
  **/
 $config['coindiffchangetarget'] = 2016;
 # X11 算法可能用的值如下，具体需要查看源代码
+/**
+ *Value GetNetworkHashPS(int lookup, int height) {
+ *    CBlockIndex *pb = pindexBest;
+ *    if (height >= 0 && height < nBestHeight)
+ *        pb = FindBlockByHeight(height);
+ *    if (pb == NULL || !pb->nHeight)
+ *        return 0;
+ *    // If lookup is -1, then use blocks since last difficulty change.
+ *    // Heavycoin difficulty changes every block on downward diff an
+ *    // every nInterval blocks on upward.  To keep it simple, just go
+ *    // back nInterval.
+ *    if (lookup <= 0)
+ *        lookup = pb->nHeight % nInterval + 1;
+**/
 #$config['coindiffchangetarget'] = 1;
 
 /**
