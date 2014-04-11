@@ -166,6 +166,8 @@ $config['cointarget'] = '150';
  *         lookup = pb->nHeight % 2016 + 1;
  **/
 $config['coindiffchangetarget'] = 2016;
+# X11 算法可能用的值如下，具体需要查看源代码
+#$config['coindiffchangetarget'] = 1;
 
 /**
  * TX Fees
@@ -262,6 +264,8 @@ $config['pplns']['dynamic']['percent'] = 30;
  */
 $config['difficulty'] = 20;
 #$config['difficulty'] = 21;
+# X11 算法可能用的值如下，具体还需要计算，该值抄袭HVC币
+#$config['difficulty'] = 5.0342;
 
 /**
  * Block Reward
