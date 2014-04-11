@@ -33,8 +33,10 @@ $config['SALTY'] = 'THISSHOULDALSOBERRAANNDDOOM';
   *  Algorithm used by this coin, sha256d or scrypt
   *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-algorithm
   * 币种的算法
+  * X11 算法要用sha256d
   **/
 $config['algorithm'] = 'scrypt';
+#$config['algorithm'] = 'sha256d';
 
 /**
   * Getbalance API Calls
@@ -166,7 +168,7 @@ $config['cointarget'] = '150';
  *         lookup = pb->nHeight % 2016 + 1;
  **/
 $config['coindiffchangetarget'] = 2016;
-# X11 算法可能用的值如下，具体需要查看源代码
+# 如果是以下公式的源代码，则值为1，具体需要查看源代码
 /**
  *Value GetNetworkHashPS(int lookup, int height) {
  *    CBlockIndex *pb = pindexBest;
@@ -278,8 +280,10 @@ $config['pplns']['dynamic']['percent'] = 30;
  */
 $config['difficulty'] = 20;
 #$config['difficulty'] = 21;
-# X11 算法可能用的值如下，具体还需要计算，该值抄袭HVC币
-#$config['difficulty'] = 5.0342;
+# X11 算法可能用的值如下，具体还需要计算，仍然可用S算法的那个官方公式来计算，记得是约等于四舍五入
+# (stratum diff) ~= 2^((target bits in pushpool) - 16)
+# 6.25~=2^(0.00116-16)
+#$config['difficulty'] = 6.25;
 
 /**
  * Block Reward
