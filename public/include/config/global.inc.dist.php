@@ -7,7 +7,7 @@ $defflip = (!cfip()) ? exit(header('HTTP/1.1 401 Unauthorized')) : 1;
  * 新版本升级：upgrade\run_upgrades.php 更新后，1、升级数据库；2、改配置文件到符合最新版本状态
  * 升级完毕
  **/
-$config['version'] = '0.0.7';
+$config['version'] = '0.0.8';
 
 /**
  * Unless you disable this, we'll do a quick check on your config first.
@@ -36,6 +36,7 @@ $config['SALTY'] = 'THISSHOULDALSOBERRAANNDDOOM';
   * X11 算法要用sha256d
   **/
 $config['algorithm'] = 'scrypt';
+# X11 算法要用sha256d
 #$config['algorithm'] = 'sha256d';
 
 /**
@@ -78,12 +79,12 @@ $config['wallet']['password'] = 'testnet';
 $config['swiftmailer']['type'] = 'sendmail';
 $config['swiftmailer']['sendmail']['path'] = '/usr/sbin/sendmail';
 $config['swiftmailer']['sendmail']['options'] = '-bs';
-$config['switfmailer']['smtp']['host'] = 'your.mail-relay.com';
-$config['switfmailer']['smtp']['port'] = '587';
-$config['switfmailer']['smtp']['encryption'] = 'tls';
-$config['switfmailer']['smtp']['username'] = '';
-$config['switfmailer']['smtp']['password'] = '';
-$config['switfmailer']['smtp']['throttle'] = 100;
+$config['swiftmailer']['smtp']['host'] = 'your.mail-relay.com';
+$config['swiftmailer']['smtp']['port'] = '587';
+$config['swiftmailer']['smtp']['encryption'] = 'tls';
+$config['swiftmailer']['smtp']['username'] = '';
+$config['swiftmailer']['smtp']['password'] = '';
+$config['swiftmailer']['smtp']['throttle'] = 100;
 
 /**
  * Getting Started Config
@@ -304,8 +305,8 @@ $config['reward'] = 50;
  */
 $config['confirmations'] = 120;
 $config['network_confirmations'] = 120;
-#$config['confirmations'] = 30;
-#$config['network_confirmations'] = 30;
+#$config['confirmations'] = 90;
+#$config['network_confirmations'] = 90;
 
 /**
  * PPS
