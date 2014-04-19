@@ -2,7 +2,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-bar-chart fa-fw"></i> гЬ©ИмЁ╪ф
+        <i class="fa fa-bar-chart fa-fw"></i> Е▄╨Е²≈Г╩÷Х╝║
       </div>
       <div class="table-responsive">
         <table class="table table-striped table-bordered table-hover">
@@ -22,24 +22,24 @@
               {else}
               <td>{$BLOCKDETAILS.height|number_format:"0"|default:"0"}</td>
               {/if}
-              <td>╠ра©</td>
+              <td>Е╦│И┤▐</td>
               <td>{$BLOCKDETAILS.amount|number_format|default:"0"}</td>
-              <td>х╥хо</td>
+              <td>Г║╝Х╝╓</td>
               <td>{if $BLOCKDETAILS.confirmations >= $GLOBAL.confirmations}
-              <font color="green">рях╥хо</font>
+              <font color="green">Е╥╡Г║╝Х╝╓</font>
               {else if $BLOCKDETAILS.confirmations == -1}
-              <font color="red">нчп╖©И</font>
+              <font color="red">Ф≈═Ф∙┬Е²≈</font>
               {else if $BLOCKDETAILS.confirmations == 0}0
-              {else}{($GLOBAL.confirmations - $BLOCKDETAILS.confirmations)|default:"0"} ╦Жх╥хо{/if}</td>
+              {else}{($GLOBAL.confirmations - $BLOCKDETAILS.confirmations)|default:"0"} Д╦╙Г║╝Х╝╓{/if}</td>
             </tr>
             <tr class="even">
-              <td>дя╤х</td>
+              <td>И ╬Е╨╕</td>
               <td>{$BLOCKDETAILS.difficulty|default:"0"}</td>
-              <td>й╠╪Д</td>
+              <td>Ф≈╤И≈╢</td>
               <td>{$BLOCKDETAILS.time|default:"0"}</td>
               <td>Shares</td>
               <td>{$BLOCKDETAILS.shares|number_format:"0"|default:"0"}</td>
-              <td>╥╒ожуъ</td>
+              <td>Е▐▒Г▌╟Х─┘</td>
               <td>{$BLOCKDETAILS.finder|default:"unknown"}</td>
             </tr>
           </tbody>

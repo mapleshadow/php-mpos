@@ -6,14 +6,14 @@
     <input type="hidden" name="ctoken" value="{$CTOKEN|escape|default:""}">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-gear fa-fw"></i> 通知设置
+        <i class="fa fa-gear fa-fw"></i> 閫氱煡璁剧疆
       </div>
       <div class="panel-body no-padding">
         <table class="table table-striped table-bordered table-hover">
             {if $DISABLE_IDLEWORKERNOTIFICATIONS|default:"" != 1}
             <tr>
               <td>
-                <label>闲置矿工</label>
+                <label>闂茬疆鐭垮伐</label>
               </td>
               <td>
                 <input type="hidden" name="data[idle_worker]" value="0" />
@@ -24,7 +24,7 @@
             {if $DISABLE_BLOCKNOTIFICATIONS|default:"" != 1}
             <tr>
               <td>
-                <label>新块</label>
+                <label>鏂板潡</label>
               </td>
               <td>
                 <input type="hidden" name="data[new_block]" value="0" />
@@ -34,7 +34,7 @@
             {/if}
             <tr>
               <td>
-                <label>支付</label>
+                <label>鏀粯</label>
               </td>
               <td>
                 <input type="hidden" name="data[payout]" value="0" />
@@ -43,7 +43,7 @@
             </tr>
             <tr>
               <td>
-                <label>成功登录</label>
+                <label>鎴愬姛鐧诲綍</label>
               </td>
               <td>
                 <input type="hidden" name="data[success_login]" value="0" />
@@ -72,7 +72,7 @@
   <div class="col-lg-8">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-clock-o fa-fw"></i> 历史通知
+        <i class="fa fa-clock-o fa-fw"></i> 鍘嗗彶閫氱煡
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">

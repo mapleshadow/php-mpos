@@ -6,7 +6,7 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-money fa-fw"></i> ÊÖ¶¯Ìá¿î
+        <i class="fa fa-money fa-fw"></i> æ‰‹åŠ¨ææ¬¾
       </div>
       <div class="panel-body">
         <div class="row">
@@ -16,19 +16,19 @@
                 Please note: a {if $GLOBAL.config.txfee_manual > 0.00001}{$GLOBAL.config.txfee_manual}{else}{$GLOBAL.config.txfee_manual|number_format:"8"}{/if} {$GLOBAL.config.currency} transaction will apply when processing "On-Demand" manual payments <span id="tt"><img width="15px" height="15px" title="This {if $GLOBAL.config.txfee_manual > 0.00001}{$GLOBAL.config.txfee_manual}{else}{$GLOBAL.config.txfee_manual|number_format:"8"}{/if} manual payment transaction fee is a network fee and goes back into the network not the pool." src="site_assets/mpos/images/questionmark.png"></span>
               </p>
               <p style="padding-left:3px; padding-redight:30px; font-size:10px;">
-                ×îµÍÌá¿îÏŞ¶î£º {$GLOBAL.config.mp_threshold} {$GLOBAL.config.currency}
+                æœ€ä½ææ¬¾é™é¢ï¼š {$GLOBAL.config.mp_threshold} {$GLOBAL.config.currency}
               </p>
             </div>
             <div class="form-group">
-              <label>ÕË»§Óà¶î</label>
+              <label>è´¦æˆ·ä½™é¢</label>
               {nocache}<input class="form-control" id="disabledInput" type="text" value="{$GLOBAL.userdata.balance.confirmed|escape}" {$GLOBAL.config.currency} disabled />{/nocache}
             </div>
             <div class="form-group">
-              <label>Ö§¸¶µØÖ·</label>
+              <label>æ”¯ä»˜åœ°å€</label>
               {nocache}<input class="form-control" id="disabledInput" type="text" value="{$GLOBAL.userdata.coin_address|escape}" disabled />{/nocache}
             </div>
             <div class="form-group">
-              <label>4 Î»ÊıPINÂë</label>
+              <label>4 ä½æ•°PINç </label>
               <input class="form-control" type="password" name="authPin" size="4" maxlength="4" />
             </div>
           </div>

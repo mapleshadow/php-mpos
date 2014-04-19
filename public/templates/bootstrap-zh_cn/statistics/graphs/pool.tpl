@@ -1,7 +1,7 @@
 {if is_array($POOLHASHRATES)}
   <div class="tab-pane fade in" id="pool">
     <div class="panel-heading">
-      ¿ó³ØËãÁ¦
+      çŸ¿æ± ç®—åŠ›
     </div>
     <div class="panel-body">
       <div id="pool-area-chart"></div>

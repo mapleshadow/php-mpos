@@ -1,6 +1,6 @@
 <article class="module width_full">
   <header><h3>{$GLOBAL.website.name}</h3></header>
   <div class="module_content">
-    <p>ÄúÇëÇóµÄÒ³ÃæÎ´ÕÒµ½¡£</p>
+    <p>æ‚¨è¯·æ±‚çš„é¡µé¢æœªæ‰¾åˆ°ã€‚</p>
   </div>
 </article>

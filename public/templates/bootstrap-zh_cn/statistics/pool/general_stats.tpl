@@ -1,25 +1,25 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-bar-chart-o fa-fw"></i> Í³¼ÆÊı¾İ
+        <i class="fa fa-bar-chart-o fa-fw"></i> ç»Ÿè®¡æ•°æ®
       </div>
       <div class="panel-body no-padding table-responsive">
         <table class="table table-striped table-bordered table-hover">
           <tbody>
             <tr>
-              <th width="50%">¿ó³ØËãÁ¦</th>
+              <th width="50%">çŸ¿æ± ç®—åŠ›</th>
               <td width="70%"><span id="b-hashrate">{$GLOBAL.hashrate|number_format:"3"}</span> {$GLOBAL.hashunits.pool}</td>
             </tr>
             <tr>
-              <th>¿ó³ØĞ§ÂÊ</th>
+              <th>çŸ¿æ± æ•ˆç‡</th>
               <td>{if $GLOBAL.roundshares.valid > 0}{($GLOBAL.roundshares.valid / ($GLOBAL.roundshares.valid + $GLOBAL.roundshares.invalid) * 100)|number_format:"2"}%{else}0%{/if}</td>
             </tr>
             <tr>
-              <th>µ±Ç°»î¶¯¿ó¹¤</th>
+              <th>å½“å‰æ´»åŠ¨çŸ¿å·¥</th>
               <td id="b-workers">{$GLOBAL.workers|number_format}</td>
             </tr>
             <tr>
-              <th>µ±Ç°ÄÑ¶È</th>
+              <th>å½“å‰éš¾åº¦</th>
               {if ! $GLOBAL.website.chaininfo.disabled}
               <td><a href="{$GLOBAL.website.chaininfo.url}" target="_new"><font size="2"><span id="b-diff">{$NETWORK.difficulty}</span></font></a></td>
               {else}
@@ -27,7 +27,7 @@
               {/if}
             </tr>
             <tr>
-              <th>Ô¤¼ÆÏÂÂÖÄÑ¶È</th>
+              <th>é¢„è®¡ä¸‹è½®éš¾åº¦</th>
               {if ! $GLOBAL.website.chaininfo.disabled}
               <td><a href="{$GLOBAL.website.chaininfo.url}" target="_new"><font size="2">{$NETWORK.EstNextDifficulty|number_format:"8"} (Change in {$NETWORK.BlocksUntilDiffChange} Blocks)</font></a></td>
               {else}
@@ -35,41 +35,41 @@
               {/if}
             </tr>
             <tr>
-              <th>Ô¤¼ÆÃ¿ÂÖÆ½¾ùÊ±¼ä£¨È«Íø£©</th>
+              <th>é¢„è®¡æ¯è½®å¹³å‡æ—¶é—´ï¼ˆå…¨ç½‘ï¼‰</th>
               <td><font size="2">{$NETWORK.EstTimePerBlock|seconds_to_words}</font></td>
             </tr>
             <tr>
-              <th>Ô¤¼ÆÃ¿ÂÖÆ½¾ùÊ±¼ä£¨¿ó³Ø£©</th>
+              <th>é¢„è®¡æ¯è½®å¹³å‡æ—¶é—´ï¼ˆçŸ¿æ± ï¼‰</th>
               <td>{$ESTTIME|seconds_to_words}</td>
             </tr>
             <tr>
-              <th>Ô¤¼Æ±¾ÂÖ¹É·İ</th>
+              <th>é¢„è®¡æœ¬è½®è‚¡ä»½</th>
               <td id="b-target">{$ESTIMATES.shares|number_format} (done: {$ESTIMATES.percent}%)</td>
             </tr>
             {if ! $GLOBAL.website.blockexplorer.disabled}
             <tr>
-              <th width="50%">È«ÍøÏÂÒ»¸öÇø¿é</th>
+              <th width="50%">å…¨ç½‘ä¸‹ä¸€ä¸ªåŒºå—</th>
               <td colspan="3">{($CURRENTBLOCK + 1)|number_format} &nbsp;&nbsp;<font size="1"> (Current: <a href="{$GLOBAL.website.blockexplorer.url}{$CURRENTBLOCKHASH}" target="_new">{$CURRENTBLOCK|number_format})</a></font></td>
             </tr>
             {else}
             <tr>
-              <th>È«ÍøÏÂÒ»¸öÇø¿é</th>
+              <th>å…¨ç½‘ä¸‹ä¸€ä¸ªåŒºå—</th>
               <td colspan="3">{($CURRENTBLOCK + 1)|number_format} &nbsp;&nbsp; (Current: {$CURRENTBLOCK|number_format})</td>
             </tr>
             {/if}
             <tr>
-              <th>×î½ü·¢ÏÖµÄÇø¿é</th>
+              <th>æœ€è¿‘å‘ç°çš„åŒºå—</th>
               <td colspan="3"><a href="{$smarty.server.SCRIPT_NAME}?page=statistics&action=round&height={$LASTBLOCK}" target="_new">{$LASTBLOCK|default:"0"|number_format}</a></td>
             </tr>
             <tr>
-              <th>¾àÀëÉÏ¸öÇø¿éµÄÊ±¼ä</th>
+              <th>è·ç¦»ä¸Šä¸ªåŒºå—çš„æ—¶é—´</th>
               <td colspan="3">{$TIMESINCELAST|seconds_to_words}</td>
             </tr>
           </tbody>
         </table>
       </div>
       <div class="panel-footer">
-        <h6>{if !$GLOBAL.website.api.disabled}ÕâĞ©Í³¼ÆµÄÊı¾İ JSON ¸ñÊ½ÔÚ <a href="{$smarty.server.SCRIPT_NAME}?page=api&action=getpoolstatus&api_key={$GLOBAL.userdata.api_key|default:""}">ÕâÀï</a>{/if}</h6>
+        <h6>{if !$GLOBAL.website.api.disabled}è¿™äº›ç»Ÿè®¡çš„æ•°æ® JSON æ ¼å¼åœ¨ <a href="{$smarty.server.SCRIPT_NAME}?page=api&action=getpoolstatus&api_key={$GLOBAL.userdata.api_key|default:""}">è¿™é‡Œ</a>{/if}</h6>
       </div>
     </div>
   </div>

@@ -70,7 +70,7 @@
       {if file_exists($smarty.current_dir|cat:"/$PAGE/$ACTION/$CONTENT")}
         {include file="$PAGE/$ACTION/$CONTENT"}
       {else}
-        Õâ¸öÒ³ÃæÖĞÈ±ÉÙÄ£°å
+        è¿™ä¸ªé¡µé¢ä¸­ç¼ºå°‘æ¨¡æ¿
       {/if}
     {/if}
     </div>

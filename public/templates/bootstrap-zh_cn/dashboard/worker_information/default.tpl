@@ -2,19 +2,19 @@
   <div class="col-lg-4">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <h4 class="panel-title"><i class="fa fa-desktop fa-fw"></i> ©С╧╓пео╒</h4>
+        <h4 class="panel-title"><i class="fa fa-desktop fa-fw"></i> Г÷©Е╥╔Д©║Ф│╞</h4>
       </div>
       <div class="panel-body no-padding table-responsive">
         <table class="table table-bordered table-hover table-striped"> 
          <thead>
           <tr>
-            <th>©С╧╓</th>
-            <th>╧Чоёбй</th>
-            <th>дя╤х</th>
+            <th>Г÷©Е╥╔</th>
+            <th>Е⌠┬Е╦▄Г▌┤</th>
+            <th>И ╬Е╨╕</th>
           </tr>
           </thead>
           <tbody id="b-workers">
-            <td colspan="3" class="text-center">ц╩сп©исц╣д©С╧╓пео╒</td>
+            <td colspan="3" class="text-center">Ф╡║Ф°┴Е▐╞Г■╗Г └Г÷©Е╥╔Д©║Ф│╞</td>
           </tbody>
         </table>
       </div>

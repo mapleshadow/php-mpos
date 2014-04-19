@@ -1,7 +1,7 @@
 {if is_array($YOURHASHRATES) && is_array($POOLHASHRATES)}
   <div class="tab-pane fade in" id="both">
     <div class="panel-heading">
-      ÎÒµÄ vs. ¿ó³Ø ËãÁ¦¶Ô±ÈÍ¼
+      æˆ‘çš„ vs. çŸ¿æ±  ç®—åŠ›å¯¹æ¯”å›¾
     </div>
     <div class="panel-body">
       <div id="both-area-chart"></div>

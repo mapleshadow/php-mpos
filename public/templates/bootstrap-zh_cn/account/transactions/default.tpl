@@ -5,7 +5,7 @@
     <input type="hidden" name="ctoken" value="{$CTOKEN|escape|default:""}" />
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-search fa-fw"></i> ½»Ò×²éÑ¯
+        <i class="fa fa-search fa-fw"></i> äº¤æ˜“æŸ¥è¯¢
       </div>
       <div class="panel-body">
             <ul class="pager">
@@ -17,11 +17,11 @@
               </li>
             </ul>
             <div class="form-group">
-              <label>ÀàĞÍ</label>
+              <label>ç±»å‹</label>
               {html_options class="form-control select-mini" name="filter[type]" options=$TRANSACTIONTYPES selected=$smarty.request.filter.type|default:""}
             </div>
             <div class="form-group">
-              <label>×´Ì¬</label>
+              <label>çŠ¶æ€</label>
               {html_options class="form-control select-mini" name="filter[status]" options=$TXSTATUS selected=$smarty.request.filter.status|default:""}
             </div>
       </div>
@@ -34,7 +34,7 @@
   <div class="col-lg-9">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-clock-o fa-fw"></i> ½»Ò×ÀúÊ·
+        <i class="fa fa-clock-o fa-fw"></i> äº¤æ˜“å†å²
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">
@@ -42,13 +42,13 @@
             <thead>
               <tr>
                 <th class="h6">ID</th>
-                <th class="h6">Ê±¼ä</th>
-                <th class="h6">TX ÀàĞÍ</th>
-                <th class="h6">×´Ì¬</th>
-                <th class="h6">Ö§¸¶µØÖ·</th>
+                <th class="h6">æ—¶é—´</th>
+                <th class="h6">TX ç±»å‹</th>
+                <th class="h6">çŠ¶æ€</th>
+                <th class="h6">æ”¯ä»˜åœ°å€</th>
                 <th class="h6">TX #</th>
-                <th class="h6">¿é #</th>
-                <th class="h6">ÊıÁ¿</th>
+                <th class="h6">å— #</th>
+                <th class="h6">æ•°é‡</th>
               </tr>
             </thead>
             <tbody>
@@ -88,7 +88,7 @@
         </div>
       </div>
       <div class="panel-footer">
-        <h6><b>Debit_AP</b> = ×Ô¶¯È¡¿î£¬ <b>Debit_MP</b> = ÊÖ¶¯È¡¿î£¬ <b>Donation</b> = ¾èÔù£¬ <b>Fee</b> = ¿ó³Ø·ÑÓÃ£¨Èç¹û¿ó³ØÊÕ·Ñ£©</h6>
+        <h6><b>Debit_AP</b> = è‡ªåŠ¨å–æ¬¾ï¼Œ <b>Debit_MP</b> = æ‰‹åŠ¨å–æ¬¾ï¼Œ <b>Donation</b> = æèµ ï¼Œ <b>Fee</b> = çŸ¿æ± è´¹ç”¨ï¼ˆå¦‚æœçŸ¿æ± æ”¶è´¹ï¼‰</h6>
       </div>
     </div>
   </div>

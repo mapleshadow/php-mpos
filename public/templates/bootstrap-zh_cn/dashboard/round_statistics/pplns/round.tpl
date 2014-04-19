@@ -10,7 +10,7 @@
                   <p class="h5 up-more" id="b-nblock">{$NETWORK.block}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">µ±Ç°Çø¿é</p>
+                  <p class="h6">å½“å‰åŒºå—</p>
                 </div>
               </div>
             </div>
@@ -25,7 +25,7 @@
                   <p class="h5 up-more" id="b-roundprogress">{$ESTIMATES.percent|number_format:"2"}%</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">Ô¤ÆÚ¹É·İ</p>
+                  <p class="h6">é¢„æœŸè‚¡ä»½</p>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@
                   <p class="h5 up-more" id="b-payout">{$GLOBAL.userdata.estimates.payout|number_format:"8"}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">{$GLOBAL.config.currency} Ô¤ÆÚÊÕÒæ</p>
+                  <p class="h6">{$GLOBAL.config.currency} é¢„æœŸæ”¶ç›Š</p>
                 </div>
               </div>
             </div>
@@ -55,7 +55,7 @@
                   <p class="h5 up-more" id="b-diff">{$NETWORK.difficulty|number_format:"8"}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">ÄÑ¶È</p>
+                  <p class="h6">éš¾åº¦</p>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@
                   <p class="h6" id="b-nextdiffc">{if $GLOBAL.nethashrate > 0}Change in {$NETWORK.BlocksUntilDiffChange} Blocks{else}No Estimates{/if}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6 up-more2">ÏÂÒ»´ÎÄÑ¶È</p>
+                  <p class="h6 up-more2">ä¸‹ä¸€æ¬¡éš¾åº¦</p>
                 </div>
               </div>
             </div> 
@@ -86,7 +86,7 @@
                   <p class="h5 up-more" id="b-esttimeperblock">{$NETWORK.EstTimePerBlock|seconds_to_words}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">Ô¤¼ÆÃ¿¿éµÄÆ½¾ùÊ±¼ä</p>
+                  <p class="h6">é¢„è®¡æ¯å—çš„å¹³å‡æ—¶é—´</p>
                 </div>
               </div>
             </div>

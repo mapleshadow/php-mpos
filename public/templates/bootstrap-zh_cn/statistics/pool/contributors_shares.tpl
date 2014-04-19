@@ -1,15 +1,15 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-tachometer fa-fw"></i> ±¾ÂÖ¹É·ÝÅÅÐÐ
+        <i class="fa fa-tachometer fa-fw"></i> æœ¬è½®è‚¡ä»½æŽ’è¡Œ
       </div>
       <div class="panel-body no-padding table-responsive">
         <table class="table table-striped table-bordered table-hover">
           <thead>
             <tr>
-              <th>Ãû´Î</th>
-              <th>¾èÔù</th>
-              <th>ÓÃ»§Ãû</th>
+              <th>åæ¬¡</th>
+              <th>æèµ </th>
+              <th>ç”¨æˆ·å</th>
               <th class="text-right">Shares</th>
             </tr>
           </thead>
@@ -37,9 +37,9 @@
       </div>
       <div class="panel-footer">
           <h6>
-          <i class="fa fa-ban fa-fw"></i> Î´¾èÔù
-          <i class="fa fa-star-o fa-fw"></i> 0&#37;&#45;2&#37; ¾èÔù 
-          <i class="fa fa-trophy fa-fw"></i> 2&#37; »ò¸ü¶à
+          <i class="fa fa-ban fa-fw"></i> æœªæèµ 
+          <i class="fa fa-star-o fa-fw"></i> 0&#37;&#45;2&#37; æèµ  
+          <i class="fa fa-trophy fa-fw"></i> 2&#37; æˆ–æ›´å¤š
           </h6>
       </div>
     </div>

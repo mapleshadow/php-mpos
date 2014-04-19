@@ -2,7 +2,7 @@
     <div class="panel panel-info">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <i class="fa fa-spinner fa-fw"></i> 本轮信息
+          <i class="fa fa-spinner fa-fw"></i> 鏈疆淇℃伅
         </h4>
       </div>
       {assign var=PAYOUT_SYSTEM value=$GLOBAL.config.payout_system}
@@ -13,7 +13,7 @@
     <div class="panel panel-info">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <i class="fa fa-cloud fa-fw"></i> 股份信息
+          <i class="fa fa-cloud fa-fw"></i> 鑲′唤淇℃伅
         </h4>
       </div>
       {assign var=PAYOUT_SYSTEM value=$GLOBAL.config.payout_system}

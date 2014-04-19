@@ -3,7 +3,7 @@
     <input type="hidden" name="ctoken" value="{$CTOKEN|escape|default:""}">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-sign-in fa-fw"></i> й╧сцряспук╩╖╫Ьпп╣гб╪
+        <i class="fa fa-sign-in fa-fw"></i> Д╫©Г■╗Е╥╡Ф°┴Х╢╕Ф┬╥Х©⌡Х║▄Г≥╩Е╫∙
       </div>
       <div class="panel-body">
         <div class="form-group">
@@ -20,7 +20,7 @@
       <center>{nocache}{$RECAPTCHA|default:"" nofilter}{/nocache}</center>
       <div class="panel-footer">
         <input type="submit" class="btn btn-success btn-sm" value="Login" >
-        <a href="{$smarty.server.SCRIPT_NAME}?page=password"><font size="1">мЭ╪гдЦ╣дцэбКё©</font></a>
+        <a href="{$smarty.server.SCRIPT_NAME}?page=password"><font size="1">Е©≤Х╝╟Д╫═Г └Е╞├Г═│О╪÷</font></a>
       </div>
     </div>
   </form>

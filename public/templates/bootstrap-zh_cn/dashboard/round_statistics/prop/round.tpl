@@ -10,7 +10,7 @@
                   <p class="h5" id="b-nblock">{$NETWORK.block}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">当前区块</p>
+                  <p class="h6">褰撳墠鍖哄潡</p>
                 </div>
               </div>
             </div>
@@ -25,7 +25,7 @@
                   <p class="h5" id="b-roundprogress">{$ESTIMATES.percent|number_format:"2"}%</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">预计股份</p>
+                  <p class="h6">棰勮鑲′唤</p>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@
                   <p class="h5" id="b-payout">{$GLOBAL.userdata.estimates.payout|number_format:"8"}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">{$GLOBAL.config.currency} 预计盈利</p>
+                  <p class="h6">{$GLOBAL.config.currency} 棰勮鐩堝埄</p>
                 </div>
               </div>
             </div>
@@ -55,7 +55,7 @@
                   <p class="h5" id="b-diff">{$NETWORK.difficulty|number_format:"8"}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">难度</p>
+                  <p class="h6">闅惧害</p>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@
                   <p class="h6" id="b-nextdiffc">{if $GLOBAL.nethashrate > 0}Change in {$NETWORK.BlocksUntilDiffChange} Blocks{else}No Estimates{/if}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">预计下一难度</p>
+                  <p class="h6">棰勮涓嬩竴闅惧害</p>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@
                   <p class="h5" id="b-esttimeperblock">{$NETWORK.EstTimePerBlock|seconds_to_words}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">预计. 平均. 每块时间</p>
+                  <p class="h6">棰勮. 骞冲潎. 姣忓潡鏃堕棿</p>
                 </div>
               </div>
             </div>

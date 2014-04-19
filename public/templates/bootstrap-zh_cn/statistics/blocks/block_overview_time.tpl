@@ -2,7 +2,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-clock-o fa-fw"></i> Çø¿é¸ÅÊö
+        <i class="fa fa-clock-o fa-fw"></i> åŒºå—æ¦‚è¿°
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">
@@ -10,21 +10,21 @@
             <thead>
               <tr>
                 <th></th>
-                <th class="text-right">Ô¤¼Æ×ÜÇø¿é</th>
-                <th class="text-right">ÒÑ·¢ÏÖ</th>
-                <th class="text-right">ÓĞĞ§</th>
-                <th class="text-right">ÎŞĞ§</th>
-                <th class="text-right">Æ½¾ùÄÑ¶È</th>
-                <th class="text-right">Ô¤¼Æ¹É·İ</th>
-                <th class="text-right">Êµ¼Ê¹É·İ</th>
-                <th class="text-right">°Ù·Ö±È</th>
-                <th class="text-right">±ÒÁ¿</th>
-                <th class="text-right">Ô¤¼Æ±ÈÀı</th>
+                <th class="text-right">é¢„è®¡æ€»åŒºå—</th>
+                <th class="text-right">å·²å‘ç°</th>
+                <th class="text-right">æœ‰æ•ˆ</th>
+                <th class="text-right">æ— æ•ˆ</th>
+                <th class="text-right">å¹³å‡éš¾åº¦</th>
+                <th class="text-right">é¢„è®¡è‚¡ä»½</th>
+                <th class="text-right">å®é™…è‚¡ä»½</th>
+                <th class="text-right">ç™¾åˆ†æ¯”</th>
+                <th class="text-right">å¸é‡</th>
+                <th class="text-right">é¢„è®¡æ¯”ä¾‹</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th>ËùÓĞÊ±¼ä</th>
+                <th>æ‰€æœ‰æ—¶é—´</th>
                 <td class="text-right">{($FIRSTBLOCKFOUND / $COINGENTIME)|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.Total|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.TotalValid|number_format}</td>
@@ -49,7 +49,7 @@
                 <td class="text-right">{($LASTBLOCKSBYTIME.Total|default:"0.00" / ($FIRSTBLOCKFOUND / $COINGENTIME)  * 100)|number_format:"2"}%</td>
               </tr>
               <tr>
-                <th>×î½ü1Ğ¡Ê±</th>
+                <th>æœ€è¿‘1å°æ—¶</th>
                 <td class="text-right">{(3600 / $COINGENTIME)|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.1HourTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.1HourValid|number_format}</td>
@@ -74,7 +74,7 @@
                 <td class="text-right">{($LASTBLOCKSBYTIME.1HourTotal|default:"0.00" / (3600 / $COINGENTIME)  * 100)|number_format:"2"}%</td>
               </tr>
               <tr>
-                <th style="padding-left:3px;padding-right:1px;">×î½ü24Ğ¡Ê±</th>
+                <th style="padding-left:3px;padding-right:1px;">æœ€è¿‘24å°æ—¶</th>
                 <td class="text-right">{(86400 / $COINGENTIME)|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.24HourTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.24HourValid|number_format}</td>
@@ -99,7 +99,7 @@
                 <td class="text-right">{($LASTBLOCKSBYTIME.24HourTotal|default:"0.00" / (86400 / $COINGENTIME)  * 100)|number_format:"2"}%</td>
               </tr>
               <tr>
-                <th>×î½ü7Ìì</th>
+                <th>æœ€è¿‘7å¤©</th>
                 <td class="text-right">{(604800 / $COINGENTIME)|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.7DaysTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.7DaysValid|number_format}</td>
@@ -124,7 +124,7 @@
                 <td class="text-right">{($LASTBLOCKSBYTIME.7DaysTotal|default:"0.00" / (604800 / $COINGENTIME)  * 100)|number_format:"2"}%</td>
               </tr>
               <tr>
-                <th>×î½ü4ÖÜ</th>
+                <th>æœ€è¿‘4å‘¨</th>
                 <td class="text-right">{(2419200 / $COINGENTIME)|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.4WeeksTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.4WeeksValid|number_format}</td>
@@ -149,7 +149,7 @@
                 <td class="text-right">{($LASTBLOCKSBYTIME.4WeeksTotal|default:"0.00" / (2419200 / $COINGENTIME)  * 100)|number_format:"2"}%</td>
               </tr>
               <tr>
-                <th>×î½ü12¸öÔÂ</th>
+                <th>æœ€è¿‘12ä¸ªæœˆ</th>
                 <td class="text-right">{(29030400 / $COINGENTIME)|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.12MonthTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.12MonthValid|number_format}</td>
@@ -178,7 +178,7 @@
         </div>
       </div>
       <div class="panel-footer">
-        <h6>{if $GLOBAL.config.payout_system != 'pps'}ÎÂÜ°ÌáÊ¾£ºĞèÒªÄÍĞÄµÈ´ı <font class="confirmations">{$GLOBAL.confirmations}</font> ¸öÈ«ÍøÈ·ÈÏºó²Å»áÈëÕË¡£{/if}</h6>
+        <h6>{if $GLOBAL.config.payout_system != 'pps'}æ¸©é¦¨æç¤ºï¼šéœ€è¦è€å¿ƒç­‰å¾… <font class="confirmations">{$GLOBAL.confirmations}</font> ä¸ªå…¨ç½‘ç¡®è®¤åæ‰ä¼šå…¥è´¦ã€‚{/if}</h6>
       </div>
     </div>
   </div>

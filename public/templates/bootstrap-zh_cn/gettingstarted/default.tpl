@@ -2,7 +2,7 @@
     <div class="col-lg-12">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <i class="fa fa-question fa-fw"></i> 挖矿新手入门
+          <i class="fa fa-question fa-fw"></i> 鎸栫熆鏂版墜鍏ラ棬
         </div>
         <div class="panel-body">
         

@@ -1,16 +1,16 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-user fa-fw"></i> Ç° 25 ÃûÇø¿é·¢ÏÖÕß
+        <i class="fa fa-user fa-fw"></i> å‰ 25 ååŒºå—å‘çŽ°è€…
       </div>
       <div class="panel-body no-padding table-responsive">
         <table class="table table-striped table-bordered table-hover">
           <thead>
             <tr>
-              <th>Ãû´Î</th>
-              <th>ÓÃ»§Ãû</th>
-              <th>Çø¿é</th>
-              <th>±ÒÁ¿</th>
+              <th>åæ¬¡</th>
+              <th>ç”¨æˆ·å</th>
+              <th>åŒºå—</th>
+              <th>å¸é‡</th>
             </tr>
           </thead>
           <tbody>

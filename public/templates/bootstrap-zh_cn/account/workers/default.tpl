@@ -6,15 +6,15 @@
     <input type="hidden" name="ctoken" value="{$CTOKEN|escape|default:""}">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-plus-square-o fa-fw"></i> Ìí¼ÓÐÂ¿ó¹¤
+        <i class="fa fa-plus-square-o fa-fw"></i> æ·»åŠ æ–°çŸ¿å·¥
       </div>
         <div class="panel-body">
           <div class="form-group">
-            <label>¿ó¹¤Ãû</label>
+            <label>çŸ¿å·¥å</label>
             <input class="form-control" type="text" name="username" value="user" size="10" maxlength="20" required>
           </div>
           <div class="form-group">
-            <label>¿ó¹¤ÃÜÂë</label>
+            <label>çŸ¿å·¥å¯†ç </label>
             <input class="form-control" type="text" name="password" value="password" size="10" maxlength="20" required>
           </div>
         </div>
@@ -27,7 +27,7 @@
   <div class="col-lg-9">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-gears fa-fw"></i> ¿ó¹¤ÅäÖÃ
+        <i class="fa fa-gears fa-fw"></i> çŸ¿å·¥é…ç½®
       </div>
       <form action="{$smarty.server.SCRIPT_NAME}" method="post" role="form">
         <input type="hidden" name="page" value="{$smarty.request.page|escape}">
@@ -39,13 +39,13 @@
           <table class="table">
              <thead>
                 <tr>
-                  <th class="smallwidth">¿ó¹¤ºÅ</th>
-                  <th class="smallwidth">¿ó¹¤ÃÜÂë</th>
-                  <th class="text-center">×´Ì¬</th>
-                  {if $GLOBAL.config.disable_notifications != 1 && $DISABLE_IDLEWORKERNOTIFICATIONS != 1}<th class="text-center">¼à¿Ø</th>{/if}
+                  <th class="smallwidth">çŸ¿å·¥å·</th>
+                  <th class="smallwidth">çŸ¿å·¥å¯†ç </th>
+                  <th class="text-center">çŠ¶æ€</th>
+                  {if $GLOBAL.config.disable_notifications != 1 && $DISABLE_IDLEWORKERNOTIFICATIONS != 1}<th class="text-center">ç›‘æŽ§</th>{/if}
                   <th class="text-right">Khash/s</th>
-                  <th class="text-right">ÄÑ¶È</th>
-                  <th class="text-center">²Ù×÷</th>
+                  <th class="text-right">éš¾åº¦</th>
+                  <th class="text-center">æ“ä½œ</th>
                 </tr>
              </thead>
              <tbody>

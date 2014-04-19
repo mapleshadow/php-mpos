@@ -1,18 +1,18 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        ±¾ÂÖÖ§¸¶Êý¾Ý
+        æœ¬è½®æ”¯ä»˜æ•°æ®
       </div>
       <div class="panel-body">
         <div class="table-responsive">
           <table class="table table-striped table-bordered table-hover {if $ROUNDTRANSACTIONS}datatable{/if}">
             <thead>
               <tr>
-                <th>ÓÃ»§Ãû</th>
-                <th>ÀàÐÍ</th>
-                <th>±¾ÂÖ Shares</th>
-                <th>±¾ÂÖ %</th>
-                <th>±ÒÁ¿</th>
+                <th>ç”¨æˆ·å</th>
+                <th>ç±»åž‹</th>
+                <th>æœ¬è½® Shares</th>
+                <th>æœ¬è½® %</th>
+                <th>å¸é‡</th>
               </tr>
             </thead>
             <tbody>

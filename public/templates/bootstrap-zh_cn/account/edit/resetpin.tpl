@@ -6,13 +6,13 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-lock fa-fw"></i> ÖØÖÃ PIN Âë
+        <i class="fa fa-lock fa-fw"></i> é‡ç½® PIN ç 
       </div>
       <div class="panel-body">
         <div class="row">
           <div class="col-lg-12">
             <div class="form-group">
-              <label>µ±Ç°µÇÂ¼ÃÜÂë</label>
+              <label>å½“å‰ç™»å½•å¯†ç </label>
               <input class="form-control" type="password" name="currentPassword">
             </div>
           </div>

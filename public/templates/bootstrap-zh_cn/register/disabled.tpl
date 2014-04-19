@@ -1,1 +1,1 @@
-<br /><center><p><font size="5px">我们目前不接受新用户注册。如果需要注册，请联系管理员或发送邮件。QQ群：96978382</font></p></center>
+<br /><center><p><font size="5px">鎴戜滑鐩墠涓嶆帴鍙楁柊鐢ㄦ埛娉ㄥ唽銆傚鏋滈渶瑕佹敞鍐岋紝璇疯仈绯荤鐞嗗憳鎴栧彂閫侀偖浠躲�俀Q缇わ細96978382</font></p></center>

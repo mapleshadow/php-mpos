@@ -2,25 +2,25 @@
   <div class="col-lg-4">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-money fa-fw"></i> Óà¶î»ã×Ü
+        <i class="fa fa-money fa-fw"></i> ä½™é¢æ±‡æ€»
       </div>
       <div class="panel-body no-padding">
         <table class="table table-striped table-bordered table-hover">
           <tr>
-            <td>Ç®°üÓà¶î</td>
+            <td>é’±åŒ…ä½™é¢</td>
             <td>{$BALANCE|number_format:"8"}</td>
           </tr>
           <tr>
-            <td>Ëø¶¨·Ö¸øÓÃ»§</td>
+            <td>é”å®šåˆ†ç»™ç”¨æˆ·</td>
             <td>{$LOCKED|number_format:"8"}</td>
           </tr>
           <tr>
-            <td>Î´³ÉÊì</td>
+            <td>æœªæˆç†Ÿ</td>
             <td>{$UNCONFIRMED|number_format:"8"}</td>
           </tr>
 {if $NEWMINT >= 0}
           <tr>
-            <td>Á÷¶¯×Ê²ú</td>
+            <td>æµåŠ¨èµ„äº§</td>
             {if $GLOBAL.config.getbalancewithunconfirmed}
             <td>{($BALANCE - $LOCKED - $UNCONFIRMED + $NEWMINT|default:"0")|number_format:"8"}</td>
             {else}
@@ -33,7 +33,7 @@
           </tr>
 {else}
           <tr>
-            <td>Á÷¶¯×Ê²ú</td>
+            <td>æµåŠ¨èµ„äº§</td>
             {if $GLOBAL.config.getbalancewithunconfirmed}
             <td>{($BALANCE - $LOCKED - $UNCONFIRMED)|number_format:"8"}</td>
             {else}
@@ -49,16 +49,16 @@
   <div class="col-lg-8">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-info fa-fw"></i> Ç®°ü×´Ì¬
+        <i class="fa fa-info fa-fw"></i> é’±åŒ…çŠ¶æ€
       </div>
       <div class="panel-body no-padding">
         <table class="table table-striped table-bordered table-hover">
           <thead>
-            <th>°æ±¾</th>
-            <th>Ğ­Òé°æ±¾</th>
-            <th>Ç®°ü°æ±¾</th>
-            <th>Á¬½ÓÊı</th>
-            <th>´íÎó</th>
+            <th>ç‰ˆæœ¬</th>
+            <th>åè®®ç‰ˆæœ¬</th>
+            <th>é’±åŒ…ç‰ˆæœ¬</th>
+            <th>è¿æ¥æ•°</th>
+            <th>é”™è¯¯</th>
           </thead>
           <tbody>
             <tr>

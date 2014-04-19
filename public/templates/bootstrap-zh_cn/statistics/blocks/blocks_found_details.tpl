@@ -2,23 +2,23 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-tasks fa-fw"></i> ×î½ü·¢ÏÖµÄ {$BLOCKLIMIT} ¸öÇø¿é
+        <i class="fa fa-tasks fa-fw"></i> æœ€è¿‘å‘ç°çš„ {$BLOCKLIMIT} ä¸ªåŒºå—
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">
           <table class="table table-striped table-bordered table-hover">
             <thead>
               <tr>
-                <th class="text-center">Çø¿é</th>
-                <th class="text-center">×´Ì¬</th>
-                <th class="text-left">·¢ÏÖÕß</th>
-                <th class="text-right">Ê±¼ä</th>
-                <th class="text-right">ÄÑ¶È</th>
-                <th class="text-right">±ÒÁ¿</th>
-                <th class="text-right">Ô¤¼Æ¹É·İ</th>
-                {if $GLOBAL.config.payout_system == 'pplns'}<th class="text-right">PPLNS ¹É·İ</th>{/if}
-                <th class="text-right">Êµ¼Ê¹É·İ</th>
-                <th  class="text-right">°Ù·Ö±È</th>
+                <th class="text-center">åŒºå—</th>
+                <th class="text-center">çŠ¶æ€</th>
+                <th class="text-left">å‘ç°è€…</th>
+                <th class="text-right">æ—¶é—´</th>
+                <th class="text-right">éš¾åº¦</th>
+                <th class="text-right">å¸é‡</th>
+                <th class="text-right">é¢„è®¡è‚¡ä»½</th>
+                {if $GLOBAL.config.payout_system == 'pplns'}<th class="text-right">PPLNS è‚¡ä»½</th>{/if}
+                <th class="text-right">å®é™…è‚¡ä»½</th>
+                <th  class="text-right">ç™¾åˆ†æ¯”</th>
               </tr>
             </thead>
             <tbody>
@@ -38,11 +38,11 @@
               {/if}
               <td class="text-center">
               {if $BLOCKSFOUND[block].confirmations >= $GLOBAL.confirmations}
-                <span class="label label-success">ÒÑÈ·ÈÏ</span>
+                <span class="label label-success">å·²ç¡®è®¤</span>
               {else if $BLOCKSFOUND[block].confirmations == -1}
-                <span class="label label-danger">ÎŞĞ§¿é</span>
+                <span class="label label-danger">æ— æ•ˆå—</span>
               {else}
-                <span class="label label-warning">Ğè {$GLOBAL.confirmations - $BLOCKSFOUND[block].confirmations} ¸öÈ·ÈÏ</span>
+                <span class="label label-warning">éœ€ {$GLOBAL.confirmations - $BLOCKSFOUND[block].confirmations} ä¸ªç¡®è®¤</span>
               {/if}
               </td>
                 <td>{if $BLOCKSFOUND[block].is_anonymous|default:"0" == 1 && $GLOBAL.userdata.is_admin|default:"0" == 0}anonymous{else}{$BLOCKSFOUND[block].finder|default:"unknown"|escape}{/if}</td>

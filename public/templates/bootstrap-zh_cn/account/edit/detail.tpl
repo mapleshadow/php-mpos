@@ -6,17 +6,17 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-edit fa-fw"></i> ÕË»§ÏêÏ¸ÐÅÏ¢
+        <i class="fa fa-edit fa-fw"></i> è´¦æˆ·è¯¦ç»†ä¿¡æ¯
       </div>
       <div class="panel-body">
         <div class="row">
           <div class="col-lg-12">
             <div class="form-group">
-              <label>ÓÃ»§Ãû</label>
+              <label>ç”¨æˆ·å</label>
               <input class="form-control" type="text" value="{$GLOBAL.userdata.username|escape}" disabled />
             </div>
             <div class="form-group">
-              <label>ÓÃ»§ Id</label>
+              <label>ç”¨æˆ· Id</label>
               <input class="form-control" type="text" value="{$GLOBAL.userdata.id}" disabled />
             </div>
             {if !$GLOBAL.website.api.disabled}
@@ -31,31 +31,31 @@
               {nocache}<input class="form-control" type="text" name="email" value="{$GLOBAL.userdata.email|escape}" size="20" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
             </div>
             <div class="form-group">
-              <label>Ç®°üµØÖ·</label>
+              <label>é’±åŒ…åœ°å€</label>
               {nocache}<input class="form-control" type="text" name="paymentAddress" value="{$smarty.request.paymentAddress|default:$GLOBAL.userdata.coin_address|escape}" size="40"  {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
             </div>
             <div class="form-group">
-              <label>¾èÔù°Ù·Ö±È</label>
-              <font size="1"> ¾èÔù½ð¶îµÄ°Ù·Ö±È ({$DONATE_THRESHOLD.min} - 100%)</font>
+              <label>æèµ ç™¾åˆ†æ¯”</label>
+              <font size="1"> æèµ é‡‘é¢çš„ç™¾åˆ†æ¯” ({$DONATE_THRESHOLD.min} - 100%)</font>
               {nocache}<input class="form-control" type="text" name="donatePercent" value="{$smarty.request.donatePercent|default:$GLOBAL.userdata.donate_percent|escape|number_format:"2"}" size="4" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
             </div>
             <div class="form-group">
-              <label>×Ô¶¯È¡¿îÉèÖÃ</label>
+              <label>è‡ªåŠ¨å–æ¬¾è®¾ç½®</label>
               </br>
               <font size="1">{$GLOBAL.config.ap_threshold.min} - {$GLOBAL.config.ap_threshold.max} {$GLOBAL.config.currency}. Set to '0' for no auto payout. A {if $GLOBAL.config.txfee_auto > 0.00001}{$GLOBAL.config.txfee_auto}{else}{$GLOBAL.config.txfee_auto|number_format:"8"}{/if} {$GLOBAL.config.currency} TX fee will apply <span id="tt"><img width="15px" height="15px" title="This {if $GLOBAL.config.txfee_auto > 0.00001}{$GLOBAL.config.txfee_auto}{else}{$GLOBAL.config.txfee_auto|number_format:"8"}{/if} automatic payment transaction fee is a network fee and goes back into the network not the pool." src="site_assets/mpos/images/questionmark.png"></span></font>
               </br>
               <input class="form-control" type="text" name="payoutThreshold" value="{nocache}{$smarty.request.payoutThreshold|default:$GLOBAL.userdata.ap_threshold|escape}{/nocache}" size="{$GLOBAL.config.ap_threshold.max|strlen}" maxlength="{$GLOBAL.config.ap_threshold.max|strlen}" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}/>
             </div>
             <div class="form-group">
-              <label>ÄäÃûÕË»§</label>
+              <label>åŒ¿åè´¦æˆ·</label>
               <input type="hidden" name="is_anonymous" value="0" />
               <input type="checkbox" class="switch" data-size="mini"  name="is_anonymous" id="is_anonymous" value="1" {if $GLOBAL.userdata.is_anonymous}checked{/if} {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}/>
               </br>
-              <font size="1">Òþ²ØÄãµÄÓÃ»§Ãû£¬ÕâÑùÆäËûÆÕÍ¨ÓÃ»§¿´²»µ½ÄãµÄÕæÊµÓÃ»§Ãû¡££¨¹ÜÀíÔ±»¹ÊÇ¿ÉÒÔ¿´µ½µÄ£©</font>
+              <font size="1">éšè—ä½ çš„ç”¨æˆ·åï¼Œè¿™æ ·å…¶ä»–æ™®é€šç”¨æˆ·çœ‹ä¸åˆ°ä½ çš„çœŸå®žç”¨æˆ·åã€‚ï¼ˆç®¡ç†å‘˜è¿˜æ˜¯å¯ä»¥çœ‹åˆ°çš„ï¼‰</font>
             </div>
             <div class="form-group">
-              <label>4 Î»Êý×ÖPINÂë</label>
-              <font size="1">ÄãÔÚ×¢²áÊ±ÌîÐ´µÄ 4 Î»ÊýPINÂë</font>
+              <label>4 ä½æ•°å­—PINç </label>
+              <font size="1">ä½ åœ¨æ³¨å†Œæ—¶å¡«å†™çš„ 4 ä½æ•°PINç </font>
               <input class="form-control" type="password" name="authPin" size="4" maxlength="4">
             </div>
             
@@ -76,7 +76,7 @@
       <input type="submit" value="Unlock" class="btn btn-warning btn-sm" name="unlock">
       {/if}
       {else}
-      <input type="submit" value="¸üÐÂÕË»§ÐÅÏ¢" class="btn btn-success btn-sm">
+      <input type="submit" value="æ›´æ–°è´¦æˆ·ä¿¡æ¯" class="btn btn-success btn-sm">
       {/if}
       {/nocache}
       </div>

@@ -1,40 +1,40 @@
   <div class="col-lg-4">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <h4 class="panel-title"><i class="fa fa-user-md fa-fw"></i> ÕË»§ĞÅÏ¢</h4>
+        <h4 class="panel-title"><i class="fa fa-user-md fa-fw"></i> è´¦æˆ·ä¿¡æ¯</h4>
       </div>
       <div class="panel-body no-padding">
         <table class="table table-bordered table-hover table-striped">
           <tr>
             <td colspan="2">
     {if $GLOBAL.userdata.no_fees}
-            ÄãµÄ¿ó¹¤ÃâÊÖĞø·ÑÓÃ
+            ä½ çš„çŸ¿å·¥å…æ‰‹ç»­è´¹ç”¨
     {else if $GLOBAL.fees > 0}
-            ±¾³ØÊÕÈ¡ <font color="orange">{if $GLOBAL.fees < 0.0001}{$GLOBAL.fees|escape|number_format:"8"}{else}{$GLOBAL.fees|escape}{/if}%</font> Îª¿ó³Ø·şÎñÆ÷ÔË×÷·ÑÓÃ¡£
+            æœ¬æ± æ”¶å– <font color="orange">{if $GLOBAL.fees < 0.0001}{$GLOBAL.fees|escape|number_format:"8"}{else}{$GLOBAL.fees|escape}{/if}%</font> ä¸ºçŸ¿æ± æœåŠ¡å™¨è¿ä½œè´¹ç”¨ã€‚
     {else}
-            ±¾¿ó³ØÃâÈÎºÎÊÖĞø·ÑÓÃ
+            æœ¬çŸ¿æ± å…ä»»ä½•æ‰‹ç»­è´¹ç”¨
     {/if}
     {if $GLOBAL.userdata.donate_percent > 0}
-            Äã¾èÔù <font color="green">{$GLOBAL.userdata.donate_percent|escape}%</font>¡£
+            ä½ æèµ  <font color="green">{$GLOBAL.userdata.donate_percent|escape}%</font>ã€‚
     {else}
-            ÄãÃ»ÓĞÉèÖÃ¾èÔù£¬ÎÒÒª <a href="{$smarty.server.SCRIPT_NAME}?page=account&action=edit">¾èÔù</a>¡£
+            ä½ æ²¡æœ‰è®¾ç½®æèµ ï¼Œæˆ‘è¦ <a href="{$smarty.server.SCRIPT_NAME}?page=account&action=edit">æèµ </a>ã€‚
     {/if}
             </td>
           </tr>
         </table>
         <table class="table table-bordered table-hover table-striped">
           <thead>
-            <tr><th colspan="2">{$GLOBAL.config.currency} ÕË»§Óà¶î</th></tr>
+            <tr><th colspan="2">{$GLOBAL.config.currency} è´¦æˆ·ä½™é¢</th></tr>
           </thead>
           <tbody>
             <tr>
-              <th>ÒÑÈ·ÈÏ</th>
+              <th>å·²ç¡®è®¤</th>
               <th>
                 <span class="label label-success pull-right bigfont" id="b-confirmed">{$GLOBAL.userdata.balance.confirmed|number_format:"6"}</span>
               </th>
             </tr>
             <tr>
-              <th>Î´È·ÈÏ</th>
+              <th>æœªç¡®è®¤</th>
               <th>
                 <span class="label label-warning pull-right bigfont" id="b-unconfirmed">{$GLOBAL.userdata.balance.unconfirmed|number_format:"6"}</span>
               </th>

@@ -18,10 +18,10 @@
   <div class="col-lg-4">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-qrcode fa-fw"></i> API ×Ö·û´®
+        <i class="fa fa-qrcode fa-fw"></i> API å­—ç¬¦ä¸²
       </div>
       <div class="panel-body text-center">
-        <p>¸Ã QR ÂëÓÃÓÚµ¼ÈëÍêÕûµÄ API ×Ö·û´®µ½ÒÆ¶¯Ó¦ÓÃ</p>
+        <p>è¯¥ QR ç ç”¨äºŽå¯¼å…¥å®Œæ•´çš„ API å­—ç¬¦ä¸²åˆ°ç§»åŠ¨åº”ç”¨</p>
         <div id="qrcodeholder"></div>
       </div>
     </div>

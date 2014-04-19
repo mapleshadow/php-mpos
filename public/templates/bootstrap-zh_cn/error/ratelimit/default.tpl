@@ -1,6 +1,6 @@
 <article class="module width_full">
-<header><h3>超出请求频率限制</h3></header>
+<header><h3>瓒呭嚭璇锋眰棰戠巼闄愬埗</h3></header>
 <div class="module_content">
-<p>您发送的请求太快太多了！</p>
+<p>鎮ㄥ彂閫佺殑璇锋眰澶揩澶浜嗭紒</p>
 </div>
 </article>

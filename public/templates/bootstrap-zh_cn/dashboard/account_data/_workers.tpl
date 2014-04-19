@@ -2,13 +2,13 @@
         <table class="table table-bordered table-hover table-striped"> 
          <thead>
           <tr>
-            <th>©С╧╓╨е</th>
-            <th>кЦа╕</th>
-            <th>дя╤х</th>
+            <th>Г÷©Е╥╔Е▐╥</th>
+            <th>Г╝≈Е┼⌡</th>
+            <th>И ╬Е╨╕</th>
           </tr>
           </thead>
           <tbody id="b-workers">
-            <td colspan="3" class="text-center">н╢╥╒ож©С╧╓пео╒</td>
+            <td colspan="3" class="text-center">Ф°╙Е▐▒Г▌╟Г÷©Е╥╔Д©║Ф│╞</td>
           </tbody>
           </tr>
         </table>

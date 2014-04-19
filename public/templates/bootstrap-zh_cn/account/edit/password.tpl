@@ -6,32 +6,32 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-key fa-fw"></i> ÐÞ¸ÄÃÜÂë
+        <i class="fa fa-key fa-fw"></i> ä¿®æ”¹å¯†ç 
       </div>
       <div class="panel-body">
         <div class="row">
           <div class="col-lg-12">
             <div class="form-group">
               <p style="padding-left:30px; padding-redight:30px; font-size:10px;">
-                ×¢Òâ£ºÕâÀïÊÇÐÞ¸ÄÄãµÄµÇÂ½ÃÜÂëµÄµØ·½
+                æ³¨æ„ï¼šè¿™é‡Œæ˜¯ä¿®æ”¹ä½ çš„ç™»é™†å¯†ç çš„åœ°æ–¹
               </p>
             </div>
             <div class="form-group">
-              <label>µ±Ç°ÃÜÂë</label>
+              <label>å½“å‰å¯†ç </label>
               {nocache}<input class="form-control" type="password" name="currentPassword" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.changepw && !$CHANGEPASSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
             </div>
             <div class="form-group">
-              <label>ÊäÈëÐÂÃÜÂë</label>
+              <label>è¾“å…¥æ–°å¯†ç </label>
               <p style="padding-right:10px;display:block;margin-top:0px;float:right;color:#999;" id="pw_strength"></p>
               {nocache}<input class="form-control" type="password" name="newPassword" id="pw_field"{if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.changepw && !$CHANGEPASSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
             </div>
             <div class="form-group">
-              <label>È·ÈÏÐÂÃÜÂë</label>
+              <label>ç¡®è®¤æ–°å¯†ç </label>
               <p style="padding-right:10px;display:block;margin-top:0px;float:right;" id="pw_match"></p>
               {nocache}<input class="form-control" type="password" name="newPassword2" id="pw_field2"{if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.changepw && !$CHANGEPASSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
             </div>
             <div class="form-group">
-              <label>4 Î»Êý×ÖPINÂë</label>
+              <label>4 ä½æ•°å­—PINç </label>
               <input class="form-control" type="password" name="authPin" size="4" maxlength="4" />
             </div>
 

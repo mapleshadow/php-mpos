@@ -3,7 +3,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <h4 class="panel-title"><i class="fa fa-align-left fa-fw"></i> ¸ÅÊö</h4>
+        <h4 class="panel-title"><i class="fa fa-align-left fa-fw"></i> æ¦‚è¿°</h4>
       </div>
       <div class="panel-body text-center">
         <div class="row">
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="panel-footer">
-        <h6>Ë¢ÐÂ¼ä¸ô£º{$GLOBAL.config.statistics_ajax_refresh_interval|default:"10"} Ãë£¬¿ó¹¤ºÍÕË»§ {$GLOBAL.config.statistics_ajax_long_refresh_interval|default:"10"} Ãë¡£Hashrate based on shares submitted in the past {$INTERVAL|default:"5"} ·ÖÖÓ¡£</h6>
+        <h6>åˆ·æ–°é—´éš”ï¼š{$GLOBAL.config.statistics_ajax_refresh_interval|default:"10"} ç§’ï¼ŒçŸ¿å·¥å’Œè´¦æˆ· {$GLOBAL.config.statistics_ajax_long_refresh_interval|default:"10"} ç§’ã€‚Hashrate based on shares submitted in the past {$INTERVAL|default:"5"} åˆ†é’Ÿã€‚</h6>
       </div>
     </div>
   </div>

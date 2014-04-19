@@ -6,22 +6,22 @@
     <div class="col-lg-12">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <i class="fa fa-envelope fa-fw"></i> ÁªÏµÎÒÃÇ
+          <i class="fa fa-envelope fa-fw"></i> è”ç³»æˆ‘ä»¬
         </div>
         <div class="panel-body">
           <div class="row">
             <div class="col-lg-6">
               <div class="form-group">
-                <label for="senderName">ÄãµÄÓÃ»§Ãû</label>
-                <input type="text" class="form-control" name="senderName" value="{$smarty.request.senderName|escape|default:""}" placeholder="ÇëÊäÈëÄãµÄÓÃ»§Ãû" size="15" maxlength="100" required />
+                <label for="senderName">ä½ çš„ç”¨æˆ·å</label>
+                <input type="text" class="form-control" name="senderName" value="{$smarty.request.senderName|escape|default:""}" placeholder="è¯·è¾“å…¥ä½ çš„ç”¨æˆ·å" size="15" maxlength="100" required />
               </div>
               <div class="form-group">
-                <label for="senderEmail">ÄãµÄÓÊÏäµØÖ·</label>
-                <input type="text" class="form-control" name="senderEmail" value="{$smarty.request.senderEmail|escape|default:""}" placeholder="ÇëÊäÈëÄãµÄÓÊÏäµØÖ·" size="50"  maxlength="100" required />
+                <label for="senderEmail">ä½ çš„é‚®ç®±åœ°å€</label>
+                <input type="text" class="form-control" name="senderEmail" value="{$smarty.request.senderEmail|escape|default:""}" placeholder="è¯·è¾“å…¥ä½ çš„é‚®ç®±åœ°å€" size="50"  maxlength="100" required />
               </div>
               <div class="form-group">
-                <label for="senderEmail">ÄãµÄÖ÷Ìâ</label>
-                <input type="text" class="form-control" name="senderSubject" value="{$smarty.request.senderSubject|escape|default:""}" placeholder="ÇëÊäÈëÄãµÄÖ÷Ìâ" size="15" maxlength="100" required />
+                <label for="senderEmail">ä½ çš„ä¸»é¢˜</label>
+                <input type="text" class="form-control" name="senderSubject" value="{$smarty.request.senderSubject|escape|default:""}" placeholder="è¯·è¾“å…¥ä½ çš„ä¸»é¢˜" size="15" maxlength="100" required />
               </div>
               <div class="col-lg-6">
                 <center>{nocache}{$RECAPTCHA|default:"" nofilter}{/nocache}
@@ -29,15 +29,15 @@
             </div>
             <div class="col-lg-6">
               <div class="form-group">
-                <label for="message">ÄãµÄĞÅÏ¢</label>
+                <label for="message">ä½ çš„ä¿¡æ¯</label>
                 <textarea type="text" class="form-control" name="senderMessage" cols="80" rows="20" maxlength="10000" required>{$smarty.request.senderMessage|escape|default:""}</textarea>
               </div>
             </div>
           </div>
         </div>
         <div class="panel-footer">
-          <button type="submit" class="btn btn-success btn-sm">·¢ËÍ Email</button>
-          <button type="reset" class="btn btn-warning btn-sm">ÖØÖÃ¸ÃÖµ</button></center>
+          <button type="submit" class="btn btn-success btn-sm">å‘é€ Email</button>
+          <button type="reset" class="btn btn-warning btn-sm">é‡ç½®è¯¥å€¼</button></center>
         </div>
       </div>
     </div>

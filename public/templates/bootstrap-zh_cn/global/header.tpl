@@ -54,7 +54,7 @@
 
                         <li>
                             <a class="text-center" href="{$smarty.server.SCRIPT_NAME}?page=account&action=notifications">
-                                <strong>查看所有通知</strong>
+                                <strong>鏌ョ湅鎵�鏈夐�氱煡</strong>
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         </li>
@@ -67,16 +67,16 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                     	{if $smarty.session.AUTHENTICATED|default:"0" == 1}
-                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=dashboard"><i class="fa fa-dashboard fa-fw"></i> 矿池算力</a>
-                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=edit"><i class="fa fa-gear fa-fw"></i> 设置</a>
-                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=workers"><i class="fa fa-desktop fa-fw"></i> 矿工</a>
+                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=dashboard"><i class="fa fa-dashboard fa-fw"></i> 鐭挎睜绠楀姏</a>
+                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=edit"><i class="fa fa-gear fa-fw"></i> 璁剧疆</a>
+                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=workers"><i class="fa fa-desktop fa-fw"></i> 鐭垮伐</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=logout"><i class="fa fa-sign-out fa-fw"></i> 注销</a>
+                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=logout"><i class="fa fa-sign-out fa-fw"></i> 娉ㄩ攢</a>
                         </li>
                         {else}
-                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=login"><i class="fa fa-sign-in fa-fw"></i> 登录</a>
-                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=register"><i class="fa fa-pencil fa-fw"></i> 注册</a>
+                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=login"><i class="fa fa-sign-in fa-fw"></i> 鐧诲綍</a>
+                        <li><a href="{$smarty.server.SCRIPT_NAME}?page=register"><i class="fa fa-pencil fa-fw"></i> 娉ㄥ唽</a>
                         </li>
                         {/if}
                     </ul>
