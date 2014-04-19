@@ -1,10 +1,10 @@
        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
-                    <li><!-- ¶à¿ó³ØËãÁ¦¼à¿Ø -->
-                        <a href="#"><i class="fa fa-tasks fa-fw"></i> X11-Ëã·¨¿ó³Ø<span class="fa arrow"></span></a>
+                    <li><!-- å¤šçŸ¿æ± ç®—åŠ›ç›‘æ§ -->
+                        <a href="#"><i class="fa fa-tasks fa-fw"></i> X11-ç®—æ³•çŸ¿æ± <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$drk_bardata_no='http://mpos.freeyy.me/drk/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$drk_bardata=$drk_bardata_no|json_decode:true}
 {$drk_pool1=$drk_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -12,11 +12,11 @@
 {$drk_network1=$drk_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$drk_network2=$drk_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$drk_network3=$drk_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/drk/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾DRK¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$drk_pool1} {$drk_pool2} È«Íø{$drk_network1} {$drk_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$drk_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/drk/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€DRKã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$drk_pool1} {$drk_pool2} å…¨ç½‘{$drk_network1} {$drk_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$drk_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$give_bardata_no='http://mpos.freeyy.me/give/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$give_bardata=$give_bardata_no|json_decode:true}
 {$give_pool1=$give_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -24,11 +24,11 @@
 {$give_network1=$give_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$give_network2=$give_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$give_network3=$give_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/give/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾GIVE¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$give_pool1} {$give_pool2} È«Íø{$give_network1} {$give_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$give_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/give/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€GIVEã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$give_pool1} {$give_pool2} å…¨ç½‘{$give_network1} {$give_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$give_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$hiro_bardata_no='http://mpos.freeyy.me/hiro/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$hiro_bardata=$hiro_bardata_no|json_decode:true}
 {$hiro_pool1=$hiro_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -36,11 +36,11 @@
 {$hiro_network1=$hiro_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$hiro_network2=$hiro_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$hiro_network3=$hiro_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/hiro/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾HIRO¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$hiro_pool1} {$hiro_pool2} È«Íø{$hiro_network1} {$hiro_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$hiro_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/hiro/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€HIROã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$hiro_pool1} {$hiro_pool2} å…¨ç½‘{$hiro_network1} {$hiro_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$hiro_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$lgc_bardata_no='http://mpos.freeyy.me/lgc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$lgc_bardata=$lgc_bardata_no|json_decode:true}
 {$lgc_pool1=$lgc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -48,11 +48,11 @@
 {$lgc_network1=$lgc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$lgc_network2=$lgc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$lgc_network3=$lgc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/lgc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾LGC¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$lgc_pool1} {$lgc_pool2} È«Íø{$lgc_network1} {$lgc_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$lgc_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/lgc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€LGCã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$lgc_pool1} {$lgc_pool2} å…¨ç½‘{$lgc_network1} {$lgc_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$lgc_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$lim_bardata_no='http://mpos.freeyy.me/lim/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$lim_bardata=$lim_bardata_no|json_decode:true}
 {$lim_pool1=$lim_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -60,11 +60,11 @@
 {$lim_network1=$lim_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$lim_network2=$lim_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$lim_network3=$lim_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/lim/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾LIM¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$lim_pool1} {$lim_pool2} È«Íø{$lim_network1} {$lim_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$lim_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/lim/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€LIMã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$lim_pool1} {$lim_pool2} å…¨ç½‘{$lim_network1} {$lim_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$lim_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$mun_bardata_no='http://mpos.freeyy.me/mun/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$mun_bardata=$mun_bardata_no|json_decode:true}
 {$mun_pool1=$mun_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -72,11 +72,11 @@
 {$mun_network1=$mun_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$mun_network2=$mun_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$mun_network3=$mun_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/mun/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾MUN¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$mun_pool1} {$mun_pool2} È«Íø{$mun_network1} {$mun_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$mun_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/mun/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€MUNã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$mun_pool1} {$mun_pool2} å…¨ç½‘{$mun_network1} {$mun_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$mun_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$vc_bardata_no='http://mpos.freeyy.me/vc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$vc_bardata=$vc_bardata_no|json_decode:true}
 {$vc_pool1=$vc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -84,17 +84,17 @@
 {$vc_network1=$vc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$vc_network2=$vc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$vc_network3=$vc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/vc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾VC¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$vc_pool1} {$vc_pool2} È«Íø{$vc_network1} {$vc_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$vc_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
+                          <li><a href="http://mpos.freeyy.me/vc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€VCã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$vc_pool1} {$vc_pool2} å…¨ç½‘{$vc_network1} {$vc_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$vc_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
                         </ul>
                         <!-- /.nav-second-level -->
-                    </li><!-- ¶à¿ó³ØËãÁ¦¼à¿Ø -->
-                    <li><!-- ¶à¿ó³ØËãÁ¦¼à¿Ø -->
-                        <a href="#"><i class="fa fa-tasks fa-fw"></i> N-ScryptËã·¨¿ó³Ø<span class="fa arrow"></span></a>
+                    </li><!-- å¤šçŸ¿æ± ç®—åŠ›ç›‘æ§ -->
+                    <li><!-- å¤šçŸ¿æ± ç®—åŠ›ç›‘æ§ -->
+                        <a href="#"><i class="fa fa-tasks fa-fw"></i> N-Scryptç®—æ³•çŸ¿æ± <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$105_bardata_no='http://mpos.freeyy.me/10-5/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$105_bardata=$105_bardata_no|json_decode:true}
 {$105_pool1=$105_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -102,11 +102,11 @@
 {$105_network1=$105_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$105_network2=$105_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$105_network3=$105_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/10-5/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾10-5¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$105_pool1} {$105_pool2} È«Íø{$105_network1} {$105_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$105_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/10-5/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€10-5ã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$105_pool1} {$105_pool2} å…¨ç½‘{$105_network1} {$105_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$105_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$alt_bardata_no='http://mpos.freeyy.me/alt/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$alt_bardata=$alt_bardata_no|json_decode:true}
 {$alt_pool1=$alt_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -114,11 +114,11 @@
 {$alt_network1=$alt_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$alt_network2=$alt_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$alt_network3=$alt_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/alt/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾ALT¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$alt_pool1} {$alt_pool2} È«Íø{$alt_network1} {$alt_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$alt_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/alt/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€ALTã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$alt_pool1} {$alt_pool2} å…¨ç½‘{$alt_network1} {$alt_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$alt_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$catc_bardata_no='http://mpos.freeyy.me/catc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$catc_bardata=$catc_bardata_no|json_decode:true}
 {$catc_pool1=$catc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -126,11 +126,11 @@
 {$catc_network1=$catc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$catc_network2=$catc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$catc_network3=$catc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/catc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾CATC¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$catc_pool1} {$catc_pool2} È«Íø{$catc_network1} {$catc_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$catc_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/catc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€CATCã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$catc_pool1} {$catc_pool2} å…¨ç½‘{$catc_network1} {$catc_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$catc_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$cai_bardata_no='http://mpos.freeyy.me/cai/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$cai_bardata=$cai_bardata_no|json_decode:true}
 {$cai_pool1=$cai_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -138,11 +138,11 @@
 {$cai_network1=$cai_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$cai_network2=$cai_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$cai_network3=$cai_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/cai/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾CAI¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$cai_pool1} {$cai_pool2} È«Íø{$cai_network1} {$cai_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$cai_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/cai/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€CAIã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$cai_pool1} {$cai_pool2} å…¨ç½‘{$cai_network1} {$cai_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$cai_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$exe_bardata_no='http://mpos.freeyy.me/exe/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$exe_bardata=$exe_bardata_no|json_decode:true}
 {$exe_pool1=$exe_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -150,11 +150,11 @@
 {$exe_network1=$exe_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$exe_network2=$exe_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$exe_network3=$exe_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/exe/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾EXE¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$exe_pool1} {$exe_pool2} È«Íø{$exe_network1} {$exe_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$exe_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/exe/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€EXEã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$exe_pool1} {$exe_pool2} å…¨ç½‘{$exe_network1} {$exe_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$exe_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$gpuc_bardata_no='http://mpos.freeyy.me/gpuc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$gpuc_bardata=$gpuc_bardata_no|json_decode:true}
 {$gpuc_pool1=$gpuc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -162,11 +162,11 @@
 {$gpuc_network1=$gpuc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$gpuc_network2=$gpuc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$gpuc_network3=$gpuc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/gpuc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾GPUC¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$gpuc_pool1} {$gpuc_pool2} È«Íø{$gpuc_network1} {$gpuc_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$gpuc_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/gpuc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€GPUCã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$gpuc_pool1} {$gpuc_pool2} å…¨ç½‘{$gpuc_network1} {$gpuc_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$gpuc_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$gns_bardata_no='http://mpos.freeyy.me/gns/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$gns_bardata=$gns_bardata_no|json_decode:true}
 {$gns_pool1=$gns_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -174,11 +174,11 @@
 {$gns_network1=$gns_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$gns_network2=$gns_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$gns_network3=$gns_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/gns/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾GNS¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$gns_pool1} {$gns_pool2} È«Íø{$gns_network1} {$gns_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$gns_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/gns/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€GNSã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$gns_pool1} {$gns_pool2} å…¨ç½‘{$gns_network1} {$gns_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$gns_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$kmc_bardata_no='http://mpos.freeyy.me/kmc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$kmc_bardata=$kmc_bardata_no|json_decode:true}
 {$kmc_pool1=$kmc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -186,11 +186,11 @@
 {$kmc_network1=$kmc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$kmc_network2=$kmc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$kmc_network3=$kmc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/kmc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾KMC¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$kmc_pool1} {$kmc_pool2} È«Íø{$kmc_network1} {$kmc_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$kmc_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/kmc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€KMCã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$kmc_pool1} {$kmc_pool2} å…¨ç½‘{$kmc_network1} {$kmc_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$kmc_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$h2o_bardata_no='http://mpos.freeyy.me/h2o/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$h2o_bardata=$h2o_bardata_no|json_decode:true}
 {$h2o_pool1=$h2o_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -198,11 +198,11 @@
 {$h2o_network1=$h2o_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$h2o_network2=$h2o_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$h2o_network3=$h2o_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/h2o/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾H2O¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$h2o_pool1} {$h2o_pool2} È«Íø{$h2o_network1} {$h2o_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$h2o_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/h2o/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€H2Oã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$h2o_pool1} {$h2o_pool2} å…¨ç½‘{$h2o_network1} {$h2o_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$h2o_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$pand_bardata_no='http://mpos.freeyy.me/pand/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$pand_bardata=$pand_bardata_no|json_decode:true}
 {$pand_pool1=$pand_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -210,11 +210,11 @@
 {$pand_network1=$pand_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$pand_network2=$pand_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$pand_network3=$pand_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/pand/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾PAND¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$pand_pool1} {$pand_pool2} È«Íø{$pand_network1} {$pand_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$pand_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/pand/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€PANDã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$pand_pool1} {$pand_pool2} å…¨ç½‘{$pand_network1} {$pand_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$pand_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$rt2_bardata_no='http://mpos.freeyy.me/rt2/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$rt2_bardata=$rt2_bardata_no|json_decode:true}
 {$rt2_pool1=$rt2_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -222,11 +222,11 @@
 {$rt2_network1=$rt2_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$rt2_network2=$rt2_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$rt2_network3=$rt2_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/rt2/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾RT2¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$rt2_pool1} {$rt2_pool2} È«Íø{$rt2_network1} {$rt2_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$rt2_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/rt2/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€RT2ã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$rt2_pool1} {$rt2_pool2} å…¨ç½‘{$rt2_network1} {$rt2_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$rt2_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$spa_bardata_no='http://mpos.freeyy.me/spa/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$spa_bardata=$spa_bardata_no|json_decode:true}
 {$spa_pool1=$spa_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -234,11 +234,11 @@
 {$spa_network1=$spa_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$spa_network2=$spa_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$spa_network3=$spa_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/spa/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾SPA¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$spa_pool1} {$spa_pool2} È«Íø{$spa_network1} {$spa_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$spa_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
-<!-- ±ÒĞÅÏ¢-¿ªÊ¼ -->
+                          <li><a href="http://mpos.freeyy.me/spa/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€SPAã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$spa_pool1} {$spa_pool2} å…¨ç½‘{$spa_network1} {$spa_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$spa_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
+<!-- å¸ä¿¡æ¯-å¼€å§‹ -->
 {$xsv_bardata_no='http://mpos.freeyy.me/xsv/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$xsv_bardata=$xsv_bardata_no|json_decode:true}
 {$xsv_pool1=$xsv_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -246,30 +246,30 @@
 {$xsv_network1=$xsv_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
 {$xsv_network2=$xsv_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
 {$xsv_network3=$xsv_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/xsv/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ¡¾XSV¡¿Ê×Ò³</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-±¾µØ{$xsv_pool1} {$xsv_pool2} È«Íø{$xsv_network1} {$xsv_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-µ±Ç°ÄÑ¶È{$xsv_network3}</li>
-<!-- ±ÒĞÅÏ¢-½áÊø -->
+                          <li><a href="http://mpos.freeyy.me/xsv/public/index.php"><i class="fa fa-dashboard fa-fw"></i> ã€XSVã€‘é¦–é¡µ</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-æœ¬åœ°{$xsv_pool1} {$xsv_pool2} å…¨ç½‘{$xsv_network1} {$xsv_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-å½“å‰éš¾åº¦{$xsv_network3}</li>
+<!-- å¸ä¿¡æ¯-ç»“æŸ -->
                         </ul>
                         <!-- /.nav-second-level -->
-                    </li><!-- ¶à¿ó³ØËãÁ¦¼à¿Ø -->
+                    </li><!-- å¤šçŸ¿æ± ç®—åŠ›ç›‘æ§ -->
                     <li>
-                        <a href="{$smarty.server.SCRIPT_NAME}"><i class="fa fa-home fa-fw"></i> ¿ó³ØÊ×Ò³</a>
+                        <a href="{$smarty.server.SCRIPT_NAME}"><i class="fa fa-home fa-fw"></i> çŸ¿æ± é¦–é¡µ</a>
                     </li>
                     {if $smarty.session.AUTHENTICATED|default:"0" == 1}
                     <li>
-                        <a href="{$smarty.server.SCRIPT_NAME}?page=dashboard"><i class="fa fa-dashboard fa-fw"></i> ¿ó³ØËãÁ¦</a>
+                        <a href="{$smarty.server.SCRIPT_NAME}?page=dashboard"><i class="fa fa-dashboard fa-fw"></i> çŸ¿æ± ç®—åŠ›</a>
                     </li>
 
                     <li {if $smarty.get.page|default:"0" eq "account"}class="active"{/if}>
-                        <a href="#"><i class="fa fa-user-md fa-fw"></i> ÎÒµÄÕË»§<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-user-md fa-fw"></i> æˆ‘çš„è´¦æˆ·<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=edit"><i class="fa fa-edit fa-fw"></i> ÕË»§ÉèÖÃ</a></li>
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=workers"><i class="fa fa-desktop fa-fw"></i> ÎÒµÄ¿ó¹¤</a></li>
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=transactions"><i class="fa fa-credit-card fa-fw"></i> ½»Ò×¼ÇÂ¼</a></li>
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=earnings"><i class="fa fa-money fa-fw"></i> ÊÕÒæ</a></li>
-                          {if !$GLOBAL.config.disable_notifications}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=notifications"><i class="fa fa-bullhorn fa-fw"></i> Í¨Öª</a></li>{/if}
-                          {if !$GLOBAL.config.disable_invitations}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=invitations"><i class="fa fa-users fa-fw"></i> ÑûÇë</a></li>{/if}
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=edit"><i class="fa fa-edit fa-fw"></i> è´¦æˆ·è®¾ç½®</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=workers"><i class="fa fa-desktop fa-fw"></i> æˆ‘çš„çŸ¿å·¥</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=transactions"><i class="fa fa-credit-card fa-fw"></i> äº¤æ˜“è®°å½•</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=earnings"><i class="fa fa-money fa-fw"></i> æ”¶ç›Š</a></li>
+                          {if !$GLOBAL.config.disable_notifications}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=notifications"><i class="fa fa-bullhorn fa-fw"></i> é€šçŸ¥</a></li>{/if}
+                          {if !$GLOBAL.config.disable_invitations}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=invitations"><i class="fa fa-users fa-fw"></i> é‚€è¯·</a></li>{/if}
                           {if !$GLOBAL.acl.qrcode}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=qrcode"><i class="fa fa-qrcode fa-fw"></i> QR Codes</a></li>{/if}
                         </ul>
                         <!-- /.nav-second-level -->
@@ -277,38 +277,38 @@
                     {/if}
                     {if $smarty.session.AUTHENTICATED|default:"0" == 1 && $GLOBAL.userdata.is_admin == 1}
                     <li {if $smarty.get.page|default:"0" eq "admin"}class="active"{/if}>
-                        <a href="#"><i class="fa fa-wrench fa-fw"></i> ¹ÜÀíÃæ°å<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-wrench fa-fw"></i> ç®¡ç†é¢æ¿<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                           <li {if $smarty.get.action|default:"0" eq "dashboard" || $smarty.get.action|default:"0" eq "monitoring" || $smarty.get.action|default:"0" eq "settings"}class="active"{/if}>
                             <a href="#"><i class="fa fa-linux fa-fw"></i> System <span class="fa arrow"></span></a>
                             <ul class="nav nav-third-level">
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=dashboard"><i class="fa fa-dashboard fa-fw"></i> ¿ó³ØÈ«¾Ö¼ì²â</a></li>
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=monitoring"><i class="fa fa-bell-o fa-fw"></i> ¼à¿ØĞÅÏ¢</a></li>
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=settings"><i class="fa fa-gears fa-fw"></i> ÉèÖÃ</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=dashboard"><i class="fa fa-dashboard fa-fw"></i> çŸ¿æ± å…¨å±€æ£€æµ‹</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=monitoring"><i class="fa fa-bell-o fa-fw"></i> ç›‘æ§ä¿¡æ¯</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=settings"><i class="fa fa-gears fa-fw"></i> è®¾ç½®</a></li>
                             </ul>
                           </li>
                           <li {if $smarty.get.action|default:"0" eq "wallet" || $smarty.get.action|default:"0" eq "transactions"}class="active"{/if}>
                             <a href="#"><i class="fa fa-usd fa-fw"></i> Funds <span class="fa arrow"></span></a>
                             <ul class="nav nav-third-level">
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=wallet"><i class="fa fa-money fa-fw"></i> Ç®°üĞÅÏ¢</a></li>
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=transactions"><i class="fa fa-tasks fa-fw"></i> È«Õ¾½»Ò×ĞÅÏ¢</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=wallet"><i class="fa fa-money fa-fw"></i> é’±åŒ…ä¿¡æ¯</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=transactions"><i class="fa fa-tasks fa-fw"></i> å…¨ç«™äº¤æ˜“ä¿¡æ¯</a></li>
                             </ul>
                           </li>
                           <li {if $smarty.get.action|default:"0" eq "news" || $smarty.get.action|default:"0" eq "newsletter"}class="active"{/if}>
                             <a href="#"><i class="fa fa-info fa-fw"></i> News <span class="fa arrow"></span></a>
                             <ul class="nav nav-third-level">
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=news"><i class="fa fa-list-alt fa-fw"></i> ÍøÕ¾ĞÂÎÅ</a></li>
-                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=newsletter"><i class="fa fa-list-alt fa-fw"></i> Í¨Ñ¶</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=news"><i class="fa fa-list-alt fa-fw"></i> ç½‘ç«™æ–°é—»</a></li>
+                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=newsletter"><i class="fa fa-list-alt fa-fw"></i> é€šè®¯</a></li>
                             </ul>
                           </li>
                           <li {if $smarty.get.action|default:"0" eq "user" || $smarty.get.action|default:"0" eq "reports" || $smarty.get.action|default:"0" eq "registrations" || $smarty.get.action|default:"0" eq "invitations" || $smarty.get.action|default:"0" eq "poolworkers"}class="active"{/if}>
                             <a href="#"><i class="fa fa-users fa-fw"></i> Users <span class="fa arrow"></span></a>
                             <ul class="nav nav-third-level">
-                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=user"><i class="fa fa-user fa-fw"></i> ÓÃ»§ĞÅÏ¢</a></li>
-                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=reports"><i class="fa fa-list-ol fa-fw"></i> ±¨¸æ</a></li>
-                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=registrations"><i class="fa fa-pencil-square-o fa-fw"></i> ×¢²áĞÅÏ¢</a></li>
-                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=invitations"><i class="fa fa-users fa-fw"></i> ÑûÇëĞÅÏ¢</a></li>
-                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=poolworkers"><i class="fa fa-desktop fa-fw"></i> ¿ó³Ø¿ó¹¤</a></li>
+                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=user"><i class="fa fa-user fa-fw"></i> ç”¨æˆ·ä¿¡æ¯</a></li>
+                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=reports"><i class="fa fa-list-ol fa-fw"></i> æŠ¥å‘Š</a></li>
+                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=registrations"><i class="fa fa-pencil-square-o fa-fw"></i> æ³¨å†Œä¿¡æ¯</a></li>
+                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=invitations"><i class="fa fa-users fa-fw"></i> é‚€è¯·ä¿¡æ¯</a></li>
+                              <li><a href="{$smarty.server.SCRIPT_NAME}?page=admin&action=poolworkers"><i class="fa fa-desktop fa-fw"></i> çŸ¿æ± çŸ¿å·¥</a></li>
                             </ul>
                           </li>
                         </ul>
@@ -316,39 +316,39 @@
                     </li>
                     {/if}
                     <li {if $smarty.get.page|default:"0" eq "statistics"}class="active"{/if}>
-                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Êı¾İÍ³¼Æ<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> æ•°æ®ç»Ÿè®¡<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                          {acl_check page='statistics' action='pool' name='<i class="fa fa-align-left fa-fw"></i> ¿ó³ØÍ³¼Æ' acl=$GLOBAL.acl.pool.statistics fallback='page=statistics'}
-                          {acl_check page='statistics' action='blocks' name='<i class="fa fa-th-large fa-fw"></i> Çø¿éä¯ÀÀ' acl=$GLOBAL.acl.block.statistics}
-                          {acl_check page='statistics' action='round' name='<i class="fa fa-refresh fa-fw"></i> »ØºÏ' acl=$GLOBAL.acl.round.statistics}
-                          {acl_check page='statistics' action='blockfinder' name='<i class="fa fa-search fa-fw"></i> ¿é·¢ÏÖÕß' acl=$GLOBAL.acl.blockfinder.statistics}
-                          {acl_check page='statistics' action='uptime' name='<i class="fa fa-clock-o fa-fw"></i> ÔËĞĞÊ±¼ä' acl=$GLOBAL.acl.uptime.statistics}
-                          {acl_check page='statistics' action='graphs' name='<i class="fa fa-signal fa-fw"></i> ËãÁ¦Í¼±í' acl=$GLOBAL.acl.graphs.statistics}
-                          {acl_check page='statistics' action='donors' name='<i class="fa fa-bitbucket fa-fw"></i> ¾èÔùÕß' acl=$GLOBAL.acl.donors.page}
+                          {acl_check page='statistics' action='pool' name='<i class="fa fa-align-left fa-fw"></i> çŸ¿æ± ç»Ÿè®¡' acl=$GLOBAL.acl.pool.statistics fallback='page=statistics'}
+                          {acl_check page='statistics' action='blocks' name='<i class="fa fa-th-large fa-fw"></i> åŒºå—æµè§ˆ' acl=$GLOBAL.acl.block.statistics}
+                          {acl_check page='statistics' action='round' name='<i class="fa fa-refresh fa-fw"></i> å›åˆ' acl=$GLOBAL.acl.round.statistics}
+                          {acl_check page='statistics' action='blockfinder' name='<i class="fa fa-search fa-fw"></i> å—å‘ç°è€…' acl=$GLOBAL.acl.blockfinder.statistics}
+                          {acl_check page='statistics' action='uptime' name='<i class="fa fa-clock-o fa-fw"></i> è¿è¡Œæ—¶é—´' acl=$GLOBAL.acl.uptime.statistics}
+                          {acl_check page='statistics' action='graphs' name='<i class="fa fa-signal fa-fw"></i> ç®—åŠ›å›¾è¡¨' acl=$GLOBAL.acl.graphs.statistics}
+                          {acl_check page='statistics' action='donors' name='<i class="fa fa-bitbucket fa-fw"></i> æèµ è€…' acl=$GLOBAL.acl.donors.page}
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
                     <li {if $smarty.get.page|default:"0" eq "gettingstarted" || $smarty.get.page|default:"0" eq "about"}class="active"{/if}>
-                        <a href="#"><i class="fa fa-question fa-fw"></i> °ïÖú<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-question fa-fw"></i> å¸®åŠ©<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=gettingstarted"><i class="fa fa-question fa-fw"></i> ĞÂÊÖÈëÃÅ</a></li>
-                          {acl_check page='about' action='pool' name='<i class="fa fa-info fa-fw"></i> ¹ØÓÚ' acl=$GLOBAL.acl.about.page}
-                          {acl_check page='about' action='chat' name='<i class="fa fa-comments-o fa-fw"></i> Web ÁÄÌìÊÒ' acl=$GLOBAL.acl.chat.page}
-                          {acl_check page='about' action='moot' name='<i class="fa fa-ticket fa-fw"></i> ÉçÇøÂÛÌ³' acl=$GLOBAL.acl.moot.forum}
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=gettingstarted"><i class="fa fa-question fa-fw"></i> æ–°æ‰‹å…¥é—¨</a></li>
+                          {acl_check page='about' action='pool' name='<i class="fa fa-info fa-fw"></i> å…³äº' acl=$GLOBAL.acl.about.page}
+                          {acl_check page='about' action='chat' name='<i class="fa fa-comments-o fa-fw"></i> Web èŠå¤©å®¤' acl=$GLOBAL.acl.chat.page}
+                          {acl_check page='about' action='moot' name='<i class="fa fa-ticket fa-fw"></i> ç¤¾åŒºè®ºå›' acl=$GLOBAL.acl.moot.forum}
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
                     <li {if $smarty.get.page|default:"0" eq "register" || $smarty.get.page|default:"0" eq "login" || $smarty.get.page|default:"0" eq "logout" || $smarty.get.page|default:"0" eq "tac" || $smarty.get.page|default:"0" eq "contactform"}class="active"{/if}>
-                        <a href="#"><i class="fa fa-tasks fa-fw"></i> ÆäËü<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-tasks fa-fw"></i> å…¶å®ƒ<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                           {if $smarty.session.AUTHENTICATED|default:"0" == 1}
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=logout"><i class="fa fa-sign-out fa-fw"></i> ×¢Ïú</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=logout"><i class="fa fa-sign-out fa-fw"></i> æ³¨é”€</a></li>
                           {else}
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=login"><i class="fa fa-sign-in fa-fw"></i> µÇÂ¼</a></li>
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=register"><i class="fa fa-pencil fa-fw"></i> ×¢²á</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=login"><i class="fa fa-sign-in fa-fw"></i> ç™»å½•</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=register"><i class="fa fa-pencil fa-fw"></i> æ³¨å†Œ</a></li>
                           {/if}
-                          {acl_check page='contactform' action='' name='<i class="fa fa-envelope fa-fw"></i> ÁªÏµ' acl=$GLOBAL.acl.contactform}
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=tac"><i class="fa fa-book fa-fw"></i> Ìõ¿îºÍÌõ¼ş</a></li>
+                          {acl_check page='contactform' action='' name='<i class="fa fa-envelope fa-fw"></i> è”ç³»' acl=$GLOBAL.acl.contactform}
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=tac"><i class="fa fa-book fa-fw"></i> æ¡æ¬¾å’Œæ¡ä»¶</a></li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
