@@ -1,8 +1,8 @@
- <div class="row">
+  <div class="row">
     <div class="col-lg-12">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <i class="fa fa-question fa-fw"></i> Getting Started Guide
+          <i class="fa fa-question fa-fw"></i> 挖矿新手入门
         </div>
         <div class="panel-body">
         

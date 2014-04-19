@@ -70,7 +70,7 @@
       {if file_exists($smarty.current_dir|cat:"/$PAGE/$ACTION/$CONTENT")}
         {include file="$PAGE/$ACTION/$CONTENT"}
       {else}
-        Missing template for this page
+        这个页面中缺少模板
       {/if}
     {/if}
     </div>

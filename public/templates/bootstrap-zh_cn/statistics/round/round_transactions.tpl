@@ -1,18 +1,18 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        Round Transactions
+        本轮支付数据
       </div>
       <div class="panel-body">
         <div class="table-responsive">
           <table class="table table-striped table-bordered table-hover {if $ROUNDTRANSACTIONS}datatable{/if}">
             <thead>
               <tr>
-                <th>User Name</th>
-                <th>Type</th>
-                <th>Round Shares</th>
-                <th>Round %</th>
-                <th>Amount</th>
+                <th>用户名</th>
+                <th>类型</th>
+                <th>本轮 Shares</th>
+                <th>本轮 %</th>
+                <th>币量</th>
               </tr>
             </thead>
             <tbody>

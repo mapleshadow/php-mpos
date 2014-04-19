@@ -3,14 +3,14 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-money fa-fw"></i> Total {$GLOBAL.config.currency} Earning Reports
+        <i class="fa fa-money fa-fw"></i> 总 {$GLOBAL.config.currency} 收益记录
       </div>
       <div class="panel-body">
         <div class="row">
           <div class="col-lg-12">
             <div class="panel panel-info">
               <div class="panel-heading">
-                <i class="fa fa-credit-card fa-fw"></i> Summary
+                <i class="fa fa-credit-card fa-fw"></i> 摘要
               </div>
               <div class="panel-body">
                 <table class="table table-striped table-bordered table-hover">
@@ -24,7 +24,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="col-xs-1">All Time</td>
+                      <td class="col-xs-1">所有时间</td>
                       {foreach $SUMMARY as $type=>$total}
                       <td class="right">{$total|number_format:"8"}</td>
                       {/foreach}
@@ -40,7 +40,7 @@
           <div class="col-lg-12">
             <div class="panel panel-info">
               <div class="panel-heading">
-                <i class="fa fa-clock-o fa-fw"></i> Sorted by Time
+                <i class="fa fa-clock-o fa-fw"></i> 按时间排序
               </div>
               <div class="panel-body">
                 <table class="table table-striped table-bordered table-hover">
@@ -60,7 +60,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="col-xs-1">Last Hour</th>
+                      <td class="col-xs-1">最近一小时</th>
                       <td>{$BYTIME.1HourCredit|number_format:"8"}</td>
                       <td>{$BYTIME.1HourBonus|number_format:"8"}</td>
                       <td>{$BYTIME.1HourDebitAP|number_format:"8"}</td>
@@ -72,7 +72,7 @@
                       <td>{$BYTIME.1HourTXFee|number_format:"8"}</td>
                     </tr>
                     <tr>
-                      <td class="col-xs-1">Last Day</th>
+                      <td class="col-xs-1">最近一天</th>
                       <td>{$BYTIME.24HourCredit|number_format:"8"}</td>
                       <td>{$BYTIME.24HourBonus|number_format:"8"}</td>
                       <td>{$BYTIME.24HourDebitAP|number_format:"8"}</td>
@@ -84,7 +84,7 @@
                       <td>{$BYTIME.24HourTXFee|number_format:"8"}</td>
                     </tr>
                     <tr>
-                      <td class="col-xs-1">Last Week</th>
+                      <td class="col-xs-1">最近一周</th>
                       <td>{$BYTIME.1WeekCredit|number_format:"8"}</td>
                       <td>{$BYTIME.1WeekBonus|number_format:"8"}</td>
                       <td>{$BYTIME.1WeekDebitAP|number_format:"8"}</td>
@@ -96,7 +96,7 @@
                       <td>{$BYTIME.1WeekTXFee|number_format:"8"}</td>
                     </tr>
                     <tr>
-                      <td class="col-xs-1">Last Month</th>
+                      <td class="col-xs-1">最近一月</th>
                       <td>{$BYTIME.1MonthCredit|number_format:"8"}</td>
                       <td>{$BYTIME.1MonthBonus|number_format:"8"}</td>
                       <td>{$BYTIME.1MonthDebitAP|number_format:"8"}</td>
@@ -108,7 +108,7 @@
                       <td>{$BYTIME.1MonthTXFee|number_format:"8"}</td>
                     </tr>
                     <tr>
-                      <td class="col-xs-1">Last Year</th>
+                      <td class="col-xs-1">最近一年</th>
                       <td>{$BYTIME.1YearCredit|number_format:"8"}</td>
                       <td>{$BYTIME.1YearBonus|number_format:"8"}</td>
                       <td>{$BYTIME.1YearDebitAP|number_format:"8"}</td>

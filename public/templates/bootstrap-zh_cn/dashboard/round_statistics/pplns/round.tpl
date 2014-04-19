@@ -10,7 +10,7 @@
                   <p class="h5 up-more" id="b-nblock">{$NETWORK.block}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">Current Block</p>
+                  <p class="h6">当前区块</p>
                 </div>
               </div>
             </div>
@@ -25,7 +25,7 @@
                   <p class="h5 up-more" id="b-roundprogress">{$ESTIMATES.percent|number_format:"2"}%</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">Of Expected Shares</p>
+                  <p class="h6">预期股份</p>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@
                   <p class="h5 up-more" id="b-payout">{$GLOBAL.userdata.estimates.payout|number_format:"8"}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">{$GLOBAL.config.currency} Est Earnings</p>
+                  <p class="h6">{$GLOBAL.config.currency} 预期收益</p>
                 </div>
               </div>
             </div>
@@ -55,7 +55,7 @@
                   <p class="h5 up-more" id="b-diff">{$NETWORK.difficulty|number_format:"8"}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">Difficulty</p>
+                  <p class="h6">难度</p>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@
                   <p class="h6" id="b-nextdiffc">{if $GLOBAL.nethashrate > 0}Change in {$NETWORK.BlocksUntilDiffChange} Blocks{else}No Estimates{/if}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6 up-more2">Est Next Difficulty</p>
+                  <p class="h6 up-more2">下一次难度</p>
                 </div>
               </div>
             </div> 
@@ -86,7 +86,7 @@
                   <p class="h5 up-more" id="b-esttimeperblock">{$NETWORK.EstTimePerBlock|seconds_to_words}</p>
                 </div>
                 <div class="circle-tile-number text-faded">
-                  <p class="h6">Est. Avg. Time per Block</p>
+                  <p class="h6">预计每块的平均时间</p>
                 </div>
               </div>
             </div>

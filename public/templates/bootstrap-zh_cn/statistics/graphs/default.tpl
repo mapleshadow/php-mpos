@@ -98,13 +98,13 @@ $(function () {
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-signal fa-fw"></i> Stats
+        <i class="fa fa-signal fa-fw"></i> 统计数据
       </div>           
       <div class="panel-body">
         <ul class="nav nav-pills" id="hashrategraph">
-          <li><a href="#mine" data-toggle="tab">Mine</a></li>
-          <li><a href="#pool" data-toggle="tab">Pool</a></li>
-          <li><a href="#both" data-toggle="tab">Both</a></li>
+          <li><a href="#mine" data-toggle="tab">我的</a></li>
+          <li><a href="#pool" data-toggle="tab">矿池</a></li>
+          <li><a href="#both" data-toggle="tab">两者</a></li>
         </ul>
         <div class="tab-content">
           {include file="{$smarty.request.page|escape}/{$smarty.request.action|escape}/mine.tpl"}

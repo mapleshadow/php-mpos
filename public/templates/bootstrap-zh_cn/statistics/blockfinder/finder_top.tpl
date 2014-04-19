@@ -1,16 +1,16 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-user fa-fw"></i> Top 25 Blockfinder
+        <i class="fa fa-user fa-fw"></i> 前 25 名区块发现者
       </div>
       <div class="panel-body no-padding table-responsive">
         <table class="table table-striped table-bordered table-hover">
           <thead>
             <tr>
-              <th>Rank</th>
-              <th>Username</th>
-              <th>Blocks</th>
-              <th>Coins Generated</th>
+              <th>名次</th>
+              <th>用户名</th>
+              <th>区块</th>
+              <th>币量</th>
             </tr>
           </thead>
           <tbody>

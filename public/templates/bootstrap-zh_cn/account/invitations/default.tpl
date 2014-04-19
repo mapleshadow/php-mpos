@@ -2,7 +2,7 @@
   <form class="col-lg-4" action="{$smarty.server.SCRIPT_NAME}" method="POST" role="form">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-envelope fa-fw"></i> Invitation
+        <i class="fa fa-envelope fa-fw"></i> 邀请注册
       </div>
       <div class="panel-body">
         <input type="hidden" name="page" value="{$smarty.request.page|escape}">
@@ -14,7 +14,7 @@
           <input class="form-control" type="text" name="data[email]" value="{$smarty.request.data.email|escape|default:""}" size="30" />
         </div>
         <div class="form-group">
-          <label>Message</label>
+          <label>信息</label>
           <textarea class="form-control" name="data[message]" rows="5">{$smarty.request.data.message|escape|default:"Please accept my invitation to this awesome pool."}</textarea>
         </div>
       </div>
@@ -27,7 +27,7 @@
   <div class="col-lg-8">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-mail-reply fa-fw"></i> Past Invitations
+        <i class="fa fa-mail-reply fa-fw"></i> 过去邀请
       </div>
       <div class="panel-body">
       

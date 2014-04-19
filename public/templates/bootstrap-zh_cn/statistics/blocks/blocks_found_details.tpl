@@ -2,23 +2,23 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-tasks fa-fw"></i> Last {$BLOCKLIMIT} Blocks Found
+        <i class="fa fa-tasks fa-fw"></i> 最近发现的 {$BLOCKLIMIT} 个区块
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">
           <table class="table table-striped table-bordered table-hover">
             <thead>
               <tr>
-                <th class="text-center">Block</th>
-                <th class="text-center">Validity</th>
-                <th class="text-left">Finder</th>
-                <th class="text-right">Time</th>
-                <th class="text-right">Difficulty</th>
-                <th class="text-right">Amount</th>
-                <th class="text-right">Expected Shares</th>
-                {if $GLOBAL.config.payout_system == 'pplns'}<th class="text-right">PPLNS Shares</th>{/if}
-                <th class="text-right">Actual Shares</th>
-                <th  class="text-right">Percentage</th>
+                <th class="text-center">区块</th>
+                <th class="text-center">状态</th>
+                <th class="text-left">发现者</th>
+                <th class="text-right">时间</th>
+                <th class="text-right">难度</th>
+                <th class="text-right">币量</th>
+                <th class="text-right">预计股份</th>
+                {if $GLOBAL.config.payout_system == 'pplns'}<th class="text-right">PPLNS 股份</th>{/if}
+                <th class="text-right">实际股份</th>
+                <th  class="text-right">百分比</th>
               </tr>
             </thead>
             <tbody>
@@ -38,11 +38,11 @@
               {/if}
               <td class="text-center">
               {if $BLOCKSFOUND[block].confirmations >= $GLOBAL.confirmations}
-                <span class="label label-success">Confirmed</span>
+                <span class="label label-success">已确认</span>
               {else if $BLOCKSFOUND[block].confirmations == -1}
-                <span class="label label-danger">Orphan</span>
+                <span class="label label-danger">无效块</span>
               {else}
-                <span class="label label-warning">{$GLOBAL.confirmations - $BLOCKSFOUND[block].confirmations} left</span>
+                <span class="label label-warning">需 {$GLOBAL.confirmations - $BLOCKSFOUND[block].confirmations} 个确认</span>
               {/if}
               </td>
                 <td>{if $BLOCKSFOUND[block].is_anonymous|default:"0" == 1 && $GLOBAL.userdata.is_admin|default:"0" == 0}anonymous{else}{$BLOCKSFOUND[block].finder|default:"unknown"|escape}{/if}</td>

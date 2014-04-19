@@ -5,7 +5,7 @@
     <input type="hidden" name="ctoken" value="{$CTOKEN|escape|default:""}" />
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-search fa-fw"></i> Transaction Filter
+        <i class="fa fa-search fa-fw"></i> 交易查询
       </div>
       <div class="panel-body">
             <ul class="pager">
@@ -17,11 +17,11 @@
               </li>
             </ul>
             <div class="form-group">
-              <label>Type</label>
+              <label>类型</label>
               {html_options class="form-control select-mini" name="filter[type]" options=$TRANSACTIONTYPES selected=$smarty.request.filter.type|default:""}
             </div>
             <div class="form-group">
-              <label>Status</label>
+              <label>状态</label>
               {html_options class="form-control select-mini" name="filter[status]" options=$TXSTATUS selected=$smarty.request.filter.status|default:""}
             </div>
       </div>
@@ -34,7 +34,7 @@
   <div class="col-lg-9">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-clock-o fa-fw"></i> Transaction History
+        <i class="fa fa-clock-o fa-fw"></i> 交易历史
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">
@@ -42,13 +42,13 @@
             <thead>
               <tr>
                 <th class="h6">ID</th>
-                <th class="h6">Date</th>
-                <th class="h6">TX Type</th>
-                <th class="h6">Status</th>
-                <th class="h6">Payment Address</th>
+                <th class="h6">时间</th>
+                <th class="h6">TX 类型</th>
+                <th class="h6">状态</th>
+                <th class="h6">支付地址</th>
                 <th class="h6">TX #</th>
-                <th class="h6">Block #</th>
-                <th class="h6">Amount</th>
+                <th class="h6">块 #</th>
+                <th class="h6">数量</th>
               </tr>
             </thead>
             <tbody>
@@ -88,7 +88,7 @@
         </div>
       </div>
       <div class="panel-footer">
-        <h6><b>Debit_AP</b> = Auto Threshold Payment, <b>Debit_MP</b> = Manual Payment, <b>Donation</b> = Donation, <b>Fee</b> = Pool Fees (if applicable)</h6>
+        <h6><b>Debit_AP</b> = 自动取款， <b>Debit_MP</b> = 手动取款， <b>Donation</b> = 捐赠， <b>Fee</b> = 矿池费用（如果矿池收费）</h6>
       </div>
     </div>
   </div>

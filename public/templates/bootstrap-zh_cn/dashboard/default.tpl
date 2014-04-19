@@ -3,7 +3,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <h4 class="panel-title"><i class="fa fa-align-left fa-fw"></i> Overview</h4>
+        <h4 class="panel-title"><i class="fa fa-align-left fa-fw"></i> 概述</h4>
       </div>
       <div class="panel-body text-center">
         <div class="row">
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="panel-footer">
-        <h6>Refresh interval: {$GLOBAL.config.statistics_ajax_refresh_interval|default:"10"} seconds, worker and account {$GLOBAL.config.statistics_ajax_long_refresh_interval|default:"10"} seconds. Hashrate based on shares submitted in the past {$INTERVAL|default:"5"} minutes.</h6>
+        <h6>刷新间隔：{$GLOBAL.config.statistics_ajax_refresh_interval|default:"10"} 秒，矿工和账户 {$GLOBAL.config.statistics_ajax_long_refresh_interval|default:"10"} 秒。Hashrate based on shares submitted in the past {$INTERVAL|default:"5"} 分钟。</h6>
       </div>
     </div>
   </div>

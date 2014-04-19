@@ -2,7 +2,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-bar-chart fa-fw"></i> Block Statistics
+        <i class="fa fa-bar-chart fa-fw"></i> 区块统计
       </div>
       <div class="table-responsive">
         <table class="table table-striped table-bordered table-hover">
@@ -22,24 +22,24 @@
               {else}
               <td>{$BLOCKDETAILS.height|number_format:"0"|default:"0"}</td>
               {/if}
-              <td>Amount</td>
+              <td>币量</td>
               <td>{$BLOCKDETAILS.amount|number_format|default:"0"}</td>
-              <td>Confirmations</td>
+              <td>确认</td>
               <td>{if $BLOCKDETAILS.confirmations >= $GLOBAL.confirmations}
-              <font color="green">Confirmed</font>
+              <font color="green">已确认</font>
               {else if $BLOCKDETAILS.confirmations == -1}
-              <font color="red">Orphan</font>
+              <font color="red">无效块</font>
               {else if $BLOCKDETAILS.confirmations == 0}0
-              {else}{($GLOBAL.confirmations - $BLOCKDETAILS.confirmations)|default:"0"} left{/if}</td>
+              {else}{($GLOBAL.confirmations - $BLOCKDETAILS.confirmations)|default:"0"} 个确认{/if}</td>
             </tr>
             <tr class="even">
-              <td>Difficulty</td>
+              <td>难度</td>
               <td>{$BLOCKDETAILS.difficulty|default:"0"}</td>
-              <td>Time</td>
+              <td>时间</td>
               <td>{$BLOCKDETAILS.time|default:"0"}</td>
               <td>Shares</td>
               <td>{$BLOCKDETAILS.shares|number_format:"0"|default:"0"}</td>
-              <td>Finder</td>
+              <td>发现者</td>
               <td>{$BLOCKDETAILS.finder|default:"unknown"}</td>
             </tr>
           </tbody>

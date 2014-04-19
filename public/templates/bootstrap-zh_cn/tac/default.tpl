@@ -2,7 +2,7 @@
     <div class="col-lg-12">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <i class="fa fa-book fa-fw"></i> Terms &amp; Conditions
+          <i class="fa fa-book fa-fw"></i> 协议 &amp; 条款
         </div>
         <div class="panel-body">
         {include file="tac/content.tpl"}

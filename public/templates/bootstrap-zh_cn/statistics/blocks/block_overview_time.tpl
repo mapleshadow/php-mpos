@@ -2,7 +2,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-clock-o fa-fw"></i> Block Overview
+        <i class="fa fa-clock-o fa-fw"></i> 区块概述
       </div>
       <div class="panel-body no-padding">
         <div class="table-responsive">
@@ -10,21 +10,21 @@
             <thead>
               <tr>
                 <th></th>
-                <th class="text-right">Gen. Est.</th>
-                <th class="text-right">Found</th>
-                <th class="text-right">Valid</th>
-                <th class="text-right">Orphan</th>
-                <th class="text-right">Avg. Diff</th>
-                <th class="text-right">Shares Est.</th>
-                <th class="text-right">Shares</th>
-                <th class="text-right">Percentage</th>
-                <th class="text-right">Amount</th>
-                <th class="text-right">Rate Est.</th>
+                <th class="text-right">预计总区块</th>
+                <th class="text-right">已发现</th>
+                <th class="text-right">有效</th>
+                <th class="text-right">无效</th>
+                <th class="text-right">平均难度</th>
+                <th class="text-right">预计股份</th>
+                <th class="text-right">实际股份</th>
+                <th class="text-right">百分比</th>
+                <th class="text-right">币量</th>
+                <th class="text-right">预计比例</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th>All Time</th>
+                <th>所有时间</th>
                 <td class="text-right">{($FIRSTBLOCKFOUND / $COINGENTIME)|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.Total|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.TotalValid|number_format}</td>
@@ -49,7 +49,7 @@
                 <td class="text-right">{($LASTBLOCKSBYTIME.Total|default:"0.00" / ($FIRSTBLOCKFOUND / $COINGENTIME)  * 100)|number_format:"2"}%</td>
               </tr>
               <tr>
-                <th>Last Hour</th>
+                <th>最近1小时</th>
                 <td class="text-right">{(3600 / $COINGENTIME)|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.1HourTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.1HourValid|number_format}</td>
@@ -74,7 +74,7 @@
                 <td class="text-right">{($LASTBLOCKSBYTIME.1HourTotal|default:"0.00" / (3600 / $COINGENTIME)  * 100)|number_format:"2"}%</td>
               </tr>
               <tr>
-                <th style="padding-left:3px;padding-right:1px;">Last 24 Hours</th>
+                <th style="padding-left:3px;padding-right:1px;">最近24小时</th>
                 <td class="text-right">{(86400 / $COINGENTIME)|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.24HourTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.24HourValid|number_format}</td>
@@ -99,7 +99,7 @@
                 <td class="text-right">{($LASTBLOCKSBYTIME.24HourTotal|default:"0.00" / (86400 / $COINGENTIME)  * 100)|number_format:"2"}%</td>
               </tr>
               <tr>
-                <th>Last 7 Days</th>
+                <th>最近7天</th>
                 <td class="text-right">{(604800 / $COINGENTIME)|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.7DaysTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.7DaysValid|number_format}</td>
@@ -124,7 +124,7 @@
                 <td class="text-right">{($LASTBLOCKSBYTIME.7DaysTotal|default:"0.00" / (604800 / $COINGENTIME)  * 100)|number_format:"2"}%</td>
               </tr>
               <tr>
-                <th>Last 4 Weeks</th>
+                <th>最近4周</th>
                 <td class="text-right">{(2419200 / $COINGENTIME)|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.4WeeksTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.4WeeksValid|number_format}</td>
@@ -149,7 +149,7 @@
                 <td class="text-right">{($LASTBLOCKSBYTIME.4WeeksTotal|default:"0.00" / (2419200 / $COINGENTIME)  * 100)|number_format:"2"}%</td>
               </tr>
               <tr>
-                <th>The Past 12 Months</th>
+                <th>最近12个月</th>
                 <td class="text-right">{(29030400 / $COINGENTIME)|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.12MonthTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.12MonthValid|number_format}</td>
@@ -178,7 +178,7 @@
         </div>
       </div>
       <div class="panel-footer">
-        <h6>{if $GLOBAL.config.payout_system != 'pps'}Round earnings are not credited until <font class="confirmations">{$GLOBAL.confirmations}</font> confirms.{/if}</h6>
+        <h6>{if $GLOBAL.config.payout_system != 'pps'}温馨提示：需要耐心等待 <font class="confirmations">{$GLOBAL.confirmations}</font> 个全网确认后才会入账。{/if}</h6>
       </div>
     </div>
   </div>

@@ -1,16 +1,16 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-th fa-fw"></i> Last Found Blocks
+        <i class="fa fa-th fa-fw"></i> 最近发现的块
       </div>
       <div class="panel-body no-padding table-responsive">
         <table class="table table-striped table-bordered table-hover">
           <thead>
             <tr>
-              <th>Block</th>
-              <th>Finder</th>
-              <th>Time</th>
-              <th class="text-right">Actual Shares</th>
+              <th>区块</th>
+              <th>发现者</th>
+              <th>时间</th>
+              <th class="text-right">实际股份</th>
             </tr>
           </thead>
           <tbody>
@@ -32,7 +32,7 @@
       </div>
 {if $GLOBAL.config.payout_system != 'pps'}
       <div class="panel-footer">
-          <h6>Note: Round Earnings are not credited until <font class="confirmations">{$GLOBAL.confirmations}</font> confirms.</h6>
+          <h6>温馨提示：需要耐心等待 <font class="confirmations">{$GLOBAL.confirmations}</font> 个确认。</h6>
       </div>
 {/if}
     </div>

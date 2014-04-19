@@ -6,7 +6,7 @@
   <div class="col-lg-6">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-money fa-fw"></i> Cash Out
+        <i class="fa fa-money fa-fw"></i> 手动提款
       </div>
       <div class="panel-body">
         <div class="row">
@@ -16,19 +16,19 @@
                 Please note: a {if $GLOBAL.config.txfee_manual > 0.00001}{$GLOBAL.config.txfee_manual}{else}{$GLOBAL.config.txfee_manual|number_format:"8"}{/if} {$GLOBAL.config.currency} transaction will apply when processing "On-Demand" manual payments <span id="tt"><img width="15px" height="15px" title="This {if $GLOBAL.config.txfee_manual > 0.00001}{$GLOBAL.config.txfee_manual}{else}{$GLOBAL.config.txfee_manual|number_format:"8"}{/if} manual payment transaction fee is a network fee and goes back into the network not the pool." src="site_assets/mpos/images/questionmark.png"></span>
               </p>
               <p style="padding-left:3px; padding-redight:30px; font-size:10px;">
-                Minimum Cashout: {$GLOBAL.config.mp_threshold} {$GLOBAL.config.currency}
+                最低提款限额： {$GLOBAL.config.mp_threshold} {$GLOBAL.config.currency}
               </p>
             </div>
             <div class="form-group">
-              <label>Account Balance</label>
+              <label>账户余额</label>
               {nocache}<input class="form-control" id="disabledInput" type="text" value="{$GLOBAL.userdata.balance.confirmed|escape}" {$GLOBAL.config.currency} disabled />{/nocache}
             </div>
             <div class="form-group">
-              <label>Payout to</label>
+              <label>支付地址</label>
               {nocache}<input class="form-control" id="disabledInput" type="text" value="{$GLOBAL.userdata.coin_address|escape}" disabled />{/nocache}
             </div>
             <div class="form-group">
-              <label>4 Digit PIN</label>
+              <label>4 位数PIN码</label>
               <input class="form-control" type="password" name="authPin" size="4" maxlength="4" />
             </div>
           </div>

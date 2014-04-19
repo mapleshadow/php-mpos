@@ -2,25 +2,25 @@
   <div class="col-lg-4">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-money fa-fw"></i> Balance Summary
+        <i class="fa fa-money fa-fw"></i> 余额汇总
       </div>
       <div class="panel-body no-padding">
         <table class="table table-striped table-bordered table-hover">
           <tr>
-            <td>Wallet Balance</td>
+            <td>钱包余额</td>
             <td>{$BALANCE|number_format:"8"}</td>
           </tr>
           <tr>
-            <td>Locked for users</td>
+            <td>锁定分给用户</td>
             <td>{$LOCKED|number_format:"8"}</td>
           </tr>
           <tr>
-            <td>Unconfirmed</td>
+            <td>未成熟</td>
             <td>{$UNCONFIRMED|number_format:"8"}</td>
           </tr>
 {if $NEWMINT >= 0}
           <tr>
-            <td>Liquid Assets</td>
+            <td>流动资产</td>
             {if $GLOBAL.config.getbalancewithunconfirmed}
             <td>{($BALANCE - $LOCKED - $UNCONFIRMED + $NEWMINT|default:"0")|number_format:"8"}</td>
             {else}
@@ -33,7 +33,7 @@
           </tr>
 {else}
           <tr>
-            <td>Liquid Assets</td>
+            <td>流动资产</td>
             {if $GLOBAL.config.getbalancewithunconfirmed}
             <td>{($BALANCE - $LOCKED - $UNCONFIRMED)|number_format:"8"}</td>
             {else}
@@ -49,16 +49,16 @@
   <div class="col-lg-8">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-info fa-fw"></i> Wallet Status
+        <i class="fa fa-info fa-fw"></i> 钱包状态
       </div>
       <div class="panel-body no-padding">
         <table class="table table-striped table-bordered table-hover">
           <thead>
-            <th>Version</th>
-            <th>Protocol Version</th>
-            <th>Wallet Version</th>
-            <th>Connections</th>
-            <th>Errors</th>
+            <th>版本</th>
+            <th>协议版本</th>
+            <th>钱包版本</th>
+            <th>连接数</th>
+            <th>错误</th>
           </thead>
           <tbody>
             <tr>
