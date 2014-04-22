@@ -179,18 +179,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$gns_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$kmc_bardata_no='http://mpos.freeyy.me/kmc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$kmc_bardata=$kmc_bardata_no|json_decode:true}
-{$kmc_pool1=$kmc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$kmc_pool2=$kmc_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$kmc_network1=$kmc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$kmc_network2=$kmc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$kmc_network3=$kmc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/kmc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【KMC】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$kmc_pool1} {$kmc_pool2} 全网{$kmc_network1} {$kmc_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$kmc_network3}</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$h2o_bardata_no='http://mpos.freeyy.me/h2o/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$h2o_bardata=$h2o_bardata_no|json_decode:true}
 {$h2o_pool1=$h2o_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -201,6 +189,18 @@
                           <li><a href="http://mpos.freeyy.me/h2o/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【H2O】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-本地{$h2o_pool1} {$h2o_pool2} 全网{$h2o_network1} {$h2o_network2}</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$h2o_network3}</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$kmc_bardata_no='http://mpos.freeyy.me/kmc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
+{$kmc_bardata=$kmc_bardata_no|json_decode:true}
+{$kmc_pool1=$kmc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
+{$kmc_pool2=$kmc_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
+{$kmc_network1=$kmc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
+{$kmc_network2=$kmc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
+{$kmc_network3=$kmc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
+                          <li><a href="http://mpos.freeyy.me/kmc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【KMC】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$kmc_pool1} {$kmc_pool2} 全网{$kmc_network1} {$kmc_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$kmc_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$pand_bardata_no='http://mpos.freeyy.me/pand/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
