@@ -17,6 +17,18 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$drk_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$gdn_bardata_no='http://mpos.freeyy.me/gdn/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
+{$gdn_bardata=$gdn_bardata_no|json_decode:true}
+{$gdn_pool1=$gdn_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
+{$gdn_pool2=$gdn_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
+{$gdn_network1=$gdn_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
+{$gdn_network2=$gdn_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
+{$gdn_network3=$gdn_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
+                          <li><a href="http://mpos.freeyy.me/gdn/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【GDN】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$gdn_pool1} {$gdn_pool2} 全网{$gdn_network1} {$gdn_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$gdn_network3}</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$give_bardata_no='http://mpos.freeyy.me/give/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$give_bardata=$give_bardata_no|json_decode:true}
 {$give_pool1=$give_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -75,6 +87,18 @@
                           <li><a href="http://mpos.freeyy.me/mun/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MUN】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-本地{$mun_pool1} {$mun_pool2} 全网{$mun_network1} {$mun_network2}</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$mun_network3}</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$twc_bardata_no='http://mpos.freeyy.me/twc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
+{$twc_bardata=$twc_bardata_no|json_decode:true}
+{$twc_pool1=$twc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
+{$twc_pool2=$twc_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
+{$twc_network1=$twc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
+{$twc_network2=$twc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
+{$twc_network3=$twc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
+                          <li><a href="http://mpos.freeyy.me/twc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【TWC】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$twc_pool1} {$twc_pool2} 全网{$twc_network1} {$twc_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$twc_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$qbc_bardata_no='http://mpos.freeyy.me/qbc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
