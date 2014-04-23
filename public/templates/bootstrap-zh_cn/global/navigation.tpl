@@ -77,6 +77,18 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$mun_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$qbc_bardata_no='http://mpos.freeyy.me/qbc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
+{$qbc_bardata=$qbc_bardata_no|json_decode:true}
+{$qbc_pool1=$qbc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
+{$qbc_pool2=$qbc_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
+{$qbc_network1=$qbc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
+{$qbc_network2=$qbc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
+{$qbc_network3=$qbc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
+                          <li><a href="http://mpos.freeyy.me/qbc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【QBC】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$qbc_pool1} {$qbc_pool2} 全网{$qbc_network1} {$qbc_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$qbc_network3}</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$vc_bardata_no='http://mpos.freeyy.me/vc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$vc_bardata=$vc_bardata_no|json_decode:true}
 {$vc_pool1=$vc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
