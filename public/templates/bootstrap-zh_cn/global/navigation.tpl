@@ -203,6 +203,18 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$gpuc_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$giar_bardata_no='http://mpos.freeyy.me/giar/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
+{$giar_bardata=$giar_bardata_no|json_decode:true}
+{$giar_pool1=$giar_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
+{$giar_pool2=$giar_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
+{$giar_network1=$giar_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
+{$giar_network2=$giar_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
+{$giar_network3=$giar_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
+                          <li><a href="http://mpos.freeyy.me/giar/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【GIAR】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$giar_pool1} {$giar_pool2} 全网{$giar_network1} {$giar_network2}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$giar_network3}</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$gns_bardata_no='http://mpos.freeyy.me/gns/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$gns_bardata=$gns_bardata_no|json_decode:true}
 {$gns_pool1=$gns_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
