@@ -23,7 +23,6 @@ $config['skip_config_tests'] = false;
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-defines--salts
  * 24位数的随机（当然可以自己乱写）加密字段（大小写字母加数字），但必须和ST的这个配置一致！
  *dkeGHfkUYekfiooaQpzkerty|类似这种可以参考，长度跟他一样即可
- *
  * 两个值可以相同，SALT=SALTY
  */
 $config['DEBUG'] = 0;
@@ -40,8 +39,9 @@ $config['SALTY'] = 'THISSHOULDALSOBERRAANNDDOOM';
   * scryptn: Vertcoin and similar ones.
   * x11: Darkcoin and similar ones.
   **/
-$config['algorithm'] = 'scrypt';
+#$config['algorithm'] = 'scrypt';
 #$config['algorithm'] = 'x11';
+$config['algorithm'] = 'sha256d';
 
 /**
   * Getbalance API Calls
@@ -106,7 +106,6 @@ $config['gettingstarted']['stratumport'] = '3333';
  *  Fetch exchange rates via an API
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-ticker-api
  * 币汇率或者交易所数据配置，目前还玩不转。。。当然了官方支持的交易所直接覆盖下面的值就行了，我的笔记本有资料如BTER等
- * 2014.3.27
  **/
 $config['price']['enabled'] = false;
 $config['price']['url'] = 'https://btc-e.com';
@@ -127,7 +126,6 @@ $config['ap_threshold']['max'] = 250;
  *  Minimum manual payout amount
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-manual-payout-threshold
  * 手动付款门槛，默认值为1该值决定了手动提款时必须达到的值
- * 017--版本新增
  **/
 $config['mp_threshold'] = 1;
 
@@ -283,8 +281,9 @@ $config['pplns']['dynamic']['percent'] = 30;
  * 具体，需要根据实际情况而定
  * 该值在建立矿池前期一般固定就不改了，如果要改，那么需要升级数据库内所有用户的难度为新难度，ST内的缓存也需要更新为新难度，才生效
  */
-$config['difficulty'] = 20;
+#$config['difficulty'] = 20;
 #$config['difficulty'] = 21;
+$config['difficulty'] = 6.25;
 # X11 算法可能用的值如下，具体还需要计算，仍然可用S算法的那个官方公式来计算，记得是约等于四舍五入
 # (stratum diff) ~= 2^((target bits in pushpool) - 16)
 # 6.25~=2^(0.00116-16)
