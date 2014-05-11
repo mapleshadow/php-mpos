@@ -40,8 +40,8 @@ $config['SALTY'] = 'THISSHOULDALSOBERRAANNDDOOM';
   * x11: Darkcoin and similar ones.
   **/
 #$config['algorithm'] = 'scrypt';
-#$config['algorithm'] = 'x11';
-$config['algorithm'] = 'sha256d';
+$config['algorithm'] = 'x11';
+#$config['algorithm'] = 'sha256d';
 
 /**
   * Getbalance API Calls
@@ -283,7 +283,8 @@ $config['pplns']['dynamic']['percent'] = 30;
  */
 #$config['difficulty'] = 20;
 #$config['difficulty'] = 21;
-$config['difficulty'] = 6.25;
+$config['difficulty'] = 7;
+#$config['difficulty'] = 6.25;
 # X11 算法可能用的值如下，具体还需要计算，仍然可用S算法的那个官方公式来计算，记得是约等于四舍五入
 # (stratum diff) ~= 2^((target bits in pushpool) - 16)
 # 6.25~=2^(0.00116-16)
