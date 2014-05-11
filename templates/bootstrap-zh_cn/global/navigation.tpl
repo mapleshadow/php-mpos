@@ -15,11 +15,21 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$drk_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$bdg_bardata_no='http://mpos.freeyy.me/bdg/public/index.php?page=api&action=public'|file_get_contents}
+{$bdg_bardata=$bdg_bardata_no|json_decode:true}
+{$bdg_1=round($bdg_bardata["hashrate"]/1000)}
+{$bdg_2=round($bdg_bardata["network_hashrate"]/1000/1000/1000)}
+{$bdg_3=$bdg_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/bdg/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【BDG】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$bdg_1} MH/s | 全网 {$bdg_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$bdg_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$erc_bardata_no='http://mpos.freeyy.me/erc/public/index.php?page=api&action=public'|file_get_contents}
 {$erc_bardata=$erc_bardata_no|json_decode:true}
 {$erc_1=round($erc_bardata["hashrate"]/1000)}
 {$erc_2=round($erc_bardata["network_hashrate"]/1000/1000/1000)}
-{$erc_3=$drk_bardata["workers"]}
+{$erc_3=$erc_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/erc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【ERC】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$erc_1} MH/s | 全网 {$erc_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$erc_3} 个</li>
@@ -73,16 +83,14 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$lgc_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$lim_bardata_no='http://mpos.freeyy.me/lim/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
+{$lim_bardata_no='http://mpos.freeyy.me/lim/public/index.php?page=api&action=public'|file_get_contents}
 {$lim_bardata=$lim_bardata_no|json_decode:true}
-{$lim_pool1=$lim_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$lim_pool2=$lim_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$lim_network1=$lim_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$lim_network2=$lim_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$lim_network3=$lim_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
+{$lim_1=round($lim_bardata["hashrate"]/1000)}
+{$lim_2=round($lim_bardata["network_hashrate"]/1000/1000/1000)}
+{$lim_3=$lim_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/lim/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【LIM】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$lim_pool1} {$lim_pool2} 全网{$lim_network1} {$lim_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$lim_network3}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$lim_1} MH/s | 全网 {$lim_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$lim_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$mun_bardata_no='http://mpos.freeyy.me/mun/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
