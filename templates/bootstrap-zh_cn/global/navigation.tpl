@@ -23,8 +23,8 @@
 {$drk_2=round($drk_bardata["network_hashrate"]/1000/1000/1000)}
 {$drk_3=$drk_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/erc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【ERC】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地算力{$drk_1} /M 全网{$drk_2} /G</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$drk_3}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-本地算力{$drk_1} MH/s 全网{$drk_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$drk_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$gdn_bardata_no='http://mpos.freeyy.me/gdn/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
