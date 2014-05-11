@@ -15,8 +15,9 @@
                 <th class="text-right">有效</th>
                 <th class="text-right">无效</th>
                 <th class="text-right">平均难度</th>
+                <th class="text-right">平均差异</th>
                 <th class="text-right">预计股份</th>
-                <th class="text-right">实际股份</th>
+                <th class="text-right">股份</th>
                 <th class="text-right">百分比</th>
                 <th class="text-right">币量</th>
                 <th class="text-right">预计比例</th>
@@ -29,6 +30,7 @@
                 <td class="text-right">{$LASTBLOCKSBYTIME.Total|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.TotalValid|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.TotalOrphan|number_format}</td>
+                <td class="text-right">{if $LASTBLOCKSBYTIME.TotalOrphan|default:"0" > 0}{(100 / $LASTBLOCKSBYTIME.Total * $LASTBLOCKSBYTIME.TotalOrphan)|number_format:"2"}{else}0.00{/if}</td>
                 <td class="text-right">
                 {if $LASTBLOCKSBYTIME.TotalValid > 0}
                   {($LASTBLOCKSBYTIME.TotalDifficulty / $LASTBLOCKSBYTIME.TotalValid)|number_format:"4"}
@@ -54,6 +56,7 @@
                 <td class="text-right">{$LASTBLOCKSBYTIME.1HourTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.1HourValid|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.1HourOrphan|number_format}</td>
+                <td class="text-right">{if $LASTBLOCKSBYTIME.1HourOrphan|default:"0" > 0}{(100 / $LASTBLOCKSBYTIME.1HourTotal * $LASTBLOCKSBYTIME.1HourOrphan)|number_format:"2"}{else}0.00{/if}</td>
                 <td class="text-right">
                 {if $LASTBLOCKSBYTIME.1HourValid > 0}
                   {($LASTBLOCKSBYTIME.1HourDifficulty / $LASTBLOCKSBYTIME.1HourValid)|number_format:"4"}
@@ -79,6 +82,7 @@
                 <td class="text-right">{$LASTBLOCKSBYTIME.24HourTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.24HourValid|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.24HourOrphan|number_format}</td>
+                <td class="text-right">{if $LASTBLOCKSBYTIME.24HourOrphan|default:"0" > 0}{(100 / $LASTBLOCKSBYTIME.24HourTotal * $LASTBLOCKSBYTIME.24HourOrphan)|number_format:"2"}{else}0.00{/if}</td>
                 <td class="text-right">
                 {if $LASTBLOCKSBYTIME.24HourValid > 0}
                   {($LASTBLOCKSBYTIME.24HourDifficulty / $LASTBLOCKSBYTIME.24HourValid)|number_format:"4"}
@@ -104,6 +108,7 @@
                 <td class="text-right">{$LASTBLOCKSBYTIME.7DaysTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.7DaysValid|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.7DaysOrphan|number_format}</td>
+                <td class="text-right">{if $LASTBLOCKSBYTIME.7DaysOrphan|default:"0" > 0}{(100 / $LASTBLOCKSBYTIME.7DaysTotal * $LASTBLOCKSBYTIME.7DaysOrphan)|number_format:"2"}{else}0.00{/if}</td>
                 <td class="text-right">
                 {if $LASTBLOCKSBYTIME.7DaysValid > 0}
                   {($LASTBLOCKSBYTIME.7DaysDifficulty / $LASTBLOCKSBYTIME.7DaysValid)|number_format:"4"}
@@ -129,6 +134,7 @@
                 <td class="text-right">{$LASTBLOCKSBYTIME.4WeeksTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.4WeeksValid|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.4WeeksOrphan|number_format}</td>
+                <td class="text-right">{if $LASTBLOCKSBYTIME.4WeeksOrphan|default:"0" > 0}{(100 / $LASTBLOCKSBYTIME.4WeeksTotal * $LASTBLOCKSBYTIME.4WeeksOrphan)|number_format:"2"}{else}0.00{/if}</td>
                 <td class="text-right">
                 {if $LASTBLOCKSBYTIME.4WeeksValid > 0}
                   {($LASTBLOCKSBYTIME.4WeeksDifficulty / $LASTBLOCKSBYTIME.4WeeksValid)|number_format:"4"}
@@ -154,6 +160,7 @@
                 <td class="text-right">{$LASTBLOCKSBYTIME.12MonthTotal|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.12MonthValid|number_format}</td>
                 <td class="text-right">{$LASTBLOCKSBYTIME.12MonthOrphan|number_format}</td>
+                <td class="text-right">{if $LASTBLOCKSBYTIME.12MonthOrphan|default:"0" > 0}{(100 / $LASTBLOCKSBYTIME.12MonthTotal * $LASTBLOCKSBYTIME.12MonthOrphan)|number_format:"2"}{else}0.00{/if}</td>
                 <td class="text-right">
                 {if $LASTBLOCKSBYTIME.12MonthValid > 0}
                   {($LASTBLOCKSBYTIME.12MonthDifficulty / $LASTBLOCKSBYTIME.12MonthValid)|number_format:"4"}
