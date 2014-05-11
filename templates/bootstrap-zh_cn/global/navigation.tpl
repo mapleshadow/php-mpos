@@ -59,16 +59,14 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$give_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$hiro_bardata_no='http://mpos.freeyy.me/hiro/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
+{$hiro_bardata_no='http://mpos.freeyy.me/hiro/public/index.php?page=api&action=public'|file_get_contents}
 {$hiro_bardata=$hiro_bardata_no|json_decode:true}
-{$hiro_pool1=$hiro_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$hiro_pool2=$hiro_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$hiro_network1=$hiro_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$hiro_network2=$hiro_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$hiro_network3=$hiro_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
+{$hiro_1=round($hiro_bardata["hashrate"]/1000)}
+{$hiro_2=round($hiro_bardata["network_hashrate"]/1000/1000/1000)}
+{$hiro_3=$hiro_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/hiro/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【HIRO】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$hiro_pool1} {$hiro_pool2} 全网{$hiro_network1} {$hiro_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$hiro_network3}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$hiro_1} MH/s | 全网 {$hiro_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$hiro_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$jug_bardata_no='http://mpos.freeyy.me/jug/public/index.php?page=api&action=public'|file_get_contents}
@@ -193,16 +191,14 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$catc_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$cai_bardata_no='http://mpos.freeyy.me/cai/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
+{$cai_bardata_no='http://mpos.freeyy.me/cai/public/index.php?page=api&action=public'|file_get_contents}
 {$cai_bardata=$cai_bardata_no|json_decode:true}
-{$cai_pool1=$cai_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$cai_pool2=$cai_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$cai_network1=$cai_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$cai_network2=$cai_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$cai_network3=$cai_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/cai/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CAI】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$cai_pool1} {$cai_pool2} 全网{$cai_network1} {$cai_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$cai_network3}</li>
+{$cai_1=round($cai_bardata["hashrate"]/1000)}
+{$cai_2=round($cai_bardata["network_hashrate"]/1000/1000/1000)}
+{$cai_3=$cai_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/jug/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CAI】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$cai_1} MH/s | 全网 {$cai_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$cai_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$exe_bardata_no='http://mpos.freeyy.me/exe/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
