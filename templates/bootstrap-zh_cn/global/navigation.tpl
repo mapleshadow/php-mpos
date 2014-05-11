@@ -11,8 +11,8 @@
 {$drk_2=round($drk_bardata["network_hashrate"]/1000/1000/1000)}
 {$drk_3=$drk_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/drk/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【DRK】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$drk_1} MH/s | 全网 {$drk_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$drk_3} 个</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$drk_1} MH/s | 全网 {$drk_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$drk_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$bdg_bardata_no='http://mpos.freeyy.me/bdg/public/index.php?page=api&action=public'|file_get_contents}
@@ -21,8 +21,8 @@
 {$bdg_2=round($bdg_bardata["network_hashrate"]/1000/1000/1000)}
 {$bdg_3=$bdg_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/bdg/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【BDG】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$bdg_1} MH/s | 全网 {$bdg_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$bdg_3} 个</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$bdg_1} MH/s | 全网 {$bdg_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$bdg_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$erc_bardata_no='http://mpos.freeyy.me/erc/public/index.php?page=api&action=public'|file_get_contents}
@@ -31,8 +31,8 @@
 {$erc_2=round($erc_bardata["network_hashrate"]/1000/1000/1000)}
 {$erc_3=$erc_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/erc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【ERC】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$erc_1} MH/s | 全网 {$erc_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$erc_3} 个</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$erc_1} MH/s | 全网 {$erc_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$erc_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$gdn_bardata_no='http://mpos.freeyy.me/gdn/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
@@ -65,8 +65,8 @@
 {$hiro_2=round($hiro_bardata["network_hashrate"]/1000/1000/1000)}
 {$hiro_3=$hiro_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/hiro/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【HIRO】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$hiro_1} MH/s | 全网 {$hiro_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$hiro_3} 个</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$hiro_1} MH/s | 全网 {$hiro_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$hiro_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$jug_bardata_no='http://mpos.freeyy.me/jug/public/index.php?page=api&action=public'|file_get_contents}
@@ -75,8 +75,8 @@
 {$jug_2=round($jug_bardata["network_hashrate"]/1000/1000/1000)}
 {$jug_3=$jug_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/jug/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【JUG】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$jug_1} MH/s | 全网 {$jug_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$jug_3} 个</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$jug_1} MH/s | 全网 {$jug_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$jug_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$lgc_bardata_no='http://mpos.freeyy.me/lgc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
@@ -97,8 +97,8 @@
 {$lim_2=round($lim_bardata["network_hashrate"]/1000/1000/1000)}
 {$lim_3=$lim_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/lim/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【LIM】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$lim_1} MH/s | 全网 {$lim_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$lim_3} 个</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$lim_1} MH/s | 全网 {$lim_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$lim_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$mun_bardata_no='http://mpos.freeyy.me/mun/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
@@ -197,8 +197,8 @@
 {$cai_2=round($cai_bardata["network_hashrate"]/1000/1000/1000)}
 {$cai_3=$cai_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/cai/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CAI】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$cai_1} MH/s | 全网 {$cai_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$cai_3} 个</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$cai_1} MH/s | 全网 {$cai_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$cai_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$exe_bardata_no='http://mpos.freeyy.me/exe/public/index.php?page=api&action=public'|file_get_contents}
@@ -207,8 +207,8 @@
 {$exe_2=round($exe_bardata["network_hashrate"]/1000/1000/1000)}
 {$exe_3=$exe_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/exe/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【EXE】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$exe_1} MH/s | 全网 {$exe_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$exe_3} 个</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$exe_1} MH/s | 全网 {$exe_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$exe_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$gpuc_bardata_no='http://mpos.freeyy.me/gpuc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
