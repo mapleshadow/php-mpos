@@ -204,20 +204,20 @@
 {$cai_bardata_no='http://mpos.freeyy.me/cai/public/index.php?page=api&action=public'|file_get_contents}
 {$cai_bardata=$cai_bardata_no|json_decode:true}
 {$cai_1=round($cai_bardata["hashrate"]/1000)}
-{$cai_2=round($cai_bardata["network_hashrate"]/1000/1000/1000)}
+{$cai_2=round($cai_bardata["network_hashrate"]/1000/1000)}
 {$cai_3=$cai_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/cai/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CAI】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$cai_1} MH/s | 全网 {$cai_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$cai_1} MH/s | 全网 {$cai_2} MH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$cai_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$exe_bardata_no='http://mpos.freeyy.me/exe/public/index.php?page=api&action=public'|file_get_contents}
 {$exe_bardata=$exe_bardata_no|json_decode:true}
 {$exe_1=round($exe_bardata["hashrate"]/1000)}
-{$exe_2=round($exe_bardata["network_hashrate"]/1000/1000/1000)}
+{$exe_2=round($exe_bardata["network_hashrate"]/1000/1000)}
 {$exe_3=$exe_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/exe/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【EXE】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$exe_1} MH/s | 全网 {$exe_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$exe_1} MH/s | 全网 {$exe_2} MH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$exe_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
