@@ -196,21 +196,19 @@
 {$cai_1=round($cai_bardata["hashrate"]/1000)}
 {$cai_2=round($cai_bardata["network_hashrate"]/1000/1000/1000)}
 {$cai_3=$cai_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/jug/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CAI】首页</a></li>
+                          <li><a href="http://mpos.freeyy.me/cai/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CAI】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$cai_1} MH/s | 全网 {$cai_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$cai_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$exe_bardata_no='http://mpos.freeyy.me/exe/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
+{$exe_bardata_no='http://mpos.freeyy.me/exe/public/index.php?page=api&action=public'|file_get_contents}
 {$exe_bardata=$exe_bardata_no|json_decode:true}
-{$exe_pool1=$exe_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$exe_pool2=$exe_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$exe_network1=$exe_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$exe_network2=$exe_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$exe_network3=$exe_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
+{$exe_1=round($exe_bardata["hashrate"]/1000)}
+{$exe_2=round($exe_bardata["network_hashrate"]/1000/1000/1000)}
+{$exe_3=$exe_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/exe/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【EXE】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$exe_pool1} {$exe_pool2} 全网{$exe_network1} {$exe_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$exe_network3}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-算力：本地 {$exe_1} MH/s | 全网 {$exe_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>-矿池在线矿工数：{$exe_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$gpuc_bardata_no='http://mpos.freeyy.me/gpuc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
