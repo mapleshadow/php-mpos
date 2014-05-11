@@ -59,6 +59,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$give_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$h5c_bardata_no='http://mpos.freeyy.me/h5c/public/index.php?page=api&action=public'|file_get_contents}
+{$h5c_bardata=$h5c_bardata_no|json_decode:true}
+{$h5c_1=round($h5c_bardata["hashrate"]/1000)}
+{$h5c_2=round($h5c_bardata["network_hashrate"]/1000/1000/1000)}
+{$h5c_3=$h5c_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/h5c/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【H5C】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$h5c_1} MH/s | 全网 {$h5c_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$h5c_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$hiro_bardata_no='http://mpos.freeyy.me/hiro/public/index.php?page=api&action=public'|file_get_contents}
 {$hiro_bardata=$hiro_bardata_no|json_decode:true}
 {$hiro_1=round($hiro_bardata["hashrate"]/1000)}
