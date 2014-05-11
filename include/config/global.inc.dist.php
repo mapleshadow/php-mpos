@@ -40,6 +40,7 @@ $config['SALTY'] = 'THISSHOULDALSOBERRAANNDDOOM';
   * x11: Darkcoin and similar ones.
   **/
 #$config['algorithm'] = 'scrypt';
+#$config['algorithm'] = 'scryptn';
 $config['algorithm'] = 'x11';
 #$config['algorithm'] = 'sha256d';
 
@@ -77,8 +78,7 @@ $config['wallet']['password'] = 'testnet';
  * Swiftmailer configuration
  *  Configure your way to send mails
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-swiftmailer
- * 2014.3.28-新增smtp邮件功能
- * 2014.4.8-新增
+ * 新增smtp邮件功能
  **/
 $config['swiftmailer']['type'] = 'sendmail';
 $config['swiftmailer']['sendmail']['path'] = '/usr/sbin/sendmail';
@@ -276,6 +276,7 @@ $config['pplns']['dynamic']['percent'] = 30;
  *  Difficulty setting for stratum/pushpool
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-pool-target-difficulty
  * 矿池难度，这个值必须和ST的配置值形成对应关系，具体可参考上面网址。
+ * S算法和N-S算法难度设置一致
  * 一般常用是，ST 16 这里 20、ST 32 这里 21、ST 64 这里 22，简单来说就是ST的值次方翻倍往上调的话，这里就加1
  * 一般100M一下，都用20，但如果算力很大那么就会提高当前币难度，那么ST最好就翻倍，这里也加1，如此可以适应大算力并且不耽误出块量
  * 具体，需要根据实际情况而定
@@ -283,7 +284,8 @@ $config['pplns']['dynamic']['percent'] = 30;
  */
 #$config['difficulty'] = 20;
 #$config['difficulty'] = 21;
-$config['difficulty'] = 7;
+$config['difficulty'] = 8;
+#$config['difficulty'] = 7;
 #$config['difficulty'] = 6.25;
 # X11 算法可能用的值如下，具体还需要计算，仍然可用S算法的那个官方公式来计算，记得是约等于四舍五入
 # (stratum diff) ~= 2^((target bits in pushpool) - 16)
