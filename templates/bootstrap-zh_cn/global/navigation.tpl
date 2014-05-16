@@ -45,16 +45,14 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$erc_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$gdn_bardata_no='http://mpos.freeyy.me/gdn/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
+{$gdn_bardata_no='http://mpos.freeyy.me/gdn/public/index.php?page=api&action=public'|file_get_contents}
 {$gdn_bardata=$gdn_bardata_no|json_decode:true}
-{$gdn_pool1=$gdn_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$gdn_pool2=$gdn_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$gdn_network1=$gdn_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$gdn_network2=$gdn_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$gdn_network3=$gdn_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
+{$gdn_1=round($gdn_bardata["hashrate"]/1000)}
+{$gdn_2=round($gdn_bardata["network_hashrate"]/1000/1000/1000)}
+{$gdn_3=$gdn_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/gdn/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【GDN】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$gdn_pool1} {$gdn_pool2} 全网{$gdn_network1} {$gdn_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$gdn_network3}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$gdn_1} MH/s | 全网 {$gdn_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$gdn_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$give_bardata_no='http://mpos.freeyy.me/give/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
