@@ -117,9 +117,7 @@ $(document).ready(function(){
       $('#b-nextdiff').html('n/a');
       $('#b-nextdiffc').html(' No Estimates');
     }
-    var minutes = Math.floor(data.getdashboarddata.data.network.esttimeperblock / 60);
-    var seconds = Math.floor(data.getdashboarddata.data.network.esttimeperblock - minutes * 60);
-    $('#b-esttimeperblock').html(minutes + " minutes " + seconds + " seconds"); // <- this needs some nicer format
+    $('#b-esttimeperblock').html(data.getdashboarddata.data.pool.esttimeperblock.toHHMMSS());
     $('#b-nblock').html(data.getdashboarddata.data.network.block);
     $('#b-roundprogress').html(number_format(parseFloat(data.getdashboarddata.data.pool.shares.progress).toFixed(2), 2) + "%");
     {/literal}{if $GLOBAL.config.payout_system != 'pps'}{literal }
@@ -160,6 +158,7 @@ $(document).ready(function(){
 
   function refreshBlockData(data) {
     blocks = data.getdashboarddata.data.pool.blocks;
+    if (blocks.length <= 0) return;
     // Initilize
     if (lastBlock == 0) {
       lastBlock = blocks[0].height;
