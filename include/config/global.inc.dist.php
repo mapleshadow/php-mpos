@@ -118,8 +118,10 @@ $config['price']['currency'] = 'USD';
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-automatic-payout-thresholds
  * 自动付款最小限度和最大限度
  **/
-$config['ap_threshold']['min'] = 1;
-$config['ap_threshold']['max'] = 250;
+#$config['ap_threshold']['min'] = 1;
+$config['ap_threshold']['min'] = 1000000;
+#$config['ap_threshold']['max'] = 250;
+$config['ap_threshold']['max'] = 2500000;
 
 /**
  * Minimum manual Payout Threshold
@@ -284,8 +286,8 @@ $config['pplns']['dynamic']['percent'] = 30;
  */
 #$config['difficulty'] = 20;
 #$config['difficulty'] = 21;
-$config['difficulty'] = 8;//0.004
-#$config['difficulty'] = 7;//0.00119
+#$config['difficulty'] = 8;//0.004
+$config['difficulty'] = 7;//0.00119
 #$config['difficulty'] = 6;//0.001
 #$config['difficulty'] = 6.25;//0.00116
 # X11 算法可能用的值如下，具体还需要计算，仍然可用S算法的那个官方公式来计算，记得是约等于四舍五入
