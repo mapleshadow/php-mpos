@@ -21,22 +21,22 @@
             <tr>
               <th>当前难度</th>
               {if ! $GLOBAL.website.chaininfo.disabled}
-              <td><a href="{$GLOBAL.website.chaininfo.url}" target="_new"><font size="2"><span id="b-diff">{$NETWORK.difficulty}</span></font></a></td>
+              <td><a href="{$GLOBAL.website.chaininfo.url}" target="_new"><span id="b-diff">{$NETWORK.difficulty|number_format:"8"}</span></a></td>
               {else}
-              <td><span id="b-diff">{$NETWORK.difficulty}</span></td>
+              <td><span id="b-diff">{$NETWORK.difficulty|number_format:"8"}</span></td>
               {/if}
             </tr>
             <tr>
               <th>预计下轮难度</th>
               {if ! $GLOBAL.website.chaininfo.disabled}
-              <td><a href="{$GLOBAL.website.chaininfo.url}" target="_new"><font size="2">{$NETWORK.EstNextDifficulty|number_format:"8"} (Change in {$NETWORK.BlocksUntilDiffChange} Blocks)</font></a></td>
+              <td><a href="{$GLOBAL.website.chaininfo.url}" target="_new">{$NETWORK.EstNextDifficulty|number_format:"8"} (Change in {$NETWORK.BlocksUntilDiffChange} Blocks)</a></td>
               {else}
-              <td><font size="2">{$NETWORK.EstNextDifficulty|number_format:"8"} (Change in {$NETWORK.BlocksUntilDiffChange} Blocks)</font></td>
+              <td>{$NETWORK.EstNextDifficulty|number_format:"8"} (Change in {$NETWORK.BlocksUntilDiffChange} Blocks)</td>
               {/if}
             </tr>
             <tr>
               <th>预计每轮平均时间（全网）</th>
-              <td><font size="2">{$NETWORK.EstTimePerBlock|seconds_to_words}</font></td>
+              <td>{$NETWORK.EstTimePerBlock|seconds_to_words}</td>
             </tr>
             <tr>
               <th>预计每轮平均时间（矿池）</th>
@@ -49,7 +49,7 @@
             {if ! $GLOBAL.website.blockexplorer.disabled}
             <tr>
               <th width="50%">全网下一个区块</th>
-              <td colspan="3">{($CURRENTBLOCK + 1)|number_format} &nbsp;&nbsp;<font size="1"> (Current: <a href="{$GLOBAL.website.blockexplorer.url}{$CURRENTBLOCKHASH}" target="_new">{$CURRENTBLOCK|number_format})</a></font></td>
+              <td colspan="3">{($CURRENTBLOCK + 1)|number_format} &nbsp;&nbsp; (Current: <a href="{$GLOBAL.website.blockexplorer.url}{$CURRENTBLOCKHASH}" target="_new">{$CURRENTBLOCK|number_format})</a></td>
             </tr>
             {else}
             <tr>
