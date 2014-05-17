@@ -65,16 +65,14 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$gdn_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$give_bardata_no='http://mpos.freeyy.me/give/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
+{$give_bardata_no='http://mpos.freeyy.me/give/public/index.php?page=api&action=public'|file_get_contents}
 {$give_bardata=$give_bardata_no|json_decode:true}
-{$give_pool1=$give_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$give_pool2=$give_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$give_network1=$give_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$give_network2=$give_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$give_network3=$give_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
+{$give_1=round($give_bardata["hashrate"]/1000)}
+{$give_2=round($give_bardata["network_hashrate"]/1000/1000/1000)}
+{$give_3=$give_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/give/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【GIVE】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$give_pool1} {$give_pool2} 全网{$give_network1} {$give_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$give_network3}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$give_1} MH/s | 全网 {$give_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$give_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$h5c_bardata_no='http://mpos.freeyy.me/h5c/public/index.php?page=api&action=public'|file_get_contents}
