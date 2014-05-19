@@ -25,16 +25,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$bdg_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$caix_bardata_no='http://mpos.freeyy.me/caix/public/index.php?page=api&action=public'|file_get_contents}
-{$caix_bardata=$caix_bardata_no|json_decode:true}
-{$caix_1=round($caix_bardata["hashrate"]/1000)}
-{$caix_2=round($caix_bardata["network_hashrate"]/1000/1000/1000)}
-{$caix_3=$caix_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/caix/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CAIx】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$caix_1} MH/s | 全网 {$caix_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$caix_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$cc_bardata_no='http://mpos.freeyy.me/cc/public/index.php?page=api&action=public'|file_get_contents}
 {$cc_bardata=$cc_bardata_no|json_decode:true}
 {$cc_1=round($cc_bardata["hashrate"]/1000)}
@@ -43,16 +33,6 @@
                           <li><a href="http://mpos.freeyy.me/coc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CC】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$cc_1} MH/s | 全网 {$cc_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$cc_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$drm_bardata_no='http://mpos.freeyy.me/drm/public/index.php?page=api&action=public'|file_get_contents}
-{$drm_bardata=$drm_bardata_no|json_decode:true}
-{$drm_1=round($drm_bardata["hashrate"]/1000)}
-{$drm_2=round($drm_bardata["network_hashrate"]/1000/1000/1000)}
-{$drm_3=$drm_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/drm/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【DRM】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$drm_1} MH/s | 全网 {$drm_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$drm_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$erc_bardata_no='http://mpos.freeyy.me/erc/public/index.php?page=api&action=public'|file_get_contents}
@@ -367,6 +347,31 @@
                           <li><a href="http://mpos.freeyy.me/xsv/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【XSV】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-本地{$xsv_pool1} {$xsv_pool2} 全网{$xsv_network1} {$xsv_network2}</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$xsv_network3}</li>
+<!-- 币信息-结束 -->
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li><!-- 多矿池算力监控 -->
+		                            <a href="#"><i class="fa fa-tasks fa-fw"></i> 只能认购不能挖矿的币汇总<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+<!-- 币信息-开始 -->
+{$caix_bardata_no='http://mpos.freeyy.me/caix/public/index.php?page=api&action=public'|file_get_contents}
+{$caix_bardata=$caix_bardata_no|json_decode:true}
+{$caix_1=round($caix_bardata["hashrate"]/1000)}
+{$caix_2=round($caix_bardata["network_hashrate"]/1000/1000/1000)}
+{$caix_3=$caix_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/caix/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CAIx】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$caix_1} MH/s | 全网 {$caix_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$caix_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$drm_bardata_no='http://mpos.freeyy.me/drm/public/index.php?page=api&action=public'|file_get_contents}
+{$drm_bardata=$drm_bardata_no|json_decode:true}
+{$drm_1=round($drm_bardata["hashrate"]/1000)}
+{$drm_2=round($drm_bardata["network_hashrate"]/1000/1000/1000)}
+{$drm_3=$drm_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/drm/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【DRM】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$drm_1} MH/s | 全网 {$drm_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$drm_3} 个</li>
 <!-- 币信息-结束 -->
                         </ul>
                         <!-- /.nav-second-level -->
