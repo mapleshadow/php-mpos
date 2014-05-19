@@ -351,7 +351,8 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li><!-- 多矿池算力监控 -->
-		                            <a href="#"><i class="fa fa-tasks fa-fw"></i> 只能认购不能挖矿的币汇总<span class="fa arrow"></span></a>
+                    <li><!-- 多矿池算力监控 -->
+                            <a href="#"><i class="fa fa-tasks fa-fw"></i> 只能认购不能挖矿的币汇总<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
 <!-- 币信息-开始 -->
 {$caix_bardata_no='http://mpos.freeyy.me/caix/public/index.php?page=api&action=public'|file_get_contents}
