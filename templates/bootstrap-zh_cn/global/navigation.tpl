@@ -335,7 +335,7 @@
                             <a href="#"><i class="fa fa-tasks fa-fw"></i> 只能认购不能挖矿的币汇总<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
 <!-- 币信息-开始 -->
-                          <li><i class="fa fa-dashboard fa-fw"></i> 【BDG】已经沦为认购币POS，所以洗洗睡吧</li>
+                          <li><font COLOR="#FF0000"><b>【BDG】已经沦为认购币POS</b></font></li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$caix_bardata_no='http://mpos.freeyy.me/caix/public/index.php?page=api&action=public'|file_get_contents}
