@@ -25,6 +25,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$cc_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$dis_bardata_no='http://mpos.freeyy.me/dis/public/index.php?page=api&action=public'|file_get_contents}
+{$dis_bardata=$dis_bardata_no|json_decode:true}
+{$dis_1=round($dis_bardata["hashrate"]/1000)}
+{$dis_2=round($dis_bardata["network_hashrate"]/1000/1000/1000)}
+{$dis_3=$dis_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/dis/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【DIS】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$dis_1} MH/s | 全网 {$dis_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$dis_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$erc_bardata_no='http://mpos.freeyy.me/erc/public/index.php?page=api&action=public'|file_get_contents}
 {$erc_bardata=$erc_bardata_no|json_decode:true}
 {$erc_1=round($erc_bardata["hashrate"]/1000)}
