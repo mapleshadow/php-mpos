@@ -35,16 +35,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$dis_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$erc_bardata_no='http://mpos.freeyy.me/erc/public/index.php?page=api&action=public'|file_get_contents}
-{$erc_bardata=$erc_bardata_no|json_decode:true}
-{$erc_1=round($erc_bardata["hashrate"]/1000)}
-{$erc_2=round($erc_bardata["network_hashrate"]/1000/1000/1000)}
-{$erc_3=$erc_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/erc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【ERC】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$erc_1} MH/s | 全网 {$erc_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$erc_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$gdn_bardata_no='http://mpos.freeyy.me/gdn/public/index.php?page=api&action=public'|file_get_contents}
 {$gdn_bardata=$gdn_bardata_no|json_decode:true}
 {$gdn_1=round($gdn_bardata["hashrate"]/1000)}
@@ -356,6 +346,16 @@
                           <li><a href="http://mpos.freeyy.me/caix/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CAIx】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$caix_1} MH/s | 全网 {$caix_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$caix_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$erc_bardata_no='http://mpos.freeyy.me/erc/public/index.php?page=api&action=public'|file_get_contents}
+{$erc_bardata=$erc_bardata_no|json_decode:true}
+{$erc_1=round($erc_bardata["hashrate"]/1000)}
+{$erc_2=round($erc_bardata["network_hashrate"]/1000/1000/1000)}
+{$erc_3=$erc_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/erc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【ERC】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$erc_1} MH/s | 全网 {$erc_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$erc_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$drm_bardata_no='http://mpos.freeyy.me/drm/public/index.php?page=api&action=public'|file_get_contents}
