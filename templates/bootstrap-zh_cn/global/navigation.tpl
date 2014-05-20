@@ -174,7 +174,7 @@
 {$win_1=round($win_bardata["hashrate"]/1000)}
 {$win_2=round($win_bardata["network_hashrate"]/1000/1000/1000)}
 {$win_3=$win_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/rtc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【WIN】首页</a></li>
+                          <li><a href="http://mpos.freeyy.me/win/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【WIN】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$win_1} MH/s | 全网 {$win_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$win_3} 个</li>
 <!-- 币信息-结束 -->
