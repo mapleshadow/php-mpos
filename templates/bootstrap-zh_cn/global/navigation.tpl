@@ -167,16 +167,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$twc_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$west_bardata_no='http://mpos.freeyy.me/west/public/index.php?page=api&action=public'|file_get_contents}
-{$west_bardata=$west_bardata_no|json_decode:true}
-{$west_1=round($west_bardata["hashrate"]/1000)}
-{$west_2=round($west_bardata["network_hashrate"]/1000/1000/1000)}
-{$west_3=$west_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/west/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【WEST】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$west_1} MH/s | 全网 {$west_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$west_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$vc_bardata_no='http://mpos.freeyy.me/vc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$vc_bardata=$vc_bardata_no|json_decode:true}
 {$vc_pool1=$vc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -376,6 +366,16 @@
                           <li><a href="http://mpos.freeyy.me/drm/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【DRM】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$drm_1} MH/s | 全网 {$drm_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$drm_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$west_bardata_no='http://mpos.freeyy.me/west/public/index.php?page=api&action=public'|file_get_contents}
+{$west_bardata=$west_bardata_no|json_decode:true}
+{$west_1=round($west_bardata["hashrate"]/1000)}
+{$west_2=round($west_bardata["network_hashrate"]/1000/1000/1000)}
+{$west_3=$west_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/west/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【WEST】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$west_1} MH/s | 全网 {$west_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$west_3} 个</li>
 <!-- 币信息-结束 -->
                         </ul>
                         <!-- /.nav-second-level -->
