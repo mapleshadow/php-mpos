@@ -168,6 +168,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-本地{$vc_pool1} {$vc_pool2} 全网{$vc_network1} {$vc_network2}</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$vc_network3}</li>
 <!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$win_bardata_no='http://mpos.freeyy.me/win/public/index.php?page=api&action=public'|file_get_contents}
+{$win_bardata=$win_bardata_no|json_decode:true}
+{$win_1=round($win_bardata["hashrate"]/1000)}
+{$win_2=round($win_bardata["network_hashrate"]/1000/1000/1000)}
+{$win_3=$win_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/rtc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【WIN】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$win_1} MH/s | 全网 {$win_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$win_3} 个</li>
+<!-- 币信息-结束 -->
                         </ul>
                         <!-- /.nav-second-level -->
                     </li><!-- 多矿池算力监控 -->
