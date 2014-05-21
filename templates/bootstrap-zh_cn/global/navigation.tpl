@@ -15,6 +15,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$drk_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$av_bardata_no='http://mpos.freeyy.me/av/public/index.php?page=api&action=public'|file_get_contents}
+{$av_bardata=$av_bardata_no|json_decode:true}
+{$av_1=round($av_bardata["hashrate"]/1000)}
+{$av_2=round($av_bardata["network_hashrate"]/1000/1000/1000)}
+{$av_3=$av_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/av/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【AV】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$av_1} MH/s | 全网 {$av_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$av_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$cc_bardata_no='http://mpos.freeyy.me/cc/public/index.php?page=api&action=public'|file_get_contents}
 {$cc_bardata=$cc_bardata_no|json_decode:true}
 {$cc_1=round($cc_bardata["hashrate"]/1000)}
@@ -23,6 +33,16 @@
                           <li><a href="http://mpos.freeyy.me/coc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CC】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$cc_1} MH/s | 全网 {$cc_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$cc_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$ctz_bardata_no='http://mpos.freeyy.me/ctz/public/index.php?page=api&action=public'|file_get_contents}
+{$ctz_bardata=$ctz_bardata_no|json_decode:true}
+{$ctz_1=round($ctz_bardata["hashrate"]/1000)}
+{$ctz_2=round($ctz_bardata["network_hashrate"]/1000/1000/1000)}
+{$ctz_3=$ctz_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/ctz/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CTZ】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$ctz_1} MH/s | 全网 {$ctz_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$ctz_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$dis_bardata_no='http://mpos.freeyy.me/dis/public/index.php?page=api&action=public'|file_get_contents}
@@ -177,6 +197,16 @@
                           <li><a href="http://mpos.freeyy.me/win/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【WIN】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$win_1} MH/s | 全网 {$win_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$win_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$xc_bardata_no='http://mpos.freeyy.me/xc/public/index.php?page=api&action=public'|file_get_contents}
+{$xc_bardata=$xc_bardata_no|json_decode:true}
+{$xc_1=round($xc_bardata["hashrate"]/1000)}
+{$xc_2=round($xc_bardata["network_hashrate"]/1000/1000/1000)}
+{$xc_3=$xc_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/xc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【XC】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$xc_1} MH/s | 全网 {$xc_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$xc_3} 个</li>
 <!-- 币信息-结束 -->
                         </ul>
                         <!-- /.nav-second-level -->
@@ -348,27 +378,7 @@
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【BDG】</b></font></li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$caix_bardata_no='http://mpos.freeyy.me/caix/public/index.php?page=api&action=public'|file_get_contents}
-{$caix_bardata=$caix_bardata_no|json_decode:true}
-{$caix_1=round($caix_bardata["hashrate"]/1000)}
-{$caix_2=round($caix_bardata["network_hashrate"]/1000/1000/1000)}
-{$caix_3=$caix_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/caix/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CAIx】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$caix_1} MH/s | 全网 {$caix_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$caix_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【ERC】</b></font></li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$drm_bardata_no='http://mpos.freeyy.me/drm/public/index.php?page=api&action=public'|file_get_contents}
-{$drm_bardata=$drm_bardata_no|json_decode:true}
-{$drm_1=round($drm_bardata["hashrate"]/1000)}
-{$drm_2=round($drm_bardata["network_hashrate"]/1000/1000/1000)}
-{$drm_3=$drm_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/drm/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【DRM】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$drm_1} MH/s | 全网 {$drm_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$drm_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$west_bardata_no='http://mpos.freeyy.me/west/public/index.php?page=api&action=public'|file_get_contents}
