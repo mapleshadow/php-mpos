@@ -361,24 +361,10 @@
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【ERC】</b></font></li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$rtc_bardata_no='http://mpos.freeyy.me/rtc/public/index.php?page=api&action=public'|file_get_contents}
-{$rtc_bardata=$rtc_bardata_no|json_decode:true}
-{$rtc_1=round($rtc_bardata["hashrate"]/1000)}
-{$rtc_2=round($rtc_bardata["network_hashrate"]/1000/1000/1000)}
-{$rtc_3=$rtc_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/rtc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【RTC】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$rtc_1} MH/s | 全网 {$rtc_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$rtc_3} 个</li>
+                          <li><font COLOR="#FF0000"><b>已经沦为认购币POS【RTC】</b></font></li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$west_bardata_no='http://mpos.freeyy.me/west/public/index.php?page=api&action=public'|file_get_contents}
-{$west_bardata=$west_bardata_no|json_decode:true}
-{$west_1=round($west_bardata["hashrate"]/1000)}
-{$west_2=round($west_bardata["network_hashrate"]/1000/1000/1000)}
-{$west_3=$west_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/west/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【WEST】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$west_1} MH/s | 全网 {$west_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$west_3} 个</li>
+                          <li><font COLOR="#FF0000"><b>已经沦为认购币POS【WEST】</b></font></li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$win_bardata_no='http://mpos.freeyy.me/win/public/index.php?page=api&action=public'|file_get_contents}
