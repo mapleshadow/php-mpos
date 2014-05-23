@@ -253,18 +253,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$gpuc_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$giar_bardata_no='http://mpos.freeyy.me/giar/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$giar_bardata=$giar_bardata_no|json_decode:true}
-{$giar_pool1=$giar_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$giar_pool2=$giar_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$giar_network1=$giar_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$giar_network2=$giar_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$giar_network3=$giar_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/giar/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【GIAR】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$giar_pool1} {$giar_pool2} 全网{$giar_network1} {$giar_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$giar_network3}</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$gns_bardata_no='http://mpos.freeyy.me/gns/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$gns_bardata=$gns_bardata_no|json_decode:true}
 {$gns_pool1=$gns_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
@@ -275,18 +263,6 @@
                           <li><a href="http://mpos.freeyy.me/gns/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【GNS】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-本地{$gns_pool1} {$gns_pool2} 全网{$gns_network1} {$gns_network2}</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$gns_network3}</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$h2o_bardata_no='http://mpos.freeyy.me/h2o/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$h2o_bardata=$h2o_bardata_no|json_decode:true}
-{$h2o_pool1=$h2o_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$h2o_pool2=$h2o_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$h2o_network1=$h2o_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$h2o_network2=$h2o_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$h2o_network3=$h2o_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/h2o/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【H2O】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$h2o_pool1} {$h2o_pool2} 全网{$h2o_network1} {$h2o_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$h2o_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$kmc_bardata_no='http://mpos.freeyy.me/kmc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
@@ -311,18 +287,6 @@
                           <li><a href="http://mpos.freeyy.me/pand/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【PAND】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-本地{$pand_pool1} {$pand_pool2} 全网{$pand_network1} {$pand_network2}</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$pand_network3}</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$rt2_bardata_no='http://mpos.freeyy.me/rt2/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$rt2_bardata=$rt2_bardata_no|json_decode:true}
-{$rt2_pool1=$rt2_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$rt2_pool2=$rt2_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$rt2_network1=$rt2_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$rt2_network2=$rt2_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$rt2_network3=$rt2_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/rt2/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【RT2】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$rt2_pool1} {$rt2_pool2} 全网{$rt2_network1} {$rt2_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$rt2_network3}</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$spa_bardata_no='http://mpos.freeyy.me/spa/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
