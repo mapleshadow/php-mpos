@@ -300,18 +300,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-本地{$spa_pool1} {$spa_pool2} 全网{$spa_network1} {$spa_network2}</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$spa_network3}</li>
 <!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$xsv_bardata_no='http://mpos.freeyy.me/xsv/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$xsv_bardata=$xsv_bardata_no|json_decode:true}
-{$xsv_pool1=$xsv_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$xsv_pool2=$xsv_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$xsv_network1=$xsv_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$xsv_network2=$xsv_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$xsv_network3=$xsv_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/xsv/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【XSV】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$xsv_pool1} {$xsv_pool2} 全网{$xsv_network1} {$xsv_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$xsv_network3}</li>
-<!-- 币信息-结束 -->
                         </ul>
                         <!-- /.nav-second-level -->
                     </li><!-- 多矿池算力监控 -->
