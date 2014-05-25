@@ -147,14 +147,14 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$qbc_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$sync_bardata_no='http://mpos.freeyy.me/sync/public/index.php?page=api&action=public'|file_get_contents}
-{$sync_bardata=$sync_bardata_no|json_decode:true}
-{$sync_1=round($sync_bardata["hashrate"]/1000)}
-{$sync_2=round($sync_bardata["network_hashrate"]/1000/1000/1000)}
-{$sync_3=$sync_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/sync/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【SYNC】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$sync_1} MH/s | 全网 {$sync_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$sync_3} 个</li>
+{$super_bardata_no='http://mpos.freeyy.me/super/public/index.php?page=api&action=public'|file_get_contents}
+{$super_bardata=$super_bardata_no|json_decode:true}
+{$super_1=round($super_bardata["hashrate"]/1000)}
+{$super_2=round($super_bardata["network_hashrate"]/1000/1000/1000)}
+{$super_3=$super_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/super/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【SUPER】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$super_1} MH/s | 全网 {$super_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$super_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$twc_bardata_no='http://mpos.freeyy.me/twc/public/index.php?page=api&action=public'|file_get_contents}
