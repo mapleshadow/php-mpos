@@ -40,7 +40,7 @@
 {$ctz_1=round($ctz_bardata["hashrate"]/1000)}
 {$ctz_2=round($ctz_bardata["network_hashrate"]/1000/1000/1000)}
 {$ctz_3=$ctz_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/ctz/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CTZ】首页</a></li>
+                          <li><a href="http://mpos.freeyy.me/ctz/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CTZ】首页-需挖矿8小时以上</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$ctz_1} MH/s | 全网 {$ctz_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$ctz_3} 个</li>
 <!-- 币信息-结束 -->
@@ -50,7 +50,7 @@
 {$dis_1=round($dis_bardata["hashrate"]/1000)}
 {$dis_2=round($dis_bardata["network_hashrate"]/1000/1000/1000)}
 {$dis_3=$dis_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/dis/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【DIS】首页</a></li>
+                          <li><a href="http://mpos.freeyy.me/dis/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【DIS】首页-需挖矿8小时以上</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$dis_1} MH/s | 全网 {$dis_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$dis_3} 个</li>
 <!-- 币信息-结束 -->
