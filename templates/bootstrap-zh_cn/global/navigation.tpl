@@ -25,16 +25,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$bee2_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$cc_bardata_no='http://mpos.freeyy.me/cc/public/index.php?page=api&action=public'|file_get_contents}
-{$cc_bardata=$cc_bardata_no|json_decode:true}
-{$cc_1=round($cc_bardata["hashrate"]/1000)}
-{$cc_2=round($cc_bardata["network_hashrate"]/1000/1000/1000)}
-{$cc_3=$cc_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/cc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CC】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$cc_1} MH/s | 全网 {$cc_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$cc_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$ctz_bardata_no='http://mpos.freeyy.me/ctz/public/index.php?page=api&action=public'|file_get_contents}
 {$ctz_bardata=$ctz_bardata_no|json_decode:true}
 {$ctz_1=round($ctz_bardata["hashrate"]/1000)}
@@ -316,6 +306,9 @@
                         <ul class="nav nav-second-level">
 <!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【AV】</b></font></li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+                          <li><font COLOR="#FF0000"><b>已经沦为认购币POS【CC】</b></font></li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【BDG】</b></font></li>
