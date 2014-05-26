@@ -135,16 +135,14 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mast_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$mun_bardata_no='http://mpos.freeyy.me/mun/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
+{$mun_bardata_no='http://mpos.freeyy.me/mun/public/index.php?page=api&action=public'|file_get_contents}
 {$mun_bardata=$mun_bardata_no|json_decode:true}
-{$mun_pool1=$mun_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$mun_pool2=$mun_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$mun_network1=$mun_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$mun_network2=$mun_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$mun_network3=$mun_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
+{$mun_1=round($mun_bardata["hashrate"]/1000)}
+{$mun_2=round($mun_bardata["network_hashrate"]/1000/1000/1000)}
+{$mun_3=$mun_bardata["workers"]}
                           <li><a href="http://mpos.freeyy.me/mun/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MUN】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$mun_pool1} {$mun_pool2} 全网{$mun_network1} {$mun_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$mun_network3}</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mun_1} MH/s | 全网 {$mun_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$qbc_bardata_no='http://mpos.freeyy.me/qbc/public/index.php?page=api&action=public'|file_get_contents}
