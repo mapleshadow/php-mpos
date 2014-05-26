@@ -307,14 +307,7 @@
                             <a href="#"><i class="fa fa-tasks fa-fw"></i> 只能认购不能挖矿的币汇总<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
 <!-- 币信息-开始 -->
-{$av_bardata_no='http://mpos.freeyy.me/av/public/index.php?page=api&action=public'|file_get_contents}
-{$av_bardata=$av_bardata_no|json_decode:true}
-{$av_1=round($av_bardata["hashrate"]/1000)}
-{$av_2=round($av_bardata["network_hashrate"]/1000/1000/1000)}
-{$av_3=$av_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/av/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【AV】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$av_1} MH/s | 全网 {$av_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$av_3} 个</li>
+                          <li><font COLOR="#FF0000"><b>已经沦为认购币POS【AV】</b></font></li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【BDG】</b></font></li>
@@ -329,14 +322,7 @@
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【WEST】</b></font></li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$win_bardata_no='http://mpos.freeyy.me/win/public/index.php?page=api&action=public'|file_get_contents}
-{$win_bardata=$win_bardata_no|json_decode:true}
-{$win_1=round($win_bardata["hashrate"]/1000)}
-{$win_2=round($win_bardata["network_hashrate"]/1000/1000/1000)}
-{$win_3=$win_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/win/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【WIN】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$win_1} MH/s | 全网 {$win_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$win_3} 个</li>
+                          <li><font COLOR="#FF0000"><b>已经沦为认购币POS【WIN】</b></font></li>
 <!-- 币信息-结束 -->
                         </ul>
                         <!-- /.nav-second-level -->
