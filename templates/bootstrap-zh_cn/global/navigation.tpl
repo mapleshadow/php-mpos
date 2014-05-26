@@ -125,6 +125,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$lim_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$mast_bardata_no='http://mpos.freeyy.me/mast/public/index.php?page=api&action=public'|file_get_contents}
+{$mast_bardata=$mast_bardata_no|json_decode:true}
+{$mast_1=round($mast_bardata["hashrate"]/1000)}
+{$mast_2=round($mast_bardata["network_hashrate"]/1000/1000/1000)}
+{$mast_3=$mast_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/mast/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MAST】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mast_1} MH/s | 全网 {$mast_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mast_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$mun_bardata_no='http://mpos.freeyy.me/mun/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
 {$mun_bardata=$mun_bardata_no|json_decode:true}
 {$mun_pool1=$mun_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
