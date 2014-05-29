@@ -186,16 +186,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>-本地{$vc_pool1} {$vc_pool2} 全网{$vc_network1} {$vc_network2}</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$vc_network3}</li>
 <!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$xc_bardata_no='http://mpos.freeyy.me/xc/public/index.php?page=api&action=public'|file_get_contents}
-{$xc_bardata=$xc_bardata_no|json_decode:true}
-{$xc_1=round($xc_bardata["hashrate"]/1000)}
-{$xc_2=round($xc_bardata["network_hashrate"]/1000/1000/1000)}
-{$xc_3=$xc_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/xc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【XC】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$xc_1} MH/s | 全网 {$xc_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$xc_3} 个</li>
-<!-- 币信息-结束 -->
                         </ul>
                         <!-- /.nav-second-level -->
                     </li><!-- 多矿池算力监控 -->
@@ -334,6 +324,9 @@
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【WIN】</b></font></li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+                          <li><font COLOR="#FF0000"><b>已经沦为认购币POS【XC】</b></font></li>
 <!-- 币信息-结束 -->
                         </ul>
                         <!-- /.nav-second-level -->
