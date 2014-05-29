@@ -95,6 +95,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$jug_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$ltcx_bardata_no='http://mpos.freeyy.me/ltcx/public/index.php?page=api&action=public'|file_get_contents}
+{$ltcx_bardata=$ltcx_bardata_no|json_decode:true}
+{$ltcx_1=round($ltcx_bardata["hashrate"]/1000)}
+{$ltcx_2=round($ltcx_bardata["network_hashrate"]/1000/1000/1000)}
+{$ltcx_3=$ltcx_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/ltcx/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【LTCX】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$ltcx_1} MH/s | 全网 {$ltcx_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$ltcx_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$lgc_bardata_no='http://mpos.freeyy.me/lgc/public/index.php?page=api&action=public'|file_get_contents}
 {$lgc_bardata=$lgc_bardata_no|json_decode:true}
 {$lgc_1=round($lgc_bardata["hashrate"]/1000)}
