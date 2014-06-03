@@ -35,6 +35,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$ctz_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$cry_bardata_no='http://mpos.freeyy.me/cry/public/index.php?page=api&action=public'|file_get_contents}
+{$cry_bardata=$cry_bardata_no|json_decode:true}
+{$cry_1=round($cry_bardata["hashrate"]/1000)}
+{$cry_2=round($cry_bardata["network_hashrate"]/1000/1000/1000)}
+{$cry_3=$cry_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/cry/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CRY】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$cry_1} MH/s | 全网 {$cry_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$cry_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$dis_bardata_no='http://mpos.freeyy.me/dis/public/index.php?page=api&action=public'|file_get_contents}
 {$dis_bardata=$dis_bardata_no|json_decode:true}
 {$dis_1=round($dis_bardata["hashrate"]/1000)}
@@ -123,16 +133,6 @@
                           <li><a href="http://mpos.freeyy.me/lim/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【LIM】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$lim_1} MH/s | 全网 {$lim_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$lim_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$mast_bardata_no='http://mpos.freeyy.me/mast/public/index.php?page=api&action=public'|file_get_contents}
-{$mast_bardata=$mast_bardata_no|json_decode:true}
-{$mast_1=round($mast_bardata["hashrate"]/1000)}
-{$mast_2=round($mast_bardata["network_hashrate"]/1000/1000/1000)}
-{$mast_3=$mast_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/mast/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MAST】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mast_1} MH/s | 全网 {$mast_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mast_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$mun_bardata_no='http://mpos.freeyy.me/mun/public/index.php?page=api&action=public'|file_get_contents}
