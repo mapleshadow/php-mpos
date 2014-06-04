@@ -75,6 +75,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$gdn_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$grn_bardata_no='http://mpos.freeyy.me/grn/public/index.php?page=api&action=public'|file_get_contents}
+{$grn_bardata=$grn_bardata_no|json_decode:true}
+{$grn_1=round($grn_bardata["hashrate"]/1000)}
+{$grn_2=round($grn_bardata["network_hashrate"]/1000/1000/1000)}
+{$grn_3=$grn_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/grn/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【GRN】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$grn_1} MH/s | 全网 {$grn_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$grn_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$give_bardata_no='http://mpos.freeyy.me/give/public/index.php?page=api&action=public'|file_get_contents}
 {$give_bardata=$give_bardata_no|json_decode:true}
 {$give_1=round($give_bardata["hashrate"]/1000)}
@@ -183,18 +193,6 @@
                           <li><a href="http://mpos.freeyy.me/twc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【TWC】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$twc_1} MH/s | 全网 {$twc_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$twc_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$vc_bardata_no='http://mpos.freeyy.me/vc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$vc_bardata=$vc_bardata_no|json_decode:true}
-{$vc_pool1=$vc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$vc_pool2=$vc_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$vc_network1=$vc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$vc_network2=$vc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$vc_network3=$vc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/vc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【VC】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$vc_pool1} {$vc_pool2} 全网{$vc_network1} {$vc_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$vc_network3}</li>
 <!-- 币信息-结束 -->
                         </ul>
                         <!-- /.nav-second-level -->
