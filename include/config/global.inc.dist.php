@@ -119,9 +119,9 @@ $config['price']['currency'] = 'USD';
  * 自动付款最小限度和最大限度
  **/
 #$config['ap_threshold']['min'] = 1;
-$config['ap_threshold']['min'] = 1000000;
+$config['ap_threshold']['min'] = 100;
 #$config['ap_threshold']['max'] = 250;
-$config['ap_threshold']['max'] = 2500000;
+$config['ap_threshold']['max'] = 6000000;
 
 /**
  * Minimum manual Payout Threshold
