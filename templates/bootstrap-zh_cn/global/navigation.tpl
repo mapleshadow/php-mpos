@@ -15,16 +15,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$drk_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$bcat_bardata_no='http://mpos.freeyy.me/bcat/public/index.php?page=api&action=public'|file_get_contents}
-{$bcat_bardata=$bcat_bardata_no|json_decode:true}
-{$bcat_1=round($bcat_bardata["hashrate"]/1000)}
-{$bcat_2=round($bcat_bardata["network_hashrate"]/1000/1000/1000)}
-{$bcat_3=$bcat_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/bcat/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【BCAT】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$bcat_1} MH/s | 全网 {$bcat_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$bcat_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$bee2_bardata_no='http://mpos.freeyy.me/bee2/public/index.php?page=api&action=public'|file_get_contents}
 {$bee2_bardata=$bee2_bardata_no|json_decode:true}
 {$bee2_1=round($bee2_bardata["hashrate"]/1000)}
@@ -314,6 +304,16 @@
                         <ul class="nav nav-second-level">
 <!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【AV】</b></font></li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$bcat_bardata_no='http://mpos.freeyy.me/bcat/public/index.php?page=api&action=public'|file_get_contents}
+{$bcat_bardata=$bcat_bardata_no|json_decode:true}
+{$bcat_1=round($bcat_bardata["hashrate"]/1000)}
+{$bcat_2=round($bcat_bardata["network_hashrate"]/1000/1000/1000)}
+{$bcat_3=$bcat_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/bcat/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【BCAT】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$bcat_1} MH/s | 全网 {$bcat_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$bcat_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【CC】</b></font></li>
