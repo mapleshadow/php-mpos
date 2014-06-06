@@ -22,11 +22,13 @@
             <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
             <input type="text" class="form-control" name="username" placeholder="Username" value="{$smarty.post.username|escape|default:""}" size="15" maxlength="20" required>
           </div>
+          {if $GLOBAL.coinaddresscheck|default:"1"}
           <label>币地址</label>
           <div class="input-group input-group-sm">
             <span class="input-group-addon"><i class="fa fa-money fa-fw"></i></span>
             <input type="text" name="coinaddress" placeholder="Coin Address" class="form-control" value="{$smarty.post.coinaddress|escape|default:""}" size="15" required>
           </div>
+          {/if}
           <label>密码</label> (<span id="pw_strength">强度</span>)
           <div class="input-group input-group-sm">
             <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>

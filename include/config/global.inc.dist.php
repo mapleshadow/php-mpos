@@ -9,13 +9,21 @@ $defflip = (!cfip()) ? exit(header('HTTP/1.1 401 Unauthorized')) : 1;
  * 升级完毕
  **/
 $config['version'] = '0.0.8';
-$config['version_url'] = 'https://raw.githubusercontent.com/MPOS/php-mpos/master/public/include/version.inc.php';
+$config['version_url'] = 'https://raw.githubusercontent.com/MPOS/php-mpos/master/include/version.inc.php';
 
 /**
  * Unless you disable this, we'll do a quick check on your config first.
  *  https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-config-check
  */
 $config['skip_config_tests'] = false;
+
+/**
+ * Unless you disable this, we'll do a check for a valid coin address on registration.
+ *  https://github.com/MPOS/php-mpos/wiki/Config-Setup#check-for-valid-wallet-address
+ * 开启注册是是否检测币地址
+ */
+#$config['check_valid_coinaddress'] = true;
+$config['check_valid_coinaddress'] = false;
 
 /**
  * Defines
@@ -31,7 +39,7 @@ $config['SALTY'] = 'THISSHOULDALSOBERRAANNDDOOM';
 
 /**
   * Coin Algorithm
-  *  Algorithm used by this coin, sha256d or scrypt
+  *  Algorithm used by this coin, sha256d or scrypt x11 scryptn
   *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-algorithm
   * 币种的算法
   * sha256d: Bitcoin and similar ones.
@@ -199,8 +207,8 @@ $config['coindiffchangetarget'] = 2016;
  **/
 #$config['txfee_auto'] = 0.1;
 #$config['txfee_manual'] = 0.1;
-$config['txfee_auto'] = 0.001;
-$config['txfee_manual'] = 0.001;
+$config['txfee_auto'] = 0.0002;
+$config['txfee_manual'] = 0.0002;
 
 /**
  * Block & Pool Bonus
