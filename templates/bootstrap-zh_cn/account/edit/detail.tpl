@@ -31,10 +31,11 @@
               {nocache}<input class="form-control" type="text" name="email" value="{$GLOBAL.userdata.email|escape}" size="20" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}/>{/nocache}
             </div>
             <div class="form-group">
-              <label>Timezone</label>
+              <label>时区</label>
               {nocache}
               <select class="form-control select-mini" name="timezone" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}>
                 {html_options options=$TIMEZONES selected=$GLOBAL.userdata.timezone}
+                <option value="273" selected="selected">Asia/Shanghai</option>
               </select>
               {/nocache}
             </div>
