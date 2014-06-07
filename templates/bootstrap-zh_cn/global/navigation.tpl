@@ -150,7 +150,7 @@
 {$muga_1=round($muga_bardata["hashrate"]/1000)}
 {$muga_2=round($muga_bardata["network_hashrate"]/1000/1000/1000)}
 {$muga_3=$muga_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/bcat/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MUGA】首页</a></li>
+                          <li><a href="http://mpos.freeyy.me/muga/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MUGA】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$muga_1} MH/s | 全网 {$muga_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$muga_3} 个</li>
 <!-- 币信息-结束 -->
