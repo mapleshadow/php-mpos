@@ -35,7 +35,6 @@
               {nocache}
               <select class="form-control select-mini" name="timezone" {if $GLOBAL.twofactor.enabled && $GLOBAL.twofactor.options.details && !$DETAILSUNLOCKED}id="disabledInput" disabled{/if}>
                 {html_options options=$TIMEZONES selected=$GLOBAL.userdata.timezone}
-                <option value="273" selected="selected">Asia/Shanghai</option>
               </select>
               {/nocache}
             </div>
