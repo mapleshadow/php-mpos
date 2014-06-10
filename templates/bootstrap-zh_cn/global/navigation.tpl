@@ -65,6 +65,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$give_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$give1_bardata_no='http://mpos.freeyy.me/glyph/public/index.php?page=api&action=public'|file_get_contents}
+{$give1_bardata=$give1_bardata_no|json_decode:true}
+{$give1_1=round($give1_bardata["hashrate"]/1000)}
+{$give1_2=round($give1_bardata["network_hashrate"]/1000/1000/1000)}
+{$give1_3=$give1_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/glyph/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【GLYPH】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$give1_1} MH/s | 全网 {$give1_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$give1_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$h5c_bardata_no='http://mpos.freeyy.me/h5c/public/index.php?page=api&action=public'|file_get_contents}
 {$h5c_bardata=$h5c_bardata_no|json_decode:true}
 {$h5c_1=round($h5c_bardata["hashrate"]/1000)}
