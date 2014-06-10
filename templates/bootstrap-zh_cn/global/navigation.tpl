@@ -95,6 +95,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$jug_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$kiwi_bardata_no='http://mpos.freeyy.me/kiwi/public/index.php?page=api&action=public'|file_get_contents}
+{$kiwi_bardata=$kiwi_bardata_no|json_decode:true}
+{$kiwi_1=round($kiwi_bardata["hashrate"]/1000)}
+{$kiwi_2=round($kiwi_bardata["network_hashrate"]/1000/1000/1000)}
+{$kiwi_3=$kiwi_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/kiwi/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【KIWI】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$kiwi_1} MH/s | 全网 {$kiwi_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$kiwi_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$lol_bardata_no='http://mpos.freeyy.me/lol/public/index.php?page=api&action=public'|file_get_contents}
 {$lol_bardata=$lol_bardata_no|json_decode:true}
 {$lol_1=round($lol_bardata["hashrate"]/1000)}
