@@ -15,16 +15,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$drk_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$bee2_bardata_no='http://mpos.freeyy.me/bee2/public/index.php?page=api&action=public'|file_get_contents}
-{$bee2_bardata=$bee2_bardata_no|json_decode:true}
-{$bee2_1=round($bee2_bardata["hashrate"]/1000)}
-{$bee2_2=round($bee2_bardata["network_hashrate"]/1000/1000/1000)}
-{$bee2_3=$bee2_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/bee2/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【BEE2】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$bee2_1} MH/s | 全网 {$bee2_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$bee2_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$ctz_bardata_no='http://mpos.freeyy.me/ctz/public/index.php?page=api&action=public'|file_get_contents}
 {$ctz_bardata=$ctz_bardata_no|json_decode:true}
 {$ctz_1=round($ctz_bardata["hashrate"]/1000)}
@@ -105,6 +95,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$jug_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$lol_bardata_no='http://mpos.freeyy.me/lol/public/index.php?page=api&action=public'|file_get_contents}
+{$lol_bardata=$lol_bardata_no|json_decode:true}
+{$lol_1=round($lol_bardata["hashrate"]/1000)}
+{$lol_2=round($lol_bardata["network_hashrate"]/1000/1000/1000)}
+{$lol_3=$lol_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/lol/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【LOL】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$lol_1} MH/s | 全网 {$lol_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$lol_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$ltcx_bardata_no='http://mpos.freeyy.me/ltcx/public/index.php?page=api&action=public'|file_get_contents}
 {$ltcx_bardata=$ltcx_bardata_no|json_decode:true}
 {$ltcx_1=round($ltcx_bardata["hashrate"]/1000)}
@@ -125,12 +125,12 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$lgc_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$lim_bardata_no='http://mpos.freeyy.me/lim/public/index.php?page=api&action=public'|file_get_contents}
+{$lim_bardata_no='http://mpos.freeyy.me/limx/public/index.php?page=api&action=public'|file_get_contents}
 {$lim_bardata=$lim_bardata_no|json_decode:true}
 {$lim_1=round($lim_bardata["hashrate"]/1000)}
 {$lim_2=round($lim_bardata["network_hashrate"]/1000/1000/1000)}
 {$lim_3=$lim_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/lim/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【LIM】首页</a></li>
+                          <li><a href="http://mpos.freeyy.me/limx/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【LIMX】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$lim_1} MH/s | 全网 {$lim_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$lim_3} 个</li>
 <!-- 币信息-结束 -->
@@ -143,16 +143,6 @@
                           <li><a href="http://mpos.freeyy.me/mun/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MUN】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mun_1} MH/s | 全网 {$mun_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$muga_bardata_no='http://mpos.freeyy.me/muga/public/index.php?page=api&action=public'|file_get_contents}
-{$muga_bardata=$muga_bardata_no|json_decode:true}
-{$muga_1=round($muga_bardata["hashrate"]/1000)}
-{$muga_2=round($muga_bardata["network_hashrate"]/1000/1000/1000)}
-{$muga_3=$muga_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/muga/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MUGA】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$muga_1} MH/s | 全网 {$muga_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$muga_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$mhyc_bardata_no='http://mpos.freeyy.me/mhyc/public/index.php?page=api&action=public'|file_get_contents}
@@ -323,30 +313,25 @@
                             <a href="#"><i class="fa fa-tasks fa-fw"></i> 只能认购不能挖矿的币汇总<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
 <!-- 币信息-开始 -->
+{$muga_bardata_no='http://mpos.freeyy.me/muga/public/index.php?page=api&action=public'|file_get_contents}
+{$muga_bardata=$muga_bardata_no|json_decode:true}
+{$muga_1=round($muga_bardata["hashrate"]/1000)}
+{$muga_2=round($muga_bardata["network_hashrate"]/1000/1000/1000)}
+{$muga_3=$muga_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/muga/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MUGA】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$muga_1} MH/s | 全网 {$muga_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$muga_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【AV】</b></font></li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【CC】</b></font></li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【BCAT】</b></font></li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【BDG】</b></font></li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【ERC】</b></font></li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
+                          <li><font COLOR="#FF0000"><b>已经沦为认购币POS【MUGA】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【RTC】</b></font></li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【WEST】</b></font></li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【WIN】</b></font></li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【XC】</b></font></li>
 <!-- 币信息-结束 -->
                         </ul>
