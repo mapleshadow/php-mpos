@@ -195,6 +195,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$super_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$mun2_bardata_no='http://mpos.freeyy.me/trk/public/index.php?page=api&action=public'|file_get_contents}
+{$mun2_bardata=$mun2_bardata_no|json_decode:true}
+{$mun2_1=round($mun2_bardata["hashrate"]/1000)}
+{$mun2_2=round($mun2_bardata["network_hashrate"]/1000/1000/1000)}
+{$mun2_3=$mun2_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/trk/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【TRK】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mun2_1} MH/s | 全网 {$mun2_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun2_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$twc_bardata_no='http://mpos.freeyy.me/twc/public/index.php?page=api&action=public'|file_get_contents}
 {$twc_bardata=$twc_bardata_no|json_decode:true}
 {$twc_1=round($twc_bardata["hashrate"]/1000)}
