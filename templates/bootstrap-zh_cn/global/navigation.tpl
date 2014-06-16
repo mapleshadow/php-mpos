@@ -125,6 +125,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$lol_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$lol1_bardata_no='http://mpos.freeyy.me/lion/public/index.php?page=api&action=public'|file_get_contents}
+{$lol1_bardata=$lol1_bardata_no|json_decode:true}
+{$lol1_1=round($lol1_bardata["hashrate"]/1000)}
+{$lol1_2=round($lol1_bardata["network_hashrate"]/1000/1000/1000)}
+{$lol1_3=$lol1_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/lion/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【LION】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$lol1_1} MH/s | 全网 {$lol1_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$lol1_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$ltcx_bardata_no='http://mpos.freeyy.me/ltcx/public/index.php?page=api&action=public'|file_get_contents}
 {$ltcx_bardata=$ltcx_bardata_no|json_decode:true}
 {$ltcx_1=round($ltcx_bardata["hashrate"]/1000)}
