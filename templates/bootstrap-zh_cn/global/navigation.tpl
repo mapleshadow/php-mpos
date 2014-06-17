@@ -175,6 +175,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$mun1_bardata_no='http://mpos.freeyy.me/mil/public/index.php?page=api&action=public'|file_get_contents}
+{$mun1_bardata=$mun1_bardata_no|json_decode:true}
+{$mun1_1=round($mun1_bardata["hashrate"]/1000)}
+{$mun1_2=round($mun1_bardata["network_hashrate"]/1000/1000/1000)}
+{$mun1_3=$mun1_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/mil/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MIL】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mun1_1} MH/s | 全网 {$mun1_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun1_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$mhyc_bardata_no='http://mpos.freeyy.me/mhyc/public/index.php?page=api&action=public'|file_get_contents}
 {$mhyc_bardata=$mhyc_bardata_no|json_decode:true}
 {$mhyc_1=round($mhyc_bardata["hashrate"]/1000)}
