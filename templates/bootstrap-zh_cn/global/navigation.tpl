@@ -115,16 +115,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$kiwi_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$lol_bardata_no='http://mpos.freeyy.me/lol/public/index.php?page=api&action=public'|file_get_contents}
-{$lol_bardata=$lol_bardata_no|json_decode:true}
-{$lol_1=round($lol_bardata["hashrate"]/1000)}
-{$lol_2=round($lol_bardata["network_hashrate"]/1000/1000/1000)}
-{$lol_3=$lol_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/lol/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【LOL】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$lol_1} MH/s | 全网 {$lol_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$lol_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$lol1_bardata_no='http://mpos.freeyy.me/lion/public/index.php?page=api&action=public'|file_get_contents}
 {$lol1_bardata=$lol1_bardata_no|json_decode:true}
 {$lol1_1=round($lol1_bardata["hashrate"]/1000)}
@@ -373,11 +363,22 @@
                             <a href="#"><i class="fa fa-tasks fa-fw"></i> 只能认购不能挖矿的币汇总<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
 <!-- 币信息-开始 -->
+{$lol_bardata_no='http://mpos.freeyy.me/lol/public/index.php?page=api&action=public'|file_get_contents}
+{$lol_bardata=$lol_bardata_no|json_decode:true}
+{$lol_1=round($lol_bardata["hashrate"]/1000)}
+{$lol_2=round($lol_bardata["network_hashrate"]/1000/1000/1000)}
+{$lol_3=$lol_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/lol/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【LOL】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$lol_1} MH/s | 全网 {$lol_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$lol_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【AV】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【CC】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【BCAT】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【BDG】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【ERC】</b></font></li>
+                          <li><font COLOR="#FF0000"><b>已经沦为认购币POS【LOL】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【MUGA】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【RTC】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【WEST】</b></font></li>
