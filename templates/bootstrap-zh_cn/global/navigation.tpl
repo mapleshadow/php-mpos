@@ -363,6 +363,7 @@
                             <a href="#"><i class="fa fa-tasks fa-fw"></i> 只能认购不能挖矿的币汇总<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
 <!-- 币信息-开始 -->
+<!--
 {$lol_bardata_no='http://mpos.freeyy.me/lol/public/index.php?page=api&action=public'|file_get_contents}
 {$lol_bardata=$lol_bardata_no|json_decode:true}
 {$lol_1=round($lol_bardata["hashrate"]/1000)}
@@ -371,6 +372,7 @@
                           <li><a href="http://mpos.freeyy.me/lol/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【LOL】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$lol_1} MH/s | 全网 {$lol_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$lol_3} 个</li>
+-->
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【AV】</b></font></li>
