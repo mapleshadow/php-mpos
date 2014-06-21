@@ -195,16 +195,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$qbc_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$super_bardata_no='http://mpos.freeyy.me/super/public/index.php?page=api&action=public'|file_get_contents}
-{$super_bardata=$super_bardata_no|json_decode:true}
-{$super_1=round($super_bardata["hashrate"]/1000)}
-{$super_2=round($super_bardata["network_hashrate"]/1000/1000/1000)}
-{$super_3=$super_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/super/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【SUPER】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$super_1} MH/s | 全网 {$super_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$super_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$mun2_bardata_no='http://mpos.freeyy.me/trk/public/index.php?page=api&action=public'|file_get_contents}
 {$mun2_bardata=$mun2_bardata_no|json_decode:true}
 {$mun2_1=round($mun2_bardata["hashrate"]/1000)}
@@ -373,6 +363,16 @@
                             <a href="#"><i class="fa fa-tasks fa-fw"></i> 只能认购不能挖矿的币汇总<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
 <!-- 币信息-开始 -->
+{$super_bardata_no='http://mpos.freeyy.me/super/public/index.php?page=api&action=public'|file_get_contents}
+{$super_bardata=$super_bardata_no|json_decode:true}
+{$super_1=round($super_bardata["hashrate"]/1000)}
+{$super_2=round($super_bardata["network_hashrate"]/1000/1000/1000)}
+{$super_3=$super_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/super/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【SUPER】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$super_1} MH/s | 全网 {$super_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$super_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【AV】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【CC】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【BCAT】</b></font></li>
@@ -381,6 +381,7 @@
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【LOL】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【MUGA】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【RTC】</b></font></li>
+                          <li><font COLOR="#FF0000"><b>已经沦为认购币POS【SUPER】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【WEST】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【WIN】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【XC】</b></font></li>
