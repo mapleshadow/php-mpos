@@ -15,16 +15,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$drk_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$ctz_bardata_no='http://mpos.freeyy.me/ctz/public/index.php?page=api&action=public'|file_get_contents}
-{$ctz_bardata=$ctz_bardata_no|json_decode:true}
-{$ctz_1=round($ctz_bardata["hashrate"]/1000)}
-{$ctz_2=round($ctz_bardata["network_hashrate"]/1000/1000/1000)}
-{$ctz_3=$ctz_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/ctz/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CTZ】首页-需挖矿8小时以上</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$ctz_1} MH/s | 全网 {$ctz_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$ctz_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$cry_bardata_no='http://mpos.freeyy.me/cry/public/index.php?page=api&action=public'|file_get_contents}
 {$cry_bardata=$cry_bardata_no|json_decode:true}
 {$cry_1=round($cry_bardata["hashrate"]/1000)}
@@ -175,16 +165,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun1_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$mhyc_bardata_no='http://mpos.freeyy.me/mhyc/public/index.php?page=api&action=public'|file_get_contents}
-{$mhyc_bardata=$mhyc_bardata_no|json_decode:true}
-{$mhyc_1=round($mhyc_bardata["hashrate"]/1000)}
-{$mhyc_2=round($mhyc_bardata["network_hashrate"]/1000/1000/1000)}
-{$mhyc_3=$mhyc_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/mhyc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MHYC】首页-又是8小时</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mhyc_1} MH/s | 全网 {$mhyc_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mhyc_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$qbc_bardata_no='http://mpos.freeyy.me/qbc/public/index.php?page=api&action=public'|file_get_contents}
 {$qbc_bardata=$qbc_bardata_no|json_decode:true}
 {$qbc_1=round($qbc_bardata["hashrate"]/1000)}
@@ -193,16 +173,6 @@
                           <li><a href="http://mpos.freeyy.me/qbc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【QBC】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$qbc_1} MH/s | 全网 {$qbc_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$qbc_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$mun2_bardata_no='http://mpos.freeyy.me/trk/public/index.php?page=api&action=public'|file_get_contents}
-{$mun2_bardata=$mun2_bardata_no|json_decode:true}
-{$mun2_1=round($mun2_bardata["hashrate"]/1000)}
-{$mun2_2=round($mun2_bardata["network_hashrate"]/1000/1000/1000)}
-{$mun2_3=$mun2_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/trk/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【TRK】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mun2_1} MH/s | 全网 {$mun2_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun2_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$twc_bardata_no='http://mpos.freeyy.me/twc/public/index.php?page=api&action=public'|file_get_contents}
@@ -234,128 +204,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mun21_1} MH/s | 全网 {$mun21_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun21_3} 个</li>
 <!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$ymc_bardata_no='http://mpos.freeyy.me/ymc/public/index.php?page=api&action=public'|file_get_contents}
-{$ymc_bardata=$ymc_bardata_no|json_decode:true}
-{$ymc_1=round($ymc_bardata["hashrate"]/1000)}
-{$ymc_2=round($ymc_bardata["network_hashrate"]/1000/1000/1000)}
-{$ymc_3=$ymc_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/ymc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【YMC】首页-又是8小时</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$ymc_1} MH/s | 全网 {$ymc_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$ymc_3} 个</li>
-<!-- 币信息-结束 -->
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li><!-- 多矿池算力监控 -->
-                    <li><!-- 多矿池算力监控 -->
-                        <a href="#"><i class="fa fa-tasks fa-fw"></i> N-Scrypt算法矿池<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-<!-- 币信息-开始 -->
-{$105_bardata_no='http://mpos.freeyy.me/10-5/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$105_bardata=$105_bardata_no|json_decode:true}
-{$105_pool1=$105_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$105_pool2=$105_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$105_network1=$105_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$105_network2=$105_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$105_network3=$105_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/10-5/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【10-5】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$105_pool1} {$105_pool2} 全网{$105_network1} {$105_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$105_network3}</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$alt_bardata_no='http://mpos.freeyy.me/alt/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$alt_bardata=$alt_bardata_no|json_decode:true}
-{$alt_pool1=$alt_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$alt_pool2=$alt_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$alt_network1=$alt_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$alt_network2=$alt_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$alt_network3=$alt_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/alt/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【ALT】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$alt_pool1} {$alt_pool2} 全网{$alt_network1} {$alt_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$alt_network3}</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$catc_bardata_no='http://mpos.freeyy.me/catc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$catc_bardata=$catc_bardata_no|json_decode:true}
-{$catc_pool1=$catc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$catc_pool2=$catc_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$catc_network1=$catc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$catc_network2=$catc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$catc_network3=$catc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/catc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CATC】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$catc_pool1} {$catc_pool2} 全网{$catc_network1} {$catc_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$catc_network3}</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$exe_bardata_no='http://mpos.freeyy.me/exe/public/index.php?page=api&action=public'|file_get_contents}
-{$exe_bardata=$exe_bardata_no|json_decode:true}
-{$exe_1=round($exe_bardata["hashrate"]/1000)}
-{$exe_2=round($exe_bardata["network_hashrate"]/1000/1000)}
-{$exe_3=$exe_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/exe/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【EXE】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$exe_1} MH/s | 全网 {$exe_2} MH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$exe_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$gpuc_bardata_no='http://mpos.freeyy.me/gpuc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$gpuc_bardata=$gpuc_bardata_no|json_decode:true}
-{$gpuc_pool1=$gpuc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$gpuc_pool2=$gpuc_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$gpuc_network1=$gpuc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$gpuc_network2=$gpuc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$gpuc_network3=$gpuc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/gpuc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【GPUC】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$gpuc_pool1} {$gpuc_pool2} 全网{$gpuc_network1} {$gpuc_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$gpuc_network3}</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$gns_bardata_no='http://mpos.freeyy.me/gns/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$gns_bardata=$gns_bardata_no|json_decode:true}
-{$gns_pool1=$gns_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$gns_pool2=$gns_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$gns_network1=$gns_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$gns_network2=$gns_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$gns_network3=$gns_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/gns/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【GNS】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$gns_pool1} {$gns_pool2} 全网{$gns_network1} {$gns_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$gns_network3}</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$kmc_bardata_no='http://mpos.freeyy.me/kmc/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$kmc_bardata=$kmc_bardata_no|json_decode:true}
-{$kmc_pool1=$kmc_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$kmc_pool2=$kmc_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$kmc_network1=$kmc_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$kmc_network2=$kmc_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$kmc_network3=$kmc_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/kmc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【KMC】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$kmc_pool1} {$kmc_pool2} 全网{$kmc_network1} {$kmc_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$kmc_network3}</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$pand_bardata_no='http://mpos.freeyy.me/pand/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$pand_bardata=$pand_bardata_no|json_decode:true}
-{$pand_pool1=$pand_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$pand_pool2=$pand_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$pand_network1=$pand_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$pand_network2=$pand_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$pand_network3=$pand_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/pand/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【PAND】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$pand_pool1} {$pand_pool2} 全网{$pand_network1} {$pand_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$pand_network3}</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$spa_bardata_no='http://mpos.freeyy.me/spa/public/index.php?page=api&action=getnavbardata&api_key=a0207fa194be74fce663b8a27143a7547a0476705e445935f9baeda563a26668'|file_get_contents}
-{$spa_bardata=$spa_bardata_no|json_decode:true}
-{$spa_pool1=$spa_bardata["getnavbardata"]["data"]["pool"]["hashrate"]}
-{$spa_pool2=$spa_bardata["getnavbardata"]["data"]["pool"]["hashratemodifiername"]}
-{$spa_network1=$spa_bardata["getnavbardata"]["data"]["network"]["hashrate"]}
-{$spa_network2=$spa_bardata["getnavbardata"]["data"]["network"]["hashratemodifiername"]}
-{$spa_network3=$spa_bardata["getnavbardata"]["data"]["network"]["difficulty"]}
-                          <li><a href="http://mpos.freeyy.me/spa/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【SPA】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-本地{$spa_pool1} {$spa_pool2} 全网{$spa_network1} {$spa_network2}</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>-当前难度{$spa_network3}</li>
-<!-- 币信息-结束 -->
                         </ul>
                         <!-- /.nav-second-level -->
                     </li><!-- 多矿池算力监控 -->
@@ -385,6 +233,52 @@
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【WEST】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【WIN】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【XC】</b></font></li>
+<!-- 币信息-结束 -->
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li><!-- 多矿池算力监控 -->
+                    <li><!-- 多矿池算力监控 -->
+                            <a href="#"><i class="fa fa-tasks fa-fw"></i> 奇怪不出块的币汇总<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+<!-- 币信息-开始 -->
+{$ctz_bardata_no='http://mpos.freeyy.me/ctz/public/index.php?page=api&action=public'|file_get_contents}
+{$ctz_bardata=$ctz_bardata_no|json_decode:true}
+{$ctz_1=round($ctz_bardata["hashrate"]/1000)}
+{$ctz_2=round($ctz_bardata["network_hashrate"]/1000/1000/1000)}
+{$ctz_3=$ctz_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/ctz/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CTZ】首页-需挖矿8小时以上</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$ctz_1} MH/s | 全网 {$ctz_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$ctz_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$mhyc_bardata_no='http://mpos.freeyy.me/mhyc/public/index.php?page=api&action=public'|file_get_contents}
+{$mhyc_bardata=$mhyc_bardata_no|json_decode:true}
+{$mhyc_1=round($mhyc_bardata["hashrate"]/1000)}
+{$mhyc_2=round($mhyc_bardata["network_hashrate"]/1000/1000/1000)}
+{$mhyc_3=$mhyc_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/mhyc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MHYC】首页-又是8小时</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mhyc_1} MH/s | 全网 {$mhyc_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mhyc_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$mun2_bardata_no='http://mpos.freeyy.me/trk/public/index.php?page=api&action=public'|file_get_contents}
+{$mun2_bardata=$mun2_bardata_no|json_decode:true}
+{$mun2_1=round($mun2_bardata["hashrate"]/1000)}
+{$mun2_2=round($mun2_bardata["network_hashrate"]/1000/1000/1000)}
+{$mun2_3=$mun2_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/trk/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【TRK】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mun2_1} MH/s | 全网 {$mun2_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun2_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$ymc_bardata_no='http://mpos.freeyy.me/ymc/public/index.php?page=api&action=public'|file_get_contents}
+{$ymc_bardata=$ymc_bardata_no|json_decode:true}
+{$ymc_1=round($ymc_bardata["hashrate"]/1000)}
+{$ymc_2=round($ymc_bardata["network_hashrate"]/1000/1000/1000)}
+{$ymc_3=$ymc_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/ymc/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【YMC】首页-又是8小时</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$ymc_1} MH/s | 全网 {$ymc_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$ymc_3} 个</li>
 <!-- 币信息-结束 -->
                         </ul>
                         <!-- /.nav-second-level -->
