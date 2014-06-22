@@ -25,6 +25,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$cry_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$gdn1_bardata_no='http://mpos.freeyy.me/frac/public/index.php?page=api&action=public'|file_get_contents}
+{$gdn1_bardata=$gdn1_bardata_no|json_decode:true}
+{$gdn1_1=round($gdn1_bardata["hashrate"]/1000)}
+{$gdn1_2=round($gdn1_bardata["network_hashrate"]/1000/1000/1000)}
+{$gdn1_3=$gdn1_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/frac/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【FRAC】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$gdn1_1} MH/s | 全网 {$gdn1_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$gdn1_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$gdn_bardata_no='http://mpos.freeyy.me/gdn/public/index.php?page=api&action=public'|file_get_contents}
 {$gdn_bardata=$gdn_bardata_no|json_decode:true}
 {$gdn_1=round($gdn_bardata["hashrate"]/1000)}
@@ -203,6 +213,16 @@
                           <li><a href="http://mpos.freeyy.me/wvs/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【WVS】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mun21_1} MH/s | 全网 {$mun21_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun21_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
+{$twc1_bardata_no='http://mpos.freeyy.me/xgr/public/index.php?page=api&action=public'|file_get_contents}
+{$twc1_bardata=$twc1_bardata_no|json_decode:true}
+{$twc1_1=round($twc1_bardata["hashrate"]/1000)}
+{$twc1_2=round($twc1_bardata["network_hashrate"]/1000/1000/1000)}
+{$twc1_3=$twc1_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/xgr/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【XGR】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$twc1_1} MH/s | 全网 {$twc1_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$twc1_3} 个</li>
 <!-- 币信息-结束 -->
                         </ul>
                         <!-- /.nav-second-level -->
