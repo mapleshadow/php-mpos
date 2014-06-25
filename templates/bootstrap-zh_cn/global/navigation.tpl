@@ -165,16 +165,6 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
-{$mun1_bardata_no='http://mpos.freeyy.me/mil/public/index.php?page=api&action=public'|file_get_contents}
-{$mun1_bardata=$mun1_bardata_no|json_decode:true}
-{$mun1_1=round($mun1_bardata["hashrate"]/1000)}
-{$mun1_2=round($mun1_bardata["network_hashrate"]/1000/1000/1000)}
-{$mun1_3=$mun1_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/mil/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MIL】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mun1_1} MH/s | 全网 {$mun1_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun1_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
 {$qbc_bardata_no='http://mpos.freeyy.me/qbc/public/index.php?page=api&action=public'|file_get_contents}
 {$qbc_bardata=$qbc_bardata_no|json_decode:true}
 {$qbc_1=round($qbc_bardata["hashrate"]/1000)}
@@ -241,12 +231,23 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$super_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$mun1_bardata_no='http://mpos.freeyy.me/mil/public/index.php?page=api&action=public'|file_get_contents}
+{$mun1_bardata=$mun1_bardata_no|json_decode:true}
+{$mun1_1=round($mun1_bardata["hashrate"]/1000)}
+{$mun1_2=round($mun1_bardata["network_hashrate"]/1000/1000/1000)}
+{$mun1_3=$mun1_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/mil/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MIL】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mun1_1} MH/s | 全网 {$mun1_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun1_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【AV】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【CC】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【BCAT】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【BDG】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【ERC】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【LOL】</b></font></li>
+                          <li><font COLOR="#FF0000"><b>已经沦为认购币POS【MIL】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【MUGA】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【RTC】</b></font></li>
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【SUPER】</b></font></li>
@@ -260,16 +261,6 @@
                     <li><!-- 多矿池算力监控 -->
                             <a href="#"><i class="fa fa-tasks fa-fw"></i> 奇怪不出块的币汇总<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-<!-- 币信息-开始 -->
-{$ctz_bardata_no='http://mpos.freeyy.me/ctz/public/index.php?page=api&action=public'|file_get_contents}
-{$ctz_bardata=$ctz_bardata_no|json_decode:true}
-{$ctz_1=round($ctz_bardata["hashrate"]/1000)}
-{$ctz_2=round($ctz_bardata["network_hashrate"]/1000/1000/1000)}
-{$ctz_3=$ctz_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/ctz/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【CTZ】首页-需挖矿8小时以上</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$ctz_1} MH/s | 全网 {$ctz_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$ctz_3} 个</li>
-<!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
 {$mhyc_bardata_no='http://mpos.freeyy.me/mhyc/public/index.php?page=api&action=public'|file_get_contents}
 {$mhyc_bardata=$mhyc_bardata_no|json_decode:true}
