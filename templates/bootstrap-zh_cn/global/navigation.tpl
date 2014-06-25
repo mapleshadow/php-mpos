@@ -15,6 +15,16 @@
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$drk_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
+{$mun1_bardata_no='http://mpos.freeyy.me/blu/public/index.php?page=api&action=public'|file_get_contents}
+{$mun1_bardata=$mun1_bardata_no|json_decode:true}
+{$mun1_1=round($mun1_bardata["hashrate"]/1000)}
+{$mun1_2=round($mun1_bardata["network_hashrate"]/1000/1000/1000)}
+{$mun1_3=$mun1_bardata["workers"]}
+                          <li><a href="http://mpos.freeyy.me/blu/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【BLU】首页</a></li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mun1_1} MH/s | 全网 {$mun1_2} GH/s</li>
+                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun1_3} 个</li>
+<!-- 币信息-结束 -->
+<!-- 币信息-开始 -->
 {$cry_bardata_no='http://mpos.freeyy.me/cry/public/index.php?page=api&action=public'|file_get_contents}
 {$cry_bardata=$cry_bardata_no|json_decode:true}
 {$cry_1=round($cry_bardata["hashrate"]/1000)}
@@ -229,16 +239,6 @@
                           <li><a href="http://mpos.freeyy.me/drk/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【临时】首页</a></li>
                           <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$super_1} MH/s | 全网 {$super_2} GH/s</li>
                           <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$super_3} 个</li>
-<!-- 币信息-结束 -->
-<!-- 币信息-开始 -->
-{$mun1_bardata_no='http://mpos.freeyy.me/mil/public/index.php?page=api&action=public'|file_get_contents}
-{$mun1_bardata=$mun1_bardata_no|json_decode:true}
-{$mun1_1=round($mun1_bardata["hashrate"]/1000)}
-{$mun1_2=round($mun1_bardata["network_hashrate"]/1000/1000/1000)}
-{$mun1_3=$mun1_bardata["workers"]}
-                          <li><a href="http://mpos.freeyy.me/mil/public/index.php"><i class="fa fa-dashboard fa-fw"></i> 【MIL】首页</a></li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>算力：本地 {$mun1_1} MH/s | 全网 {$mun1_2} GH/s</li>
-                          <li><i class="fa fa-dashboard fa-fw"></i>矿池在线矿工数：{$mun1_3} 个</li>
 <!-- 币信息-结束 -->
 <!-- 币信息-开始 -->
                           <li><font COLOR="#FF0000"><b>已经沦为认购币POS【AV】</b></font></li>
