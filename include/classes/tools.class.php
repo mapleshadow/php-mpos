@@ -18,11 +18,11 @@ class Tools extends Base {
       curl_setopt($curl, CURLOPT_HEADER, false);
       $data = curl_exec($curl);
       preg_match('/define\(\'MPOS_VERSION\', \'(.*)\'\);/', $data, $match);
-      $mpos_versions['MPOS_VERSION'] = $match[1];
+      $mpos_versions['MPOS_VERSION'] = @$match[1];
       preg_match('/define\(\'DB_VERSION\', \'(.*)\'\);/', $data, $match);
-      $mpos_versions['DB_VERSION'] = $match[1];
+      $mpos_versions['DB_VERSION'] = @$match[1];
       preg_match('/define\(\'CONFIG_VERSION\', \'(.*)\'\);/', $data, $match);
-      $mpos_versions['CONFIG_VERSION'] = $match[1];
+      $mpos_versions['CONFIG_VERSION'] = @$match[1];
       curl_close($curl);
       return $this->memcache->setCache($key, $mpos_versions, 30);
     } else {
@@ -81,6 +81,8 @@ class Tools extends Base {
       return 'cryptorush';
     } else if (preg_match('/mintpal.com/', $url)) {
       return 'mintpal';
+    } else if (preg_match('/bittrex.com/', $url)) {
+      return 'bittrex';
     }
     $this->setErrorMessage("API URL unknown");
     return false;
@@ -115,6 +117,9 @@ class Tools extends Base {
       	  break;
       	case 'mintpal':
       	  return @$aData['0']['last_price'];
+      	  break;
+      	  case 'bittrex':
+      	  return @$aData['result']['Last'];
       	  break;
       }
     } else {
